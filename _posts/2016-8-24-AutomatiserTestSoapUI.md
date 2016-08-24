@@ -204,10 +204,12 @@ Concrètement, à ce stade on sait que l'on peut faire ceci avec SoapUI :
 **_Validité des vérifications automatique_**
 
 > Il faut faire attention à la confiance qui peut être accordée aux vérifications automatiques :
+>
 > * Si elles vérifient tout ce qu'un être humain vérifierait lui-même, elles sont suffisantes et on peut s'y fier 
 >   * si elles indiquent que le résultat d'un test est bon alors c'est qu'il est bon.
 > * S'il est nécessaire que les vérifications automatiques soient complétées par celles effectuées par un être humain, alors les vérifications ne sont pas fiables 
 >   * le résultat indiqué par de telles vérifications automatiques n'a aucune valeur, puisqu'un être humain doit les vérifier ensuite.
+> 
 > Je recommande de faire en sorte que les tests automatiques couvrent le plus de cas d'utilisation possible, cela permet de limiter le nombre d'erreurs qui échapperaient aux tests.
  
 ### Les Groovy Scripts
