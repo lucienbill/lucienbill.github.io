@@ -40,8 +40,8 @@ Dans SoapUI, il est possible de grouper les cas de test, et de les exécuter les
 Imbrication des Test Suites / Cases / Steps
 * Un **projet** peut contenir plusieurs **Test Suites** 
   * Une Test Suite peut contenir plusieurs **Test Cases** 
-….*Un Test Case peut contenir plusieurs **Test Steps**
-……*Un Test Step est une action unique, indivisible (exemple : appel d'un webservice, exécution d'une requête SQL)
+  * Un Test Case peut contenir plusieurs **Test Steps**
+  * Un Test Step est une action unique, indivisible (exemple : appel d'un webservice, exécution d'une requête SQL)
  
 ####Créer une Test Suite
 Effectuez un clic droit sur le projet auquel vous voulez ajouter une Test Suite, et sélectionnez "New TestSuite".
@@ -65,7 +65,7 @@ On peut copier une requête d'un projet à un autre : SoapUI ouvrira alors une f
 La capture d'écran suivante représente un TestCase composé des étapes suivantes : 
 1.	Une étape manuelle 
   * Lors de l'exécution du TestCase, une fenêtre s'affichera, et l'utilisateur devra interragir avec cette fenêtre afin que SoapUI passe à l'étape suivante. 
-….* Note : je recommande de ne pas utiliser ce type d'étapes, c'est incompatible avec l'automatisation (en effet, Jenkins et Squash TA ne vont pas savoir comment les traiter)
+  * Note : je recommande de ne pas utiliser ce type d'étapes, c'est incompatible avec l'automatisation (en effet, Jenkins et Squash TA ne vont pas savoir comment les traiter)
 2. Un appel à un webservice A
 3. Une requête SQL 
   * On peut exécuter des requêtes SQL directement dans SoapUI. Cela peut être utile pour créer un jeu de données, vérifier l'effet d'un service sur la BDD, ou s'assurer qu'une liste de données retournée par un webservice est correcte. Cependant cela demande un peu de configuration : je recommande de ne pas utiliser de requête SQL dans SoapUI. J’écrirai peut-être quelque chose à ce sujet plus tard.
@@ -99,7 +99,7 @@ A une requête SOAP, REST ou JDBC (i.e. "requête SQL"), on peut attacher autant
 * Vérifier que le temps de réponse est inférieur à une valeur donnée
 * etc  .
 Voici à quoi ressemblent les résultats d'une requête dont toutes les assertions sont vérifiées, et d'une requête dont au moins une assertion n'est pas vérifiée :
-      
+
 ####Variabiliser les vérifications
 Il est possible d'utiliser les propriétés (i.e. les variables) dans les vérifications automatiques
  
@@ -121,7 +121,7 @@ La pop-up de la capture ci-dessus permet de personnaliser le log. Je coche souve
 Voici un exemple de **Test Suite** contenant plusieurs **Test Cases**, dont un en échec :
  
 Concrètement, à ce stade on sait que l'on peut faire ceci avec SoapUI :
-•	Créer un scénario de tests qui s'exécute en appuyant sur un seul bouton, et qui vérifie tout automatiquement (plus besoin de lire soi-même les réponses retournées par les webservices).
+* Créer un scénario de tests qui s'exécute en appuyant sur un seul bouton, et qui vérifie tout automatiquement (plus besoin de lire soi-même les réponses retournées par les webservices).
  
 Validité des vérifications automatique
  Il faut faire attention à la confiance qui peut être accordée aux vérifications automatiques :
@@ -225,8 +225,8 @@ Si Excel vous le demande, confirmez que vous souhaitez bien enregistrer un fichi
  
 ######Vérifier l'encodage
 Ouvrez le fichier CSV avec Notepad++, cliquez sur "Encodage" :
-•	Si "Encoder en ANSI" est sélectionné, le fichier est bon.
-•	Sinon, cliquez sur "Convertir en ANSI"
+* Si "Encoder en ANSI" est sélectionné, le fichier est bon.
+* Sinon, cliquez sur "Convertir en ANSI"
 Cette manipulation sert à éviter les problèmes liés aux accents et aux caractères spéciaux.
  
 ####Importer l'outil d'automatisation dans un autre projet SoapUI
