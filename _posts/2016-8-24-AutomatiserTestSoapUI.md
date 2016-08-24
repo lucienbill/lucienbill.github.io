@@ -522,6 +522,7 @@ En cas d'erreur, l’identification des cas de tests qui posent problèmes se d�
 3. Lecture du rapport d'exécution produit par le GUI de SoapUI
  
 **_Alternative_**
+
 > Comme alternative au GUI de SoapUI, on peut utiliser le plugin Maven : le rapport généré sera le même, il sera juste présenté différemment.
  
 # Aller plus loin
