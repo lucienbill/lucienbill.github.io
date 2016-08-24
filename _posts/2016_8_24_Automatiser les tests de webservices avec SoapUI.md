@@ -3,17 +3,17 @@
 Cet article présente les travaux qui ont été réalisés pour automatiser les tests des webservices avec SoapUI 5.2.1. Voici un résumé :
 
 1. SoapUI est une application avec une interface graphique et permet d'appeler des webservices (SOAP et REST) 
-⋅⋅* Il est possible de mettre en place des vérifications automatiques
-⋅⋅* SoapUI supporte le langage de scripting "Groovy" (qui permet de faire presque tout et n'importe quoi, du moment qu'on le code)
+  * Il est possible de mettre en place des vérifications automatiques
+  * SoapUI supporte le langage de scripting "Groovy" (qui permet de faire presque tout et n'importe quoi, du moment qu'on le code)
 
 2. J'ai créé un projet SoapUI qui utilise les vérifications automatiques et les Groovy Scripts 
 
-⋅⋅* Ce projet lit un fichier CSV qui contient les données à envoyer au service et les éléments à vérifier dans la réponse du webservice. Pour l'utiliser il faut créer les cas de tests (dans le fichier CSV), paramétrer le projet SoapUI puis cliquer sur le bouton d'exécution -> un rapport d'exécution indiquera le résultat des tests
+  * Ce projet lit un fichier CSV qui contient les données à envoyer au service et les éléments à vérifier dans la réponse du webservice. Pour l'utiliser il faut créer les cas de tests (dans le fichier CSV), paramétrer le projet SoapUI puis cliquer sur le bouton d'exécution -> un rapport d'exécution indiquera le résultat des tests
 
 3. On peut piloter l'exécution de ce projet SoapUI avec Maven 
 
-⋅⋅* C'est ici que l'automatisation commence vraiment
-⋅⋅* C'est également ici que ça se complique (le plugin maven de SoapUI n'est pas "plug and play")
+  * C'est ici que l'automatisation commence vraiment
+  * C'est également ici que ça se complique (le plugin maven de SoapUI n'est pas "plug and play")
 
 4. L'outil est pilotable depuis Jenkins
 5. L'outil est pilotable depuis Squash TA, mais présente quelques défauts (mineurs)
@@ -39,7 +39,7 @@ Dans SoapUI, il est possible de grouper les cas de test, et de les exécuter les
  
 Imbrication des Test Suites / Cases / Steps
 *Un **projet** peut contenir plusieurs **Test Suites** 
-⋅⋅* Une Test Suite peut contenir plusieurs **Test Cases** 
+  * Une Test Suite peut contenir plusieurs **Test Cases** 
 ….*Un Test Case peut contenir plusieurs **Test Steps**
 ……*Un Test Step est une action unique, indivisible (exemple : appel d'un webservice, exécution d'une requête SQL)
  
@@ -64,11 +64,11 @@ On peut copier une requête d'un projet à un autre : SoapUI ouvrira alors une f
 ####Exemple
 La capture d'écran suivante représente un TestCase composé des étapes suivantes : 
 1.	Une étape manuelle 
-⋅⋅* Lors de l'exécution du TestCase, une fenêtre s'affichera, et l'utilisateur devra interragir avec cette fenêtre afin que SoapUI passe à l'étape suivante. 
+  * Lors de l'exécution du TestCase, une fenêtre s'affichera, et l'utilisateur devra interragir avec cette fenêtre afin que SoapUI passe à l'étape suivante. 
 ….* Note : je recommande de ne pas utiliser ce type d'étapes, c'est incompatible avec l'automatisation (en effet, Jenkins et Squash TA ne vont pas savoir comment les traiter)
 2. Un appel à un webservice A
 3. Une requête SQL 
-⋅⋅* On peut exécuter des requêtes SQL directement dans SoapUI. Cela peut être utile pour créer un jeu de données, vérifier l'effet d'un service sur la BDD, ou s'assurer qu'une liste de données retournée par un webservice est correcte. Cependant cela demande un peu de configuration : je recommande de ne pas utiliser de requête SQL dans SoapUI. J’écrirai peut-être quelque chose à ce sujet plus tard.
+  * On peut exécuter des requêtes SQL directement dans SoapUI. Cela peut être utile pour créer un jeu de données, vérifier l'effet d'un service sur la BDD, ou s'assurer qu'une liste de données retournée par un webservice est correcte. Cependant cela demande un peu de configuration : je recommande de ne pas utiliser de requête SQL dans SoapUI. J’écrirai peut-être quelque chose à ce sujet plus tard.
 4.	Un appel à un webservice B
  
 ###Variabiliser les scénarios de tests
@@ -97,7 +97,7 @@ A une requête SOAP, REST ou JDBC (i.e. "requête SQL"), on peut attacher autant
 * Vérifier le résultat d'une requête XPath ou XQuery
 * Exécuter un script personnalisé
 * Vérifier que le temps de réponse est inférieur à une valeur donnée
-* etc⋅⋅.
+* etc  .
 Voici à quoi ressemblent les résultats d'une requête dont toutes les assertions sont vérifiées, et d'une requête dont au moins une assertion n'est pas vérifiée :
       
 ####Variabiliser les vérifications
@@ -126,9 +126,9 @@ Concrètement, à ce stade on sait que l'on peut faire ceci avec SoapUI :
 Validité des vérifications automatique
  Il faut faire attention à la confiance qui peut être accordée aux vérifications automatiques :
 * Si elles vérifient tout ce qu'un être humain vérifierait lui-même, elles sont suffisantes et on peut s'y fier 
-⋅⋅* si elles indiquent que le résultat d'un test est bon alors c'est qu'il est bon.
+  * si elles indiquent que le résultat d'un test est bon alors c'est qu'il est bon.
 * S'il est nécessaire que les vérifications automatiques soient complétées par celles effectuées par un être humain, alors les vérifications ne sont pas fiables 
-⋅⋅* le résultat indiqué par de telles vérifications automatiques n'a aucune valeur, puisqu'un être humain doit les vérifier ensuite.
+  * le résultat indiqué par de telles vérifications automatiques n'a aucune valeur, puisqu'un être humain doit les vérifier ensuite.
 Il est recommandé de faire en sorte que les tests automatiques couvrent le plus de cas d'utilisation possible, cela permet de limiter le nombre d'erreurs qui échapperaient aux tests.
  
 ###Les Groovy Scripts
@@ -148,9 +148,9 @@ Le projet est disponible ici :
 Ce projet fonctionne de la manière suivante :
 1. Le projet ouvre un fichier CSV contenant des données de test et des vérifications à faire
 2. Pour chaque ligne du fichier CSV, SoapUI envoie une requête au webservice : 
-⋅⋅1. le cas de test est nommé automatiquement (c'est utile pour le log)
-⋅⋅2. les données envoyées au webervice sont extraites depuis le CSV
-⋅⋅3. les vérifications automatiques à faire sur la réponse du webservice sont déterminées à partir du CSV.
+  1. le cas de test est nommé automatiquement (c'est utile pour le log)
+  2. les données envoyées au webervice sont extraites depuis le CSV
+  3. les vérifications automatiques à faire sur la réponse du webservice sont déterminées à partir du CSV.
 ##Utilité
 Sans utiliser le projet ci-dessus, on peut déjà faire de l'automatisation : une fois que le scénario de test est entièrement implémenté dans SoapUI (avec les Test Suites / Cases / Steps) que que chaque Test Step contient toutes les vérifications automatiques nécessaires, les tests peuvent être lancés de manière automatique : l'ordonnanceur (par exemple Jenkins ou Squash TA) générera un rapport de tests.
 Le projet SoapUI ci-joint permet de générer un tel scénario de tests à partir d'un fichier de données au format CSV : cela permet d'implémenter et faire évoluer plus facilement et plus rapidement le scénario.
@@ -159,8 +159,8 @@ Pour utiliser cet outil, il est recommandé d'étudier le fonctionnement de l'ex
 ###Première utilisation
 1. Dézippez les fichiers dans le répertoire de votre choix. Importez le fichier "Projet_SoapUI_exemple.xml" dans SoapUI (File > Import Project)
 2. Modifiez l'élément TestSuite > Test Case > Looper_properties : 
-⋅⋅* chemin_CSV_absolu doit être vide
-⋅⋅* chemin_CSV doit être renseigné avec le chemin relatif du fichier de données par défaut
+  * chemin_CSV_absolu doit être vide
+  * chemin_CSV doit être renseigné avec le chemin relatif du fichier de données par défaut
  
 3. Lancez l'exécution du scénario (son statut d'exécution sera "failed" : c'est normal)
  
@@ -168,12 +168,12 @@ Décortiquons maintenant ce qu'il s'est passé lorsqu'on a lancé le scénario :
 1. l'étape "Data_injector" a lu la première ligne du fichier CSV, qui contient le nom des données, puis l'a stocké dans une variable
  
 2. "Data injector" a ensuite lu la ligne 2 : 
-⋅⋅1. il a écrit les données de cette ligne dans l'étape "Test_properties" (les noms des propriétés sont les noms donnés dans la première ligne du csv)
-⋅⋅2. il a renommé le deuxième Step du Test Case ("nom du cas de test (automatique)") avec la valeur de la priopriété "Tst_name" du step "Test_properties"
+  1. il a écrit les données de cette ligne dans l'étape "Test_properties" (les noms des propriétés sont les noms donnés dans la première ligne du csv)
+  2. il a renommé le deuxième Step du Test Case ("nom du cas de test (automatique)") avec la valeur de la priopriété "Tst_name" du step "Test_properties"
 3. le Test Step suivant (qui venait d'être renommé) appelle le webservice. 
-⋅⋅1. Les données qu'il lui envoie sont variabilisées : les valeurs proviennent du step "Test_properties". On remarquera le nom du cas de test est écrit dans un commentaire XML : si le renommage automatique du cas de test ne fonctionne pas, alors le flux envoyé au service permettra d'identifier le cas de test car le nom sera écrit dedans.
+  1. Les données qu'il lui envoie sont variabilisées : les valeurs proviennent du step "Test_properties". On remarquera le nom du cas de test est écrit dans un commentaire XML : si le renommage automatique du cas de test ne fonctionne pas, alors le flux envoyé au service permettra d'identifier le cas de test car le nom sera écrit dedans.
  
-⋅⋅2. Les vérifications automatiques sont également variabilisées. 
+  2. Les vérifications automatiques sont également variabilisées. 
  
 Nombre d'assertions
 L'exemple ne contient que 2 assertions variabilisées (de type "le flux contient / ne contient pas une chaîne de caractères spécifiée"). Un test réel en contiendra vraisemblablement beaucoup plus, mais j'ai préféré ne pas surcharger l'exemple.
@@ -292,9 +292,9 @@ Dans l'idéal, voici le scénario d'automatisation à mettre en place (ce scéna
 Dans l’entité pour laquelle je travaillais au moment de la mise en place de l’automatisation des tests des webservices, ce qu'on utilisait ressemblait à ceci :
 1. Jenkins ordonne de compiler le code
 2. Jenkins ordonne à Squash TA d'exécuter son script 
-⋅⋅1. Squash TA initialise les bases de données et y insère les jeux de données pour les tests automatisés
-⋅⋅2. Squash TA exécute les tests automatisés
-⋅⋅3. Squash TA génère un rapport de tests
+  1. Squash TA initialise les bases de données et y insère les jeux de données pour les tests automatisés
+  2. Squash TA exécute les tests automatisés
+  3. Squash TA génère un rapport de tests
 3. Jenkins génère un rapport d'exécution
  
 SoapUI a une particularité : on peut le piloter avec Squash ou avec Jenkins, et dans les 2 cas ce sont 2 manières très différentes de faire :
@@ -314,11 +314,11 @@ L'inconvénient est que le fonctionnement du plug-in SoapUI de Squash TA n'est n
 ##Solution
 Pour résumer, on avait le choix entre :
 * utiliser Jenkins, ce qui fonctionne parfaitement mais implique de :  
-⋅⋅* modifier totalement la façon dont on fait les tests automatisés
-⋅⋅* perdre le lien avec Squash TM
+  * modifier totalement la façon dont on fait les tests automatisés
+  * perdre le lien avec Squash TM
 * utiliser Squash TA, ce qui est plus simple à mettre en œuvre mais qui : 
-⋅⋅* nécessite de faire attention au chemin relatif / absolu du fichier CSV
-⋅⋅* produit un rapport de test inexploitable pour SoapUI
+  * nécessite de faire attention au chemin relatif / absolu du fichier CSV
+  * produit un rapport de test inexploitable pour SoapUI
  
 On a donc choisi d'utiliser Squash TA. L'automatisation permet dans ce de différentier les 2 situations suivantes :
 1. Les tests automatisés ne relèvent aucune erreur
@@ -336,6 +336,6 @@ Comme alternative au GUI de SoapUI, on peut utiliser le plugin Maven : le rappor
 Avec SoapUI, il est également possible de faire des tests de performances (souvent appelés "benchmark").
  
 On peut paramétrer le nombre d'appels simultanés à envoyer, la fréquence à laquelle chaque groupe d'appels et lancé, et on peut mesurer les temps de réponses ainsi que la quantité de données envoyées.
-Exemple : une architecture de webservices X doit être capable d'avoir un temps de réponse de moins de 250 millisecondes avec 300 utilisateurs concurrents envoyant une requête par seconde pendant 2 heures ininterrompues. On met en place un environnement de benchmark : il s'agit de l'environnement qu'on prévoit de mettre en production (même type de ressources, même volume de données dans les bases etc⋅⋅.), mais il ne sera accessible qu'à un groupe spécifique de machines. Ce groupe de machines peut être sous certaines conditions réduit à "un". La machine en question utilisera SoapUI pour simuler les conditions d'utilisation visées (300 requêtes par secondes pendant 2 heures) et mesurer les temps de réponse.
+Exemple : une architecture de webservices X doit être capable d'avoir un temps de réponse de moins de 250 millisecondes avec 300 utilisateurs concurrents envoyant une requête par seconde pendant 2 heures ininterrompues. On met en place un environnement de benchmark : il s'agit de l'environnement qu'on prévoit de mettre en production (même type de ressources, même volume de données dans les bases etc  .), mais il ne sera accessible qu'à un groupe spécifique de machines. Ce groupe de machines peut être sous certaines conditions réduit à "un". La machine en question utilisera SoapUI pour simuler les conditions d'utilisation visées (300 requêtes par secondes pendant 2 heures) et mesurer les temps de réponse.
 #FAQ - Troubleshooting
 Dans cette section je répondrai à vos éventuelles questions.
