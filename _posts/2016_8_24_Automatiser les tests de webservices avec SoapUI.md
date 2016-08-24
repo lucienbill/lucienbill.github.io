@@ -26,42 +26,60 @@ Cet article présente les travaux qui ont été réalisés pour automatiser les 
 Nous allons supposer que vous devez tester un webservice, que votre scénario de tests est prêt est que vous savez comment accéder au webservice. Nous supposerons également que vous avez installé **SoapUI 5.2.1** (ou une version ultérieure) sur votre poste.
 ###Créer un nouveau projet
 Cliquez sur **File > New SOAP/REST Project**, puis renseignez l'adresse du service à tester
+
+![New project](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_new.png)
  
 ###Ouvrir un projet existant
 Cliquez sur **File > Import Projet**.
+
+![Import project](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_import.png)
  
 ###Les premières requêtes
 Lorsqu'on a peu de requêtes à passer au webservice, on peut se contenter de lier les requêtes directement à la déclaration du service.
- 
+
+![First requests](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_firstRequest.png)
+
 Tester un webservice de cette façon fonctionne, cependant lorsqu'il y a beaucoup de cas à tester cela devient lassant : il faut lancer chaque requête une à une et il n'y a aucune possibilité d'automatisation. L'être humain lambda sait lire, mais il est rarement passionné à l'idée de parser un flux XML avec les yeux. Heureusement, on peut faire autrement.
 ###Tests Suites et Test cases
 Dans SoapUI, il est possible de grouper les cas de test, et de les exécuter les uns à la suite des autres **en cliquant sur un seul bouton** grâce aux Test Suites et aux Test Cases.
+
+[Test Suite](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_TestSuites.png)
  
-Imbrication des Test Suites / Cases / Steps
-* Un **projet** peut contenir plusieurs **Test Suites** 
-  * Une Test Suite peut contenir plusieurs **Test Cases** 
-  * Un Test Case peut contenir plusieurs **Test Steps**
-  * Un Test Step est une action unique, indivisible (exemple : appel d'un webservice, exécution d'une requête SQL)
+**_Imbrication des Test Suites / Cases / Steps_**
+> * Un **projet** peut contenir plusieurs **Test Suites** 
+>   * Une Test Suite peut contenir plusieurs **Test Cases** 
+>     * Un Test Case peut contenir plusieurs **Test Steps**
+>       * Un Test Step est une action unique, indivisible (exemple : appel d'un webservice, exécution d'une requête SQL)
  
 ####Créer une Test Suite
 Effectuez un clic droit sur le projet auquel vous voulez ajouter une Test Suite, et sélectionnez "New TestSuite".
+
+![New Test Suite](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_newTestSuite.png)
  
 ####Créer un Test Case
 Effectuez un clic droit sur une Test Suite, puis cliquez sur "New TestCase"
+
+![New Test Case](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_newTestCase.png)
  
 ####Ajouter des étapes à un Test Case
 #####Nouvelle étape
 Effectuez un clic droit sur le Test Case ou sur l'élément "Test Steps", et choisissez le type d'étape à ajouter
+
+![Add Step](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_addStep.png)
  
 #####Etape existante
 On peut vouloir copier une étape vers un Test Case précis. On peut :
 * effectuer un clic droit sur la requête à copier, et sélectionner "Add to TestCase",
 * effectuer un glisser-déposer.
+
+![Drag And Drop](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_dragAndDrop.png)
+![Add to Test Case]!(https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_addToTestCase.png)
  
-  
-Astuce
-On peut copier une requête d'un projet à un autre : SoapUI ouvrira alors une fenêtre de dialogue pour importer si nécessaire la déclaration du service associé à la requête.
+**_Astuce_**
+> On peut copier une requête d'un projet à un autre : SoapUI ouvrira alors une fenêtre de dialogue pour importer si nécessaire la déclaration du service associé à la requête.
+
 ####Exemple
+
 La capture d'écran suivante représente un TestCase composé des étapes suivantes : 
 1.	Une étape manuelle 
   * Lors de l'exécution du TestCase, une fenêtre s'affichera, et l'utilisateur devra interragir avec cette fenêtre afin que SoapUI passe à l'étape suivante. 
@@ -70,25 +88,34 @@ La capture d'écran suivante représente un TestCase composé des étapes suivan
 3. Une requête SQL 
   * On peut exécuter des requêtes SQL directement dans SoapUI. Cela peut être utile pour créer un jeu de données, vérifier l'effet d'un service sur la BDD, ou s'assurer qu'une liste de données retournée par un webservice est correcte. Cependant cela demande un peu de configuration : je recommande de ne pas utiliser de requête SQL dans SoapUI. J’écrirai peut-être quelque chose à ce sujet plus tard.
 4.	Un appel à un webservice B
+
+![Sample Test Suite](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_testCase.png)
  
 ###Variabiliser les scénarios de tests
 Variabiliser les scénarios de tests permet de faciliter leur maintenance. Exemple : on a un scénario qui contient 10 requêtes SOAP vers un webservice, et pour chaque requête on envoie un token d'identification. L'environnement de test change, l'ancien token n'est plus valide et a besoin d'être changé : le modifier à la main dans les 10 requêtes prend du temps. Si on utilise des variables, il n'y a besoin de changer le token qu'à un seul endroit.
 Avec SoapUI, on stocke les variables dans des Test Step de type **Properties**. Une étape de ce type est un tableau de données stockées au format "clé ; valeur". L'ordre d'un step de type "Properties" dans un Test Case n'a aucune importance : le comportement de SoapUI sera le même, que le step "properties" soit au début, au milieu ou à la fin de la liste.
-  
+
+![Properties](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_addProperties.png)
+![Property](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_addProperty.png)
+
 On peut ensuite utiliser les variables dans les requêtes. Dans la capture d'écran suivante, on écrit dans la requête SOAP :
 ```
 ${Properties_foobar#nom}
 ```
 Lorsque l'étape SOAP sera exécutée, SoapUI remplacera cette chaîne de caractères par la valeur de la propriété "nom" de l'étape "Properties_foobar" (dans l'exemple, ce sera "valeur").
+
+![Property use case](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUIi_propertiyUsage.png)
  
-Plus d'infos sur les propriétés
-Il existe d'autres éléments qui peuvent stocker des propriétés. C'est le cas des Test Suites et des Test Case par exemple. Le [site officiel](https://www.soapui.org/functional-testing/properties/working-with-properties.html) les décrit plus en détail. Je me contente généralement d'utiliser des Test Steps de type "Properties".
+**_Plus d'infos sur les propriétés_**
+> Il existe d'autres éléments qui peuvent stocker des propriétés. C'est le cas des Test Suites et des Test Case par exemple. Le [site officiel](https://www.soapui.org/functional-testing/properties/working-with-properties.html) les décrit plus en détail. Je me contente généralement d'utiliser des Test Steps de type "Properties".
  
 ###Vérifications automatiques
 Variabiliser les tests pour pouvoir les réutiliser est un bon départ. Implémenter des vérifications automatiques pour ne plus avoir à vérifier soi-même le comportement des webservices, c'est encore mieux !
 Pour automatiser les vérifications, SoapUI utilise les **assertions**.
 ####Les différents types de vérifications automatiques
- 
+
+![Assert contains](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_assertC.png)
+
 A une requête SOAP, REST ou JDBC (i.e. "requête SQL"), on peut attacher autant d'assertions que l'ont veut. Elles peuvent être du type :
 * "**Contains**" : le flux retourné par le service doit contenir une chaîne de caractères spécifique
 * "**Not Contains**" : le flux retourné par le service ne doit pas contenir une chaîne de caractères spécifique
@@ -100,8 +127,13 @@ A une requête SOAP, REST ou JDBC (i.e. "requête SQL"), on peut attacher autant
 * etc  .
 Voici à quoi ressemblent les résultats d'une requête dont toutes les assertions sont vérifiées, et d'une requête dont au moins une assertion n'est pas vérifiée :
 
+![Assertions: OK](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_assertOK.png)
+![Assertions: KO](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_assertKO.png)
+
 ####Variabiliser les vérifications
 Il est possible d'utiliser les propriétés (i.e. les variables) dans les vérifications automatiques
+
+![Variables](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_propertyFail.png)
  
 ####Exécution d'un Test Case contenant des étapes avec des vérifications automatiques
 Il est possible de paramétrer un Test Case :
@@ -109,40 +141,50 @@ Il est possible de paramétrer un Test Case :
 * le Test Case doit-il être en statut "erreur" dès qu'un Test Step est en erreur ?
 * doit-on purger les résultats sans erreur de la mémoire ?
 Faites un clic droit sur le TestCase et sélectionnez "Options", ou cliquez sur l'engrenage dans la barre d'outils du TestCase.
- 
+
+![Test Case options](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_TCOptions.png)
+
 Je paramètre généralement mes Test Cases comme sur la capture d'écran ci-dessus. Lorsque la mémoire disponible sur la machine est faible, je coche la case "Discard OK Results"
 Voici un exemple de Test Case qui se déroule correctement. Le détail du déroulement est affiché dans le "TestCase Log" :
+
+![Test Case log](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_TCOK.png)
  
 Voici un exemple de Test Case dans lequel au moins un Step est en erreur : 
+
+![Test Case KO](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_TCKO.png)
  
- 
-Le "TestCase Log"
-La pop-up de la capture ci-dessus permet de personnaliser le log. Je coche souvent la case "Errors Only" afin que seuls les Test Steps en erreur soient affichés dans le log.
+**_Le "TestCase Log"_**
+> La pop-up de la capture ci-dessus permet de personnaliser le log. Je coche souvent la case "Errors Only" afin que seuls les Test Steps en erreur soient affichés dans le log.
+
 Voici un exemple de **Test Suite** contenant plusieurs **Test Cases**, dont un en échec :
- 
+
+![Test Suite fail](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_TSfail.png)
+
 Concrètement, à ce stade on sait que l'on peut faire ceci avec SoapUI :
 * Créer un scénario de tests qui s'exécute en appuyant sur un seul bouton, et qui vérifie tout automatiquement (plus besoin de lire soi-même les réponses retournées par les webservices).
  
-Validité des vérifications automatique
- Il faut faire attention à la confiance qui peut être accordée aux vérifications automatiques :
-* Si elles vérifient tout ce qu'un être humain vérifierait lui-même, elles sont suffisantes et on peut s'y fier 
-  * si elles indiquent que le résultat d'un test est bon alors c'est qu'il est bon.
-* S'il est nécessaire que les vérifications automatiques soient complétées par celles effectuées par un être humain, alors les vérifications ne sont pas fiables 
-  * le résultat indiqué par de telles vérifications automatiques n'a aucune valeur, puisqu'un être humain doit les vérifier ensuite.
-Il est recommandé de faire en sorte que les tests automatiques couvrent le plus de cas d'utilisation possible, cela permet de limiter le nombre d'erreurs qui échapperaient aux tests.
+**_Validité des vérifications automatique_**
+> Il faut faire attention à la confiance qui peut être accordée aux vérifications automatiques :
+> * Si elles vérifient tout ce qu'un être humain vérifierait lui-même, elles sont suffisantes et on peut s'y fier 
+>   * si elles indiquent que le résultat d'un test est bon alors c'est qu'il est bon.
+> * S'il est nécessaire que les vérifications automatiques soient complétées par celles effectuées par un être humain, alors les vérifications ne sont pas fiables 
+>   * le résultat indiqué par de telles vérifications automatiques n'a aucune valeur, puisqu'un être humain doit les vérifier ensuite.
+> Je recommande de faire en sorte que les tests automatiques couvrent le plus de cas d'utilisation possible, cela permet de limiter le nombre d'erreurs qui échapperaient aux tests.
  
 ###Les Groovy Scripts
 SoapUI permet d'utiliser le langage de scripting "Groovy", qui permet concrètement de coder ses propres fonctionnalités et de les ajouter à SoapUI.
 On peut, par exemple, implémenter le scénario de test suivant grace aux scripts Groovy :
 1. Appeler un service de type "GetList" : il doit retourner une liste de résultats.
 2. Pour chaque résultat de cette liste, appeler un service de type "GetDetail" pour obtenir des informations détaillées sur l'entité sélectionnée.
- 
-Groovy
-Groovy est un langage de scripting intégrable à Java : il peut utiliser des librairies java, mais utilise une syntaxe moins contraignante. Il n'y a pas besoin de savoir développer en Java pour créer un script Groovy.
+
+![Groovy get detail](https://github.com/lucienbill/lucienbill.github.io/blob/lucienbill-SoapUI_Tuto/images/SUI/SUI_groovyGetDetail.png)
+
+**_Groovy_**
+> Groovy est un langage de scripting intégrable à Java : il peut utiliser des librairies java, mais utilise une syntaxe moins contraignante. Il n'y a pas besoin de savoir développer en Java pour créer un script Groovy, mais je recommande tout de même de coder proprement de façon à rendre le script plus facile à maintenir.
  
 #SoapUI : exécuter des cas de tests à l'aide d'un fichier CSV
-Projet SoapUI
-Le projet est disponible ici :
+**_Projet SoapUI_**
+> Le projet est disponible [ici](https:lucienbill.github.io/other_resources/SoapUI_Auto_24082016.7z).
  
 ##Description
 Ce projet fonctionne de la manière suivante :
@@ -161,29 +203,39 @@ Pour utiliser cet outil, il est recommandé d'étudier le fonctionnement de l'ex
 2. Modifiez l'élément TestSuite > Test Case > Looper_properties : 
   * chemin_CSV_absolu doit être vide
   * chemin_CSV doit être renseigné avec le chemin relatif du fichier de données par défaut
- 
+
+![CSV Path](lucienbill.github.io/images/SUI/SUI_CSVPath.png)
+
 3. Lancez l'exécution du scénario (son statut d'exécution sera "failed" : c'est normal)
+
+![First execution](lucienbill.github.io/images/SUI/SUI_sampleAuto.png)
  
 Décortiquons maintenant ce qu'il s'est passé lorsqu'on a lancé le scénario :
 1. l'étape "Data_injector" a lu la première ligne du fichier CSV, qui contient le nom des données, puis l'a stocké dans une variable
- 
+
+![Sample data](lucienbill.github.io/images/SUI/SUI_csv.png)
+
 2. "Data injector" a ensuite lu la ligne 2 : 
   1. il a écrit les données de cette ligne dans l'étape "Test_properties" (les noms des propriétés sont les noms donnés dans la première ligne du csv)
   2. il a renommé le deuxième Step du Test Case ("nom du cas de test (automatique)") avec la valeur de la priopriété "Tst_name" du step "Test_properties"
 3. le Test Step suivant (qui venait d'être renommé) appelle le webservice. 
   1. Les données qu'il lui envoie sont variabilisées : les valeurs proviennent du step "Test_properties". On remarquera le nom du cas de test est écrit dans un commentaire XML : si le renommage automatique du cas de test ne fonctionne pas, alors le flux envoyé au service permettra d'identifier le cas de test car le nom sera écrit dedans.
+
+![Sample properties](lucienbill.github.io/images/SUI/SUI_requestAuto.png)
  
   2. Les vérifications automatiques sont également variabilisées. 
  
-Nombre d'assertions
-L'exemple ne contient que 2 assertions variabilisées (de type "le flux contient / ne contient pas une chaîne de caractères spécifiée"). Un test réel en contiendra vraisemblablement beaucoup plus, mais j'ai préféré ne pas surcharger l'exemple.
+![Contains](lucienbill.github.io/images/SUI/SUI_exp1.png)
+
+**_Nombre d'assertions_**
+> L'exemple ne contient que 2 assertions variabilisées (de type "le flux contient / ne contient pas une chaîne de caractères spécifiée"). Un test réel en contiendra vraisemblablement beaucoup plus, mais j'ai préféré ne pas surcharger l'exemple.
 4. SoapUI attend 300 millisecondes : cela sert à éviter un bug du [GUI](https://fr.wikipedia.org/wiki/Interface_graphique) de SoapUI
 5. Les étapes de propriétés ("Test_Properties" et "Looper_properties") ne sont pas exécutées : elles servent juste à stocker des données
 6. Le script Groovy "Looper" vérifie s'il reste des lignes dans le CSV, si c'est le cas on passe à la ligne suivante en revenant au step "Data_injector"
  
-Simplification
-La description ci-dessus est une version simplifiée de ce qu'il se passe vraiment. Je vous invite à ouvrir les groovy scripts pour voir le code. Vous constaterez que "Looper" ne vérifie pas s'il reste des lignes au fichier CSV : il se contente de lire une propriété écrite par le Data_injector, qui écrit une valeur différente si la ligne qu'il lit contient des données ou non.
- 
+**_Simplification_**
+> La description ci-dessus est une version simplifiée de ce qu'il se passe vraiment. Je vous invite à ouvrir les groovy scripts pour voir le code. Vous constaterez que "Looper" ne vérifie pas s'il reste des lignes au fichier CSV : il se contente de lire une propriété écrite par le Data_injector, qui écrit une valeur différente si la ligne qu'il lit contient des données ou non.
+> ![data injector](lucienbill.github.io/images/SUI/SUI_groovyNewLine.png) 
  
 ###Utiliser l'outil avec un autre webservice
 L'opération se déroule en 3 étapes :
@@ -201,12 +253,18 @@ Pour chaque cas de test du scénario, le fichier CSV doit contenir les élément
 * le nom de chaque colonne doit être unique.
 Dans l'exemple fourni avec l'outil, les données sont : 
  
-  
-Rappel sur les vérifications du type "ne contient pas"
-Un assertion du type "not contains" vérifie qu'une chaîne de caractères n'est pas dans la réponse retournée par une requête (exemple : une requête SOAP).
-Si on ne donne pas de chaîne de caractère de référence à cette assertion (i.e. si on la laisse vide), alors elle répondra systématiquement "il y a une erreur". Concrètement, cela signifie que si on souhaite ne pas utiliser une assertion de type "not contains" pour un cas de test particulier, il ne faut pas laisser la colonne correspondante vide dans le CSV, mais y écrire quelque chose qui n'a aucune chance de figurer dans le flux. Exemple :
- 
-Dans cette exemple, SoapUI vérifiera que le flux de réponse ne contient pas "foobar" : cela n'apporte rien fonctionnellement, mais empêche SoapUI de signaler une réponse comme étant défectueuse alors qu'elle ne l'est pas.
+![Sample data](lucienbill.github.io/images/SUI/SUI_csv.png)
+![Sample properties](lucienbill.github.io/images/SUI/SUI_requestAuto.png)
+![Contains](lucienbill.github.io/images/SUI/SUI_exp1.png)
+
+**_Note sur les vérifications du type "ne contient pas"_**
+> Un assertion du type "not contains" vérifie qu'une chaîne de caractères n'est pas dans la réponse retournée par une requête (exemple : une requête SOAP).
+> Si on ne donne pas de chaîne de caractère de référence à cette assertion (i.e. si on la laisse vide), alors elle répondra systématiquement "il y a une erreur". Concrètement, cela signifie que si on souhaite ne pas utiliser une assertion de type "not contains" pour un cas de test particulier, il ne faut pas laisser la colonne correspondante vide dans le CSV, mais y écrire quelque chose qui n'a aucune chance de figurer dans le flux. Exemple :
+
+![foobar](lucienbill.github.io/images/SUI/SUI_foobar.png)
+
+> *Dans cette exemple, SoapUI vérifiera que le flux de réponse ne contient pas "foobar" : cela n'apporte rien fonctionnellement, mais empêche SoapUI de signaler une réponse comme étant défectueuse alors qu'elle ne l'est pas.*
+
 #####Enregistrer les données
 Vous pouvez utiliser un éditeur de texte comme Notepad++ pour créer les données, cependant lorsqu'il y a beaucoup de colonnes cela peut devenir compliqué. Utilisez plutôt Excel ou LibreOffice
 ######LibreOffice
@@ -215,23 +273,31 @@ Lorsque vous les enregistrez, sélectionnez le format "Texte CSV", choisissez un
 Si LibreOffice vous le demande, confirmez que vous souhaitez bien enregistrer un fichier CSV.
 Le séparateur de données est le caractère ";" (point-virgule)
  
- 
+![csv separator](lucienbill.github.io/images/SUI/SUI_csvExample.png)
+![csv save](lucienbill.github.io/images/SUI/SUI_utiliserCSV.png)
+![csv save options](lucienbill.github.io/images/SUI/SUI_csvSeparator.png)
  
 ######Excel
 Ecrivez vos données.
 Lorsque vous les enregistrez, sélectionnez le format "CSV (séparateur point-virgule)", choisissez un emplacement cohérent (par exemple, dans le répertoire où vous allez enregistrer le projet SoapUI qui testera votre webservice) puis cliquez sur "Enregistrer".
 Si Excel vous le demande, confirmez que vous souhaitez bien enregistrer un fichier CSV.
- 
- 
+
+![Excel CSV](lucienbill.github.io/images/SUI/SUI_csvExample.png)
+![Excel CSV confirm](lucienbill.github.io/images/SUI/SUI_ExcelCSV.png)
+
 ######Vérifier l'encodage
 Ouvrez le fichier CSV avec Notepad++, cliquez sur "Encodage" :
 * Si "Encoder en ANSI" est sélectionné, le fichier est bon.
 * Sinon, cliquez sur "Convertir en ANSI"
 Cette manipulation sert à éviter les problèmes liés aux accents et aux caractères spéciaux.
+
+![ANSI](lucienbill.github.io/images/SUI/SUI_ANSI.png)
  
 ####Importer l'outil d'automatisation dans un autre projet SoapUI
 Copier la TestSuite de l'exemple (projet SoapUI_Auto) dans le projet de votre choix, avec un glisser-déposer ou un clic-droit -> Cloner.
  
+![Drag and clone](lucienbill.github.io/images/SUI/SUI_dragAndDrop2.png)
+![Clone](lucienbill.github.io/images/SUI/SUI_clone.png)
  
 SoapUI vous demandera si vous souhaitez également copier le lien vers le webservice utilisé par la TestSuite. Vous n'aurez probablement pas besoin de ce lien : vous pouvez l'importer puis le supprimer ensuite, ou vous pouvez demander à SoapUI de ne pas l'importer tout court.
  
