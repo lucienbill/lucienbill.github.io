@@ -3,13 +3,19 @@
 Cet article présente les travaux qui ont été réalisés pour automatiser les tests des webservices avec SoapUI 5.2.1. Voici un résumé :
 
 1.	SoapUI est une application avec une interface graphique et permet d'appeler des webservices (SOAP et REST) 
+
 ..* Il est possible de mettre en place des vérifications automatiques
 ..* SoapUI supporte le langage de scripting "Groovy" (qui permet de faire presque tout et n'importe quoi, du moment qu'on le code)
+
 2. J'ai créé un projet SoapUI qui utilise les vérifications automatiques et les Groovy Scripts 
+
 ..* Ce projet lit un fichier CSV qui contient les données à envoyer au service et les éléments à vérifier dans la réponse du webservice. Pour l'utiliser il faut créer les cas de tests (dans le fichier CSV), paramétrer le projet SoapUI puis cliquer sur le bouton d'exécution -> un rapport d'exécution indiquera le résultat des tests
+
 3. On peut piloter l'exécution de ce projet SoapUI avec Maven 
+
 ..* C'est ici que l'automatisation commence vraiment
 ..* C'est également ici que ça se complique (le plugin maven de SoapUI n'est pas "plug and play")
+
 4. L'outil est pilotable depuis Jenkins
 5. L'outil est pilotable depuis Squash TA, mais présente quelques défauts (mineurs)
 6. Squash VS Jenkins : que choisir ?
