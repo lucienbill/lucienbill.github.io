@@ -32,19 +32,19 @@ Cet article présente les travaux qui ont été réalisés pour automatiser les 
 
 Nous allons supposer que vous devez tester un webservice, que votre scénario de tests est prêt est que vous savez comment accéder au webservice. Nous supposerons également que vous avez installé **SoapUI 5.2.1** (ou une version ultérieure) sur votre poste.
 
-###Créer un nouveau projet
+### Créer un nouveau projet
 
 Cliquez sur **File > New SOAP/REST Project**, puis renseignez l'adresse du service à tester
 
 ![New project]({{ site.baseurl }}/images/SUI/SUI_new.png)
  
-###Ouvrir un projet existant
+### Ouvrir un projet existant
 
 Cliquez sur **File > Import Projet**.
 
 ![Import project]({{ site.baseurl }}/images/SUI/SUI_import.png)
  
-###Les premières requêtes
+### Les premières requêtes
 
 Lorsqu'on a peu de requêtes à passer au webservice, on peut se contenter de lier les requêtes directement à la déclaration du service.
 
@@ -52,7 +52,7 @@ Lorsqu'on a peu de requêtes à passer au webservice, on peut se contenter de li
 
 Tester un webservice de cette façon fonctionne, cependant lorsqu'il y a beaucoup de cas à tester cela devient lassant : il faut lancer chaque requête une à une et il n'y a aucune possibilité d'automatisation. L'être humain lambda sait lire, mais il est rarement passionné à l'idée de parser un flux XML avec les yeux. Heureusement, on peut faire autrement.
 
-###Tests Suites et Test cases
+### Tests Suites et Test cases
 
 Dans SoapUI, il est possible de grouper les cas de test, et de les exécuter les uns à la suite des autres **en cliquant sur un seul bouton** grâce aux Test Suites et aux Test Cases.
 
@@ -65,27 +65,27 @@ Dans SoapUI, il est possible de grouper les cas de test, et de les exécuter les
 >     * Un Test Case peut contenir plusieurs **Test Steps**
 >       * Un Test Step est une action unique, indivisible (exemple : appel d'un webservice, exécution d'une requête SQL)
  
-####Créer une Test Suite
+#### Créer une Test Suite
 
 Effectuez un clic droit sur le projet auquel vous voulez ajouter une Test Suite, et sélectionnez "New TestSuite".
 
 ![New Test Suite]({{ site.baseurl }}/images/SUI/SUI_newTestSuite.png)
  
-####Créer un Test Case
+#### Créer un Test Case
 
 Effectuez un clic droit sur une Test Suite, puis cliquez sur "New TestCase"
 
 ![New Test Case]({{ site.baseurl }}/images/SUI/SUI_newTestCase.png)
  
-####Ajouter des étapes à un Test Case
+#### Ajouter des étapes à un Test Case
 
-#####Nouvelle étape
+##### Nouvelle étape
 
 Effectuez un clic droit sur le Test Case ou sur l'élément "Test Steps", et choisissez le type d'étape à ajouter
 
 ![Add Step]({{ site.baseurl }}/images/SUI/SUI_addStep.png)
  
-#####Etape existante
+##### Etape existante
 
 On peut vouloir copier une étape vers un Test Case précis. On peut :
 
@@ -99,7 +99,7 @@ On peut vouloir copier une étape vers un Test Case précis. On peut :
 
 > On peut copier une requête d'un projet à un autre : SoapUI ouvrira alors une fenêtre de dialogue pour importer si nécessaire la déclaration du service associé à la requête.
 
-####Exemple
+#### Exemple
 
 La capture d'écran suivante représente un TestCase composé des étapes suivantes : 
 
@@ -113,7 +113,7 @@ La capture d'écran suivante représente un TestCase composé des étapes suivan
 
 ![Sample Test Suite]({{ site.baseurl }}/images/SUI/SUI_testCase.png)
  
-###Variabiliser les scénarios de tests
+### Variabiliser les scénarios de tests
 
 Variabiliser les scénarios de tests permet de faciliter leur maintenance. Exemple : on a un scénario qui contient 10 requêtes SOAP vers un webservice, et pour chaque requête on envoie un token d'identification. L'environnement de test change, l'ancien token n'est plus valide et a besoin d'être changé : le modifier à la main dans les 10 requêtes prend du temps. Si on utilise des variables, il n'y a besoin de changer le token qu'à un seul endroit.
 
@@ -123,9 +123,11 @@ Avec SoapUI, on stocke les variables dans des Test Step de type **Properties**. 
 ![Property]({{ site.baseurl }}/images/SUI/SUI_addProperty.png)
 
 On peut ensuite utiliser les variables dans les requêtes. Dans la capture d'écran suivante, on écrit dans la requête SOAP :
+
 ```
 ${Properties_foobar#nom}
 ```
+
 Lorsque l'étape SOAP sera exécutée, SoapUI remplacera cette chaîne de caractères par la valeur de la propriété "nom" de l'étape "Properties_foobar" (dans l'exemple, ce sera "valeur").
 
 ![Property use case]({{ site.baseurl }}/images/SUI/SUIi_propertiyUsage.png)
@@ -134,12 +136,12 @@ Lorsque l'étape SOAP sera exécutée, SoapUI remplacera cette chaîne de caract
 
 > Il existe d'autres éléments qui peuvent stocker des propriétés. C'est le cas des Test Suites et des Test Case par exemple. Le [site officiel](https://www.soapui.org/functional-testing/properties/working-with-properties.html) les décrit plus en détail. Je me contente généralement d'utiliser des Test Steps de type "Properties".
  
-###Vérifications automatiques
+### Vérifications automatiques
 
 Variabiliser les tests pour pouvoir les réutiliser est un bon départ. Implémenter des vérifications automatiques pour ne plus avoir à vérifier soi-même le comportement des webservices, c'est encore mieux !
 Pour automatiser les vérifications, SoapUI utilise les **assertions**.
 
-####Les différents types de vérifications automatiques
+#### Les différents types de vérifications automatiques
 
 ![Assert contains]({{ site.baseurl }}/images/SUI/SUI_assertC.png)
 
@@ -159,13 +161,13 @@ Voici à quoi ressemblent les résultats d'une requête dont toutes les assertio
 ![Assertions: OK]({{ site.baseurl }}/images/SUI/SUI_assertOK.png)
 ![Assertions: KO]({{ site.baseurl }}/images/SUI/SUI_assertKO.png)
 
-####Variabiliser les vérifications
+#### Variabiliser les vérifications
 
 Il est possible d'utiliser les propriétés (i.e. les variables) dans les vérifications automatiques
 
 ![Variables]({{ site.baseurl }}/images/SUI/SUI_propertyFail.png)
  
-####Exécution d'un Test Case contenant des étapes avec des vérifications automatiques
+#### Exécution d'un Test Case contenant des étapes avec des vérifications automatiques
 
 Il est possible de paramétrer un Test Case :
 
@@ -206,7 +208,7 @@ Concrètement, à ce stade on sait que l'on peut faire ceci avec SoapUI :
 >   * le résultat indiqué par de telles vérifications automatiques n'a aucune valeur, puisqu'un être humain doit les vérifier ensuite.
 > Je recommande de faire en sorte que les tests automatiques couvrent le plus de cas d'utilisation possible, cela permet de limiter le nombre d'erreurs qui échapperaient aux tests.
  
-###Les Groovy Scripts
+### Les Groovy Scripts
 
 SoapUI permet d'utiliser le langage de scripting "Groovy", qui permet concrètement de coder ses propres fonctionnalités et de les ajouter à SoapUI.
 
@@ -221,13 +223,13 @@ On peut, par exemple, implémenter le scénario de test suivant grace aux script
 
 > Groovy est un langage de scripting intégrable à Java : il peut utiliser des librairies java, mais utilise une syntaxe moins contraignante. Il n'y a pas besoin de savoir développer en Java pour créer un script Groovy, mais je recommande tout de même de coder proprement de façon à rendre le script plus facile à maintenir.
  
-#SoapUI : exécuter des cas de tests à l'aide d'un fichier CSV
+# SoapUI : exécuter des cas de tests à l'aide d'un fichier CSV
 
 **_Projet SoapUI_**
 
 > Le projet est disponible [ici]({{ site.baseurl }}/other_resources/SoapUI_Auto_24082016.7z).
  
-##Description
+## Description
 
 Ce projet fonctionne de la manière suivante :
 
@@ -237,7 +239,7 @@ Ce projet fonctionne de la manière suivante :
   2. les données envoyées au webervice sont extraites depuis le CSV
   3. les vérifications automatiques à faire sur la réponse du webservice sont déterminées à partir du CSV.
 
-##Utilité
+## Utilité
 
 Sans utiliser le projet ci-dessus, on peut déjà faire de l'automatisation : une fois que le scénario de test est entièrement implémenté dans SoapUI (avec les Test Suites / Cases / Steps) que que chaque Test Step contient toutes les vérifications automatiques nécessaires, les tests peuvent être lancés de manière automatique : l'ordonnanceur (par exemple Jenkins ou Squash TA) générera un rapport de tests.
 
@@ -245,9 +247,9 @@ Le projet SoapUI ci-joint permet de générer un tel scénario de tests à parti
 
 Pour utiliser cet outil, il est recommandé d'étudier le fonctionnement de l'exemple (décrit ci-dessous) afin d'adapter l'outil au service que l'on souhaite tester.
 
-##Utilisation de l'exemple
+## Utilisation de l'exemple
 
-###Première utilisation
+### Première utilisation
 
 1. Dézippez les fichiers dans le répertoire de votre choix. Importez le fichier "Projet_SoapUI_exemple.xml" dans SoapUI (File > Import Project)
 2. Modifiez l'élément TestSuite > Test Case > Looper_properties : 
@@ -290,7 +292,7 @@ Décortiquons maintenant ce qu'il s'est passé lorsqu'on a lancé le scénario :
 > La description ci-dessus est une version simplifiée de ce qu'il se passe vraiment. Je vous invite à ouvrir les groovy scripts pour voir le code. Vous constaterez que "Looper" ne vérifie pas s'il reste des lignes au fichier CSV : il se contente de lire une propriété écrite par le Data_injector, qui écrit une valeur différente si la ligne qu'il lit contient des données ou non.
 > ![data injector]({{ site.baseurl }}/images/SUI/SUI_groovyNewLine.png) 
  
-###Utiliser l'outil avec un autre webservice
+### Utiliser l'outil avec un autre webservice
 
 L'opération se déroule en 3 étapes :
 
@@ -298,11 +300,11 @@ L'opération se déroule en 3 étapes :
 2. Cloner les composants utiles de l'outil,
 3. Paramétrer le projet SoapUI et la requête au webservice
 
-####Créer les données de test
+#### Créer les données de test
 
 Les données de tests sont celles qui seront contenues dans le fichier CSV que lira l'outil d'automatisation : elles sont créées par le testeur (un être humain) à partir du plan de test et des données de la base de test.
 
-#####Structure des données
+##### Structure des données
 
 Pour chaque cas de test du scénario, le fichier CSV doit contenir les éléments suivants :
 
@@ -327,11 +329,11 @@ Dans l'exemple fourni avec l'outil, les données sont :
 
 > *Dans cette exemple, SoapUI vérifiera que le flux de réponse ne contient pas "foobar" : cela n'apporte rien fonctionnellement, mais empêche SoapUI de signaler une réponse comme étant défectueuse alors qu'elle ne l'est pas.*
 
-#####Enregistrer les données
+##### Enregistrer les données
 
 Vous pouvez utiliser un éditeur de texte comme Notepad++ pour créer les données, cependant lorsqu'il y a beaucoup de colonnes cela peut devenir compliqué. Utilisez plutôt Excel ou LibreOffice
 
-######LibreOffice
+###### LibreOffice
 
 Ecrivez vos données.
 
@@ -343,7 +345,7 @@ Le séparateur de données est le caractère ";" (point-virgule)
 ![csv save]({{ site.baseurl }}/images/SUI/SUI_utiliserCSV.png)
 ![csv save options]({{ site.baseurl }}/images/SUI/SUI_csvSeparator.png)
  
-######Excel
+###### Excel
 
 Ecrivez vos données.
 
@@ -353,7 +355,7 @@ Si Excel vous le demande, confirmez que vous souhaitez bien enregistrer un fichi
 ![Excel CSV]({{ site.baseurl }}/images/SUI/SUI_csvExample.png)
 ![Excel CSV confirm]({{ site.baseurl }}/images/SUI/SUI_ExcelCSV.png)
 
-######Vérifier l'encodage
+###### Vérifier l'encodage
 
 Ouvrez le fichier CSV avec Notepad++, cliquez sur "Encodage" :
 
@@ -364,7 +366,7 @@ Cette manipulation sert à éviter les problèmes liés aux accents et aux carac
 
 ![ANSI]({{ site.baseurl }}/images/SUI/SUI_ANSI.png)
  
-####Importer l'outil d'automatisation dans un autre projet SoapUI
+#### Importer l'outil d'automatisation dans un autre projet SoapUI
 
 Copier la TestSuite de l'exemple (projet SoapUI_Auto) dans le projet de votre choix, avec un glisser-déposer ou un clic-droit -> Cloner.
  
@@ -379,7 +381,7 @@ Si vous n'importez pas le lien, SoapUI signalera une erreur : on lui indiquera q
 
 ![Remove step]({{ site.baseurl }}/images/SUI/SUI_Clone3.png)
 
-####Paramétrer l'outil d'automatisation
+#### Paramétrer l'outil d'automatisation
 
 Avant de pouvoir utiliser l'outil pour votre webservice, il faut lui indiquer quel webservice utiliser, quel fichier CSV lire, et comment utiliser les données du fichier CSV.
 
@@ -402,7 +404,7 @@ Ensuite, renseignez la requête à envoyer au webservice afin de faire la corres
 ![Properties mapping]({{ site.baseurl }}/images/SUI/SUI_csvMap.png)
 ![Properties mapping 2]({{ site.baseurl }}/images/SUI/SUI_csvMap2.png)
  
-####Rappel des règles à respecter
+#### Rappel des règles à respecter
 
 **_Règles importantes_**
 
@@ -410,7 +412,7 @@ Ensuite, renseignez la requête à envoyer au webservice afin de faire la corres
 > * La requête vers le webservice doit être en deuxième position dans le Test Case
 > * Les vérifications automatiques que vous implémentez doivent être suffisantes (i.e. on peut se fier au résultat des vérifications automatiques pour savoir si un cas de test est bon ou en échec)
 
-####Exécuter le scénario
+#### Exécuter le scénario
 
 Lancez le scénario. S'il y a une erreur lors de l'exécution lisez le log pour déterminer s'il s'agit d'une erreur d'implémentation ou d'un bug du webservice.
 
@@ -434,14 +436,14 @@ Le projet SoapUI qui lit un fichier CSV est livré avec les fichiers nécessaire
 > 
 > ![AutoRename]({{ site.baseurl }}/images/SUI/SUI_AutoName.png)
  
-#Piloter SoapUI depuis Jenkins
+# Piloter SoapUI depuis Jenkins
 
 Piloter SoapUI depuis Jenkins revient à piloter SoapUI depuis Maven, mais sur un serveur qui dispose d'une interface d'administration bien pensée.
 Pour utiliser le projer SoapUI d'exemple avec Jenkins, ajoutez une étape maven à un job (ou créez un nouveau job avec une étape maven). Il faudra surtout indiquer à Jenkins qu'il faut utiliser le fichier de settings maven qui accompagne le projet.
 
 ![Jenkins]({{ site.baseurl }}/images/SUI/SUI_jenkins.png)
 
-#Piloter SoapUI depuis Squash TA
+# Piloter SoapUI depuis Squash TA
 
 Le pilotage par Squash TA se fait aussi à l'aide de Maven, il y a donc besoin du fichier "maven_settings.xml". Pour utiliser le projet sur un poste de travail avec Eclipse + Maven, servez-vous du fichier Squash_TA_pom.xml.
 Squash TA utilise le sous-répertoire src :
@@ -478,7 +480,7 @@ SoapUI a une particularité : on peut le piloter avec Squash ou avec Jenkins, et
 
 Utiliser Squash TA ou Jenkins ne revient donc pas au même, voici les différences :
 
-##Jenkins
+## Jenkins
 
 Dans l'absolu, Jenkins est capable de faire tout ce qu'il faut pour l'automatisation des tests, et lorsqu'il utilise SoapUI il produit un rapport qui est facile à interpréter.
 
@@ -486,7 +488,7 @@ Dans la réalité, on avait besoin que Jenkins demande à Squash de s'occuper de
 
 Mettre en place un Jenkins qui gèrerait toutes les étapes lui-même aurait donc demandé une refonte plutôt chronophage de l’existant, et garder le lien entre le scénario de test et les exécutions automatiques aurait demandé un travail supplémentaire.
 
-##Squash TA
+## Squash TA
 
 Pour ce projet, Squash TA gèrait les bases de données et l'exécution des tests automatisés. L'intérêt de Squash TA est que les tests automatisés sont liés à leurs équivalents "manuels" dans Squash TM : cela permet de faire un suivi et de faire évoluer les tests plus facilement que si on n'utilisait que Jenkins.
 
@@ -495,7 +497,7 @@ L'inconvénient est que le fonctionnement du plug-in SoapUI de Squash TA n'est n
 * Squash TA charge le projet SoapUI à exécuter dans un dossier temporaire. Cela oblige à indiquer le chemin absolu du fichier CSV à lire : il faut y penser lorsqu'on transfère un scénario depuis/vers le plugin Squash vers/depuis une autre version de SoapUI.
 * Le rapport de test produit par le plugin Squash TA de SoapUI est inexploitable avec ce type de projet SoapUI : il ne contient que la moitié des informations nécessaires à l'identification d'un problème.
  
-##Solution
+## Solution
 
 Pour résumer, on avait le choix entre :
 
@@ -518,9 +520,9 @@ En cas d'erreur, l’identification des cas de tests qui posent problèmes se d�
 **_Alternative_**
 > Comme alternative au GUI de SoapUI, on peut utiliser le plugin Maven : le rapport généré sera le même, il sera juste présenté différemment.
  
-#Aller plus loin
+# Aller plus loin
 
-##Tests de performances
+## Tests de performances
 
 Avec SoapUI, il est également possible de faire des tests de performances (souvent appelés "benchmark").
 
@@ -530,6 +532,6 @@ On peut paramétrer le nombre d'appels simultanés à envoyer, la fréquence à 
 
 Exemple : une architecture de webservices X doit être capable d'avoir un temps de réponse de moins de 250 millisecondes avec 300 utilisateurs concurrents envoyant une requête par seconde pendant 2 heures ininterrompues. On met en place un environnement de benchmark : il s'agit de l'environnement qu'on prévoit de mettre en production (même type de ressources, même volume de données dans les bases etc  .), mais il ne sera accessible qu'à un groupe spécifique de machines. Ce groupe de machines peut être sous certaines conditions réduit à "un". La machine en question utilisera SoapUI pour simuler les conditions d'utilisation visées (300 requêtes par secondes pendant 2 heures) et mesurer les temps de réponse.
 
-#FAQ - Troubleshooting
+# FAQ - Troubleshooting
 
 Dans cette section je répondrai à vos éventuelles questions.
