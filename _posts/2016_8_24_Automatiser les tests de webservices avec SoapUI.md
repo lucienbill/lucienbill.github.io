@@ -38,7 +38,7 @@ Tester un webservice de cette façon fonctionne, cependant lorsqu'il y a beaucou
 Dans SoapUI, il est possible de grouper les cas de test, et de les exécuter les uns à la suite des autres **en cliquant sur un seul bouton** grâce aux Test Suites et aux Test Cases.
  
 Imbrication des Test Suites / Cases / Steps
-*Un **projet** peut contenir plusieurs **Test Suites** 
+* Un **projet** peut contenir plusieurs **Test Suites** 
   * Une Test Suite peut contenir plusieurs **Test Cases** 
 ….*Un Test Case peut contenir plusieurs **Test Steps**
 ……*Un Test Step est une action unique, indivisible (exemple : appel d'un webservice, exécution d'une requête SQL)
