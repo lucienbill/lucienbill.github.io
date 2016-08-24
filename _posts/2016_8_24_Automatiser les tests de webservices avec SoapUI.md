@@ -1,6 +1,7 @@
 #Introduction
  
-Cet article présente les travaux qui ont été réalisés pour automatiser les tests des webservices avec SoapUI 5.2.1. Voici un résumé : 
+Cet article présente les travaux qui ont été réalisés pour automatiser les tests des webservices avec SoapUI 5.2.1. Voici un résumé :
+
 1.	SoapUI est une application avec une interface graphique et permet d'appeler des webservices (SOAP et REST) 
 ..* Il est possible de mettre en place des vérifications automatiques
 ..* SoapUI supporte le langage de scripting "Groovy" (qui permet de faire presque tout et n'importe quoi, du moment qu'on le code)
