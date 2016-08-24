@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am a developer and a musician. I'll probably write more details sometime.
+I used to be a mechanical engineer doing some code for a living, then I met Violaine Varicca and she turned me into a developer.
 
 ### More Information
 
