@@ -1,3 +1,8 @@
+---
+layout: post
+title: Automatiser les tests de webservices avec SoapUI
+---
+
 #Introduction
  
 Cet article présente les travaux qui ont été réalisés pour automatiser les tests des webservices avec SoapUI 5.2.1. Voici un résumé :
