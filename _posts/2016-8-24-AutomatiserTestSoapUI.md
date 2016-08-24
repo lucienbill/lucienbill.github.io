@@ -422,7 +422,7 @@ Lancez le scénario. S'il y a une erreur lors de l'exécution lisez le log pour 
 
 ![Run scenario]({{ site.baseurl }}/images/SUI/SUI_TCLog.png)
  
-#Piloter SoapUI depuis Maven
+# Piloter SoapUI depuis Maven
 
 **_Maven ?_**
 
@@ -459,7 +459,7 @@ Squash TA utilise le sous-répertoire src :
 
 > Pour que Squash TA puisse exécuter correctement le scénario SoapUI, il faut que le scénario SoapUI soit paramétré pour charger le fichier CSV depuis un chemin absolu (Squash TA ne fonctionne pas avec le chemin relatif). Il faudra indiquer ce chemin dans la propriété "**chemin_CSV_absolu**" du Test Step "**Looper_properties**" : SoapUI ignorera alors la valeur inscrite dans la propriété "chemin_CSV"
  
-#Pour automatiser : Squash TA ou Jenkins ?
+# Pour automatiser : Squash TA ou Jenkins ?
 
 Dans l'idéal, voici le scénario d'automatisation à mettre en place (ce scénario serait exécuté automatiquement à chaque nouveau commit ou chaque jour à minuit) :
 
