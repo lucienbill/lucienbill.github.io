@@ -3,9 +3,11 @@ layout: post
 title: Automatiser les tests de webservices avec SoapUI
 ---
 
-# Introduction
+# tl;dr
  
-Cet article présente les travaux que j'ai réalisés pour automatiser des tests de webservices avec SoapUI 5.2.1 durant l'été 2016. Voici un résumé :
+Durant l'été 2016 j'ai aidé à automatiser des tests de webservices avec SoapUI 5.2.1. J'en ai profité pour écrire un tuto sur SoapUI.
+
+Résumé :
 
 1. SoapUI est une application avec une interface graphique et permet d'appeler des webservices (SOAP et REST) 
   * Il est possible de mettre en place des vérifications automatiques
