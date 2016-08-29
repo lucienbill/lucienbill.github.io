@@ -67,27 +67,27 @@ Dans SoapUI, il est possible de grouper les cas de test, et de les exécuter les
 >     * Un Test Case peut contenir plusieurs **Test Steps**
 >       * Un Test Step est une action unique, indivisible (exemple : appel d'un webservice, exécution d'une requête SQL)
  
-######## Créer une Test Suite
+**Créer une Test Suite**
 
 Effectuez un clic droit sur le projet auquel vous voulez ajouter une Test Suite, et sélectionnez "New TestSuite".
 
 ![New Test Suite]({{ site.baseurl }}/images/SUI/SUI_newTestSuite.png)
  
-######## Créer un Test Case
+**Créer un Test Case**
 
 Effectuez un clic droit sur une Test Suite, puis cliquez sur "New TestCase"
 
 ![New Test Case]({{ site.baseurl }}/images/SUI/SUI_newTestCase.png)
  
-######## Ajouter des étapes à un Test Case
+**Ajouter des étapes à un Test Case**
 
-########## Nouvelle étape
+**_Nouvelle étape_**
 
 Effectuez un clic droit sur le Test Case ou sur l'élément "Test Steps", et choisissez le type d'étape à ajouter
 
 ![Add Step]({{ site.baseurl }}/images/SUI/SUI_addStep.png)
  
-########## Etape existante
+**_Etape existante_**
 
 On peut vouloir copier une étape vers un Test Case précis. On peut :
 
@@ -101,7 +101,7 @@ On peut vouloir copier une étape vers un Test Case précis. On peut :
 
 > On peut copier une requête d'un projet à un autre : SoapUI ouvrira alors une fenêtre de dialogue pour importer si nécessaire la déclaration du service associé à la requête.
 
-######## Exemple
+**Exemple**
 
 La capture d'écran suivante représente un TestCase composé des étapes suivantes : 
 
@@ -143,7 +143,7 @@ Lorsque l'étape SOAP sera exécutée, SoapUI remplacera cette chaîne de caract
 Variabiliser les tests pour pouvoir les réutiliser est un bon départ. Implémenter des vérifications automatiques pour ne plus avoir à vérifier soi-même le comportement des webservices, c'est encore mieux !
 Pour automatiser les vérifications, SoapUI utilise les **assertions**.
 
-######## Les différents types de vérifications automatiques
+**Les différents types de vérifications automatiques**
 
 ![Assert contains]({{ site.baseurl }}/images/SUI/SUI_assertC.png)
 
@@ -163,13 +163,13 @@ Voici à quoi ressemblent les résultats d'une requête dont toutes les assertio
 ![Assertions: OK]({{ site.baseurl }}/images/SUI/SUI_assertOK.png)
 ![Assertions: KO]({{ site.baseurl }}/images/SUI/SUI_assertKO.png)
 
-######## Variabiliser les vérifications
+**Variabiliser les vérifications**
 
 Il est possible d'utiliser les propriétés (i.e. les variables) dans les vérifications automatiques
 
 ![Variables]({{ site.baseurl }}/images/SUI/SUI_propertyFail.png)
  
-######## Exécution d'un Test Case contenant des étapes avec des vérifications automatiques
+**Exécution d'un Test Case contenant des étapes avec des vérifications automatiques**
 
 Il est possible de paramétrer un Test Case :
 
@@ -304,11 +304,11 @@ L'opération se déroule en 3 étapes :
 2. Cloner les composants utiles de l'outil,
 3. Paramétrer le projet SoapUI et la requête au webservice
 
-######## Créer les données de test
+**Créer les données de test**
 
 Les données de tests sont celles qui seront contenues dans le fichier CSV que lira l'outil d'automatisation : elles sont créées par le testeur (un être humain) à partir du plan de test et des données de la base de test.
 
-########## Structure des données
+**_Structure des données_**
 
 Pour chaque cas de test du scénario, le fichier CSV doit contenir les éléments suivants :
 
@@ -333,11 +333,11 @@ Dans l'exemple fourni avec l'outil, les données sont :
 
 > *Dans cette exemple, SoapUI vérifiera que le flux de réponse ne contient pas "foobar" : cela n'apporte rien fonctionnellement, mais empêche SoapUI de signaler une réponse comme étant défectueuse alors qu'elle ne l'est pas.*
 
-########## Enregistrer les données
+**_Enregistrer les données_**
 
 Vous pouvez utiliser un éditeur de texte comme Notepad++ pour créer les données, cependant lorsqu'il y a beaucoup de colonnes cela peut devenir compliqué. Utilisez plutôt Excel ou LibreOffice
 
-############ LibreOffice
+**_LibreOffice_**
 
 Ecrivez vos données.
 
@@ -349,7 +349,7 @@ Le séparateur de données est le caractère ";" (point-virgule)
 ![csv save]({{ site.baseurl }}/images/SUI/SUI_utiliserCSV.png)
 ![csv save options]({{ site.baseurl }}/images/SUI/SUI_csvSeparator.png)
  
-############ Excel
+**_Excel_**
 
 Ecrivez vos données.
 
@@ -359,7 +359,7 @@ Si Excel vous le demande, confirmez que vous souhaitez bien enregistrer un fichi
 ![Excel CSV]({{ site.baseurl }}/images/SUI/SUI_csvExample.png)
 ![Excel CSV confirm]({{ site.baseurl }}/images/SUI/SUI_ExcelCSV.png)
 
-############ Vérifier l'encodage
+**_Vérifier l'encodage_**
 
 Ouvrez le fichier CSV avec Notepad++, cliquez sur "Encodage" :
 
@@ -370,7 +370,7 @@ Cette manipulation sert à éviter les problèmes liés aux accents et aux carac
 
 ![ANSI]({{ site.baseurl }}/images/SUI/SUI_ANSI.png)
  
-######## Importer l'outil d'automatisation dans un autre projet SoapUI
+**Importer l'outil d'automatisation dans un autre projet SoapUI**
 
 Copier la TestSuite de l'exemple (projet SoapUI_Auto) dans le projet de votre choix, avec un glisser-déposer ou un clic-droit -> Cloner.
  
@@ -385,7 +385,7 @@ Si vous n'importez pas le lien, SoapUI signalera une erreur : on lui indiquera q
 
 ![Remove step]({{ site.baseurl }}/images/SUI/SUI_Clone3.png)
 
-######## Paramétrer l'outil d'automatisation
+**Paramétrer l'outil d'automatisation**
 
 Avant de pouvoir utiliser l'outil pour votre webservice, il faut lui indiquer quel webservice utiliser, quel fichier CSV lire, et comment utiliser les données du fichier CSV.
 
@@ -408,7 +408,7 @@ Ensuite, renseignez la requête à envoyer au webservice afin de faire la corres
 ![Properties mapping]({{ site.baseurl }}/images/SUI/SUI_csvMap.png)
 ![Properties mapping 2]({{ site.baseurl }}/images/SUI/SUI_csvMap2.png)
  
-######## Rappel des règles à respecter
+**Rappel des règles à respecter**
 
 **_Règles importantes_**
 
@@ -416,7 +416,7 @@ Ensuite, renseignez la requête à envoyer au webservice afin de faire la corres
 > * La requête vers le webservice doit être en deuxième position dans le Test Case
 > * Les vérifications automatiques que vous implémentez doivent être suffisantes (i.e. on peut se fier au résultat des vérifications automatiques pour savoir si un cas de test est bon ou en échec)
 
-######## Exécuter le scénario
+**Exécuter le scénario**
 
 Lancez le scénario. S'il y a une erreur lors de l'exécution lisez le log pour déterminer s'il s'agit d'une erreur d'implémentation ou d'un bug du webservice.
 
