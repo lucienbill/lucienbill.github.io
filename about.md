@@ -11,7 +11,7 @@ I used to be a mechanical engineer doing some code for a living, then I met Viol
 
 ### More Information
 
-Je suis le preneur de son, le technicien/ingénieur du son et compositeur du groupe de vidéastes [All Geek Studio](https://www.youtube.com/c/allgeekstudiotv).
+Je suis le preneur de son, technicien/ingénieur du son et compositeur du groupe de vidéastes [All Geek Studio](https://www.youtube.com/c/allgeekstudiotv).
 Mes compositions sont disponibles sur [soundcloud](https://soundcloud.com/lucien-bill-1), n'hésitez pas à y faire un tour !
 
 -----
