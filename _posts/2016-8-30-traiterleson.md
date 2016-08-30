@@ -3,8 +3,6 @@ layout: post
 title: Les bases du traitement du son
 ---
 
-traiter le son 
-
 ## tl;dr
 Traiter le son est un vaste sujet. Pire encore : c'est tout un art et il est extrêmement facile de se planter ! Je ne suis pas ingénieur du son de métier, mais à force de recherche et de pratique j'ai fini par apprendre certaines choses. Cet article est destiné à ceux qui veulent prendre un raccourci et éviter de tomber dans les pièges dans lesquels je suis tombé lors de mon apprentissage.
 
