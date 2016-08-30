@@ -89,7 +89,9 @@ Quand je traite une piste de dialogues, je m'arrange pour que le niveau maximum 
 Gardons à l'esprit les buts que je m'étais fixé au départ, et analysons 2 exemples :
 
 #### [IRL S01E04](https://www.youtube.com/watch?v=yFzmF7tRtZ8)
-Le son est intelligible, le volume des voix est globalement constant. Cependant à certains endroits je le trouve trop compressé, et j'ai été vraiment trop agressif sur la suppression de bruit. Pour ne pas retarder la date de sortie, on a décidé que le son était suffisamment bon : il n'a pas de défaut majeur, il n'est juste pas aussi bon que je l'aurais voulu parce que j'ai eu la main lourde sur certains traitements.
+Le son est intelligible, le volume des voix est globalement constant. Le mix entre bruitages, dialogues et musiques est satisfaisant (mais je discuterai de ce sujet dans un autre article).
+
+Cependant à certains endroits je trouve les dialogues trop compressés, et j'ai été vraiment trop agressif sur la suppression de bruit. Pour ne pas retarder la date de sortie on a décidé que le son était suffisamment bon : il n'a pas de défaut majeur, il n'est juste pas aussi bon que je l'aurais voulu parce que j'ai eu la main lourde sur certains traitements. C'est une leçon que je retiens pour les prochains épisodes.
 
 #### [T-Rex Show : Starfox](https://www.youtube.com/watch?v=1VM9RCIqqKE)
 Il s'agit du replay d'un stream sur un vieux jeu. Le son était traité en direct (j'écrirai sur le traitement du son en live appliqué au stream plus tard) : 
@@ -97,6 +99,6 @@ Il s'agit du replay d'un stream sur un vieux jeu. Le son était traité en direc
  * On avait paramétré un compresseur plutôt agressif (ratio 10:1 environ). Pour des voix en live, avec des intervenants se trouvant  à des distances variable du micro, cela semble bien fonctionner.
  * On avait également paramétré un limiteur à -2 dB : cela permet d'atténuer les coups qui sont donnés dans la table sur laquelle est posé le micro
 
-La voix est très compressé, mais ce n'est pas gênant car je n'ai pas traité le son du jeu : ce qui est gênant dans les émissions de radio qui utilisent un fond sonore, c'est le fait que le volume du fond sonore ne cessent d'augmenter/diminuer lors des silences. Ce n'est pas le cas pour le T-Rex Show.
+La voix est très compressé, mais ce n'est pas gênant car je n'ai pas traité le son du jeu : ce qui est gênant dans les émissions de radio qui utilisent un fond sonore, c'est le fait que le volume du fond sonore ne cesse d'augmenter/diminuer lors des silences. Ce n'est pas le cas pour le T-Rex Show.
 
 En post production j'ai légèrement recompressé le son (ratio 2:1), puis normalisé à -1 dB.
