@@ -4,10 +4,10 @@ title: Le volume sonore
 ---
 
 ## tl;dr
-En lien avec l'article sur le traitement du son, voici un article sur la perception du volume sonore. En bref, si vous vous demandez comment faire pour faire en sorte que plusieurs pistes audio soient "au même volume sonore", et comment être certain qu'un spectateur n'ait pas à régler lui-même le son pendant qu'il visionne une de vos productions, cet article vous intéressera !
+En lien avec l'article sur le traitement du son, voici un article sur la perception du volume sonore. En bref, si vous vous demandez comment vous débrouiller pour faire en sorte que plusieurs pistes audio soient "au même volume sonore", et comment être certain qu'un spectateur n'ait pas à régler lui-même le son pendant qu'il visionne une de vos productions, cet article vous intéressera !
 
 ## Peak vs Volume
-Le "peak" est l'amplitude maximale d'un signal. Un peak de -2dB signifiera que le signal ne dépassera jamais 2dB. A un instant t, le niveau du signal pourra être -2dB, cependant le volume sonore pourra être différent : ce volume est une perception plus "globale" du signal (la perception de plusieurs instants, considérés comme un ensemble). En bref : le "peak" et le "Volume" sont deux notions différentes, et la notion qui va nous intéresser est celle de volume. Quand une musique nous paraît "forte", on parle de son volume.
+Le "peak" est l'amplitude maximale d'un signal. Un peak de -2dB signifiera que le signal ne dépassera jamais -2dB. A un instant t, le niveau du signal pourra être -2dB, cependant le volume sonore pourra être différent : ce volume est une perception plus "globale" du signal (la perception de plusieurs instants, considérés comme un ensemble). En bref : le "peak" et le "Volume" sont deux notions différentes, et la notion qui va nous intéresser est celle de volume. Quand une musique nous paraît "forte", on parle de son volume.
 
 Concrètement, mesurer le peak est facile, et mesurer le volume est un poil plus complexe. Souvent, les débutants confondent ces deux notions et mesurent le peak en pensant mesurer le volume (après tout quand on débute par définition on ne peut pas tout savoir).
 
