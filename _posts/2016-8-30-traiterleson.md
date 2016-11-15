@@ -6,7 +6,7 @@ title: Les bases du traitement du son
 ## tl;dr
 Traiter le son est un vaste sujet. Pire encore : c'est tout un art et il est extrêmement facile de se planter ! Je ne suis pas ingénieur du son de métier, mais à force de recherche et de pratique j'ai fini par apprendre certaines choses. Cet article est destiné à ceux qui veulent prendre un raccourci et éviter de tomber dans les pièges dans lesquels je suis tombé lors de mon apprentissage.
 
-Concrètement ma façon de traiter le son est encore en évolution, et je ne suis pas encore tout à fait satisfait des résultats que j'ai produits. Si cela ne tenait qu'à moi je remplacerais très régulièrement les vidéos dont j'ai traité le son et les musiques que j'ai composées par des versions améliorées, mais il faut savoir s'arrêter. Ce qui a été produit dans le passé appartient au passé : s'acharner dessus est dangereux et peut empêcher d'avancer. Prenons mes musiques sur SoundCloud : je pourrais les remplacer aujourd’hui par des versions améliorées, mais cela ne m'avancerait à rien car dans 3 mois je voudrai répéter l'opération. Autant ne pas le faire du tout : les musiques que j'ai publiées sont le résultat de ce que je savais faire au moment où je les ai composées, et le fait que je n'en sois pas entièrement satisfait aujourd'hui est bon signe car cela signifie que je me suis amélioré. Ce constat ne me rend pas satisfait de mon insatisfaction mais me permet de relativiser.
+Concrètement ma façon de traiter le son est encore en évolution, et je ne suis pas encore tout à fait satisfait des résultats que j'ai produit. Si cela ne tenait qu'à moi je remplacerais très régulièrement les vidéos dont j'ai traité le son et les musiques que j'ai composées par des versions améliorées, mais il faut savoir s'arrêter. Ce qui a été produit dans le passé appartient au passé : s'acharner dessus est dangereux et peut empêcher d'avancer. Prenons mes musiques sur SoundCloud : je pourrais les remplacer aujourd’hui par des versions améliorées, mais cela ne m'avancerait à rien car dans 3 mois je voudrai répéter l'opération. Autant ne pas le faire du tout : les musiques que j'ai publiées sont le résultat de ce que je savais faire au moment où je les ai composées, et le fait que je n'en sois pas entièrement satisfait aujourd'hui est bon signe car cela signifie que je me suis amélioré. Ce constat ne me rend pas satisfait de mon insatisfaction mais me permet de relativiser.
 
 
 ## Buts
@@ -57,7 +57,7 @@ Si tous les plans de la vidéo à traiter sont filmés dans les mêmes condition
 Pour le cas d'un épisode de websérie : on a plusieurs plans tournés dans des conditions très différentes. Quand un personnage chuchote j'augmente le son, et quand un personnage crie je baisse le son.
 
 #### Normaliser VS Amplifier
-Pour augmenter ou baisser le son, on peut utiliser l'amplification. Cependant quand on souhaite augmenter un son, l'amplification pourra causer un problème : on augmente le signal voulu, mais également le bruit. Il existe une alternative : la normalisation. Pour résumer, quand on normalise un signal, les signaux forts sont fortement impactés et les signaux faibles sont faiblement impactés. C'est plus subtil que l'amplification, et j'obtiens des résultats que je juge plus satisfaisants.
+Pour augmenter ou baisser le son, on peut utiliser l'amplification ou la normalisation, ce sont plus ou moins deux façon différentes de faire la même chose. [Cet article](http://manual.audacityteam.org/man/amplify_and_normalize.html) l'explique très bien.
 
 ### Compresseur
 En bref : un compresseur permet de réduire l'écart entre les sons faibles et les sons forts. Bien réglé, on ne le remarque pas : l'écart est toujours présent, mais suffisamment faible pour épargner au spectateur la nécessité d'augmenter / baisser le son en cours de visionnage. Mal réglé, il détruit le son :
@@ -94,7 +94,7 @@ Cependant à certains endroits je trouve les dialogues trop compressés, et j'ai
 #### [T-Rex Show : Starfox](https://www.youtube.com/watch?v=1VM9RCIqqKE)
 Il s'agit du replay d'un stream sur un vieux jeu. Le son était traité en direct (j'écrirai sur le traitement du son en live appliqué au stream plus tard) : 
 
- * On avait paramétré un compresseur plutôt agressif (ratio 10:1 environ). Pour des voix en live, avec des intervenants se trouvant  à des distances variable du micro, cela semble bien fonctionner.
+ * On avait paramétré un compresseur plutôt agressif (ratio 10:1 environ) avec un seul à -15 dB. Pour des voix en live, avec des intervenants se trouvant  à des distances variable du micro, cela semble bien fonctionner.
  * On avait également paramétré un limiteur à -2 dB : cela permet d'atténuer les coups qui sont donnés dans la table sur laquelle est posé le micro
 
 La voix est très compressé, mais ce n'est pas gênant car je n'ai pas traité le son du jeu : ce qui est gênant dans les émissions de radio qui utilisent un fond sonore, c'est le fait que le volume du fond sonore ne cesse d'augmenter/diminuer lors des silences. Ce n'est pas le cas pour le T-Rex Show.
