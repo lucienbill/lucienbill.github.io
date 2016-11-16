@@ -57,7 +57,7 @@ Si tous les plans de la vidéo à traiter sont filmés dans les mêmes condition
 Pour le cas d'un épisode de websérie : on a plusieurs plans tournés dans des conditions très différentes. Quand un personnage chuchote j'augmente le son, et quand un personnage crie je baisse le son.
 
 #### Normaliser VS Amplifier
-Pour augmenter ou baisser le son, on peut utiliser l'amplification ou la normalisation, ce sont plus ou moins deux façon différentes de faire la même chose. [Cet article](http://manual.audacityteam.org/man/amplify_and_normalize.html) l'explique très bien.
+Pour augmenter ou baisser le son, on peut utiliser l'amplification ou la normalisation, ce sont plus ou moins deux façons différentes de faire la même chose. [Cet article](http://manual.audacityteam.org/man/amplify_and_normalize.html) l'explique très bien.
 
 ### Compresseur
 En bref : un compresseur permet de réduire l'écart entre les sons faibles et les sons forts. Bien réglé, on ne le remarque pas : l'écart est toujours présent, mais suffisamment faible pour épargner au spectateur la nécessité d'augmenter / baisser le son en cours de visionnage. Mal réglé, il détruit le son :
