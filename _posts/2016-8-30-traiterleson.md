@@ -70,6 +70,8 @@ En bref : un compresseur permet de réduire l'écart entre les sons faibles et l
 
 Pour utiliser un compresseur, on définit un seuil et un taux de compression. Dès que le signal en entrée sera plus fort que le seuil, il sera affecté par le taux de compression. Ce taux peut se définir par "pour X décibels en entrée, on aura Y décibels en sortie". Exemple : un ratio de 5:1 signifiera que pour 5 décibels en entrée, on aura 1 décibel en sortie. Expérimentez pour trouver les réglages qui s'adaptent à votre situation, en gardant à l'esprit qu'une compression trop forte dénaturera le son.
 
+https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Compression_ratio.svg/600px-Compression_ratio.svg.png
+
 ### Dé-esseur
 
 Le dé-esseur est un effet assez particulier : il permet d'atténuer les "s". Oui, le son associé à la lettre "s". Cet effet est très utile sur les sons très compressés, où les "s" peuvent être vraiment agressifs. Bien réglé, le dé-esseur permet de rendre une voix plus agréable à écouter.
@@ -97,9 +99,9 @@ Cependant à certains endroits je trouve les dialogues trop compressés, et j'ai
 #### [T-Rex Show : Starfox](https://www.youtube.com/watch?v=1VM9RCIqqKE)
 Il s'agit du replay d'un stream sur un vieux jeu. Le son était traité en direct (j'écrirai sur le traitement du son en live appliqué au stream plus tard) : 
 
- * On avait paramétré un compresseur plutôt agressif (ratio 10:1 environ) avec un seul à -15 dB. Pour des voix en live, avec des intervenants se trouvant  à des distances variable du micro, cela semble bien fonctionner.
+ * On avait paramétré un compresseur plutôt agressif (ratio 10:1 environ) avec un seuil à -15 dB. Pour des voix en live, avec des intervenants se trouvant  à des distances variable du micro, cela semble bien fonctionner.
  * On avait également paramétré un limiteur à -2 dB : cela permet d'atténuer les coups qui sont donnés dans la table sur laquelle est posé le micro
 
-La voix est très compressé, mais ce n'est pas gênant car je n'ai pas traité le son du jeu : ce qui est gênant dans les émissions de radio qui utilisent un fond sonore, c'est le fait que le volume du fond sonore ne cesse d'augmenter/diminuer lors des silences. Ce n'est pas le cas pour le T-Rex Show.
+La voix est très compressée, mais ce n'est pas gênant car je n'ai pas traité le son du jeu : ce qui est gênant dans les émissions de radio qui utilisent un fond sonore, c'est le fait que le volume du fond sonore ne cesse d'augmenter/diminuer lors des silences. Ce n'est pas le cas pour le T-Rex Show.
 
 En post production j'ai légèrement recompressé le son (ratio 2:1), puis normalisé à -1 dB.
