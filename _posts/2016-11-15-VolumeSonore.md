@@ -29,7 +29,7 @@ Des normes ont été définies, [cet article](http://aesfrance.info/le-loudness-
 ![Mesurer le volume]({{ site.baseurl }}/images/posts_data/dynamic.png)
 
 ## Mes réglages
-Pour les productions de type "talk show", on doit entendre distinctement les voix, et le spectateur ne doit pas avoir besoin de retoucher aux réglages sonores durant le visionnage. Je vise dans ce type de situation un volume cible de -10 LU et une gamme dynamique de -9 LU. Pour obtenir un résultat conforme à ces objectifs, je compresse généralement légèrement mon son (ratio = 1:2,25, seuil = -50dB). 
+Pour les productions de type "talk show", on doit entendre distinctement les voix, et le spectateur ne doit pas avoir besoin de retoucher aux réglages sonores durant le visionnage. Je vise dans ce type de situation un volume cible de -10 LU et une gamme dynamique de -9 LU. Pour obtenir un résultat conforme à ces objectifs, je compresse généralement légèrement mon son (ratio = 2,25:1, seuil = -50dB). 
 
 [Voici un exemple](https://www.youtube.com/watch?v=CL6VzWFI0Dc) : une rediffusion d'un stream dont j'ai retraité le son.
 
