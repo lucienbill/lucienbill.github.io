@@ -4,7 +4,6 @@ title: Traiter le son en live
 ---
 
 ## tl;dr
-
 Savoir traiter le son en post-prod, c'est bien. Mais quand on doit diffuser en direct, il faut savoir le traiter en direct ! Cet article décrit mes recommendations pour ce type de problématique.
 
 ## But et enjeux
