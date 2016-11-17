@@ -39,5 +39,8 @@ Concrètement, voici comment je l'utilise :
 
 Ces réglages peuvent vous servir de base, mais ne les appliquez pas aveuglément : testez, effectuez des enregistrement et écoutez-les ! Il faut que le résultat vous semble satisfaisant. Personnellement, je me fie à mon oreille et à un outil de mesure de volume et de gamme dynamique (j'en parle [ici]({{ site.baseurl }}/VolumeSonore/)). Il se peut par exemple que vous jugiez la compression néfaste sur le son du jeu, ou que le "gate" sur la voix ne vous plaise pas. Fiez-vous donc à votre opinion, et n'hésitez-pas à demander l'avis de vos spectateurs..
 
+#### Bonus : serveur vocal
+Si vous jouez en équipe pendant que vous streamez, vous utilisez certainement un serveur vocal (Skype, Discord, Mumble...). Bonne nouvelle : vous pouvez compresser le son qui sort de ce serveur via Voicmeeter Banana avant de l'envoyer vers le live et/ou vos oreilles ! Vos équipiers pourront continuer d'alterner entre cris et chuchottements : la viriation de volume sonore sera réduite.
+
 ### Décalage audio-vidéo
 Le traitement du son, qu'il soit matériel ou logiciel, n'est pas toujours instantanné. Cela peut avoir pour effet de mettre votre son en retard par rapport à votre image : c'est quelque chose qu'il faut vérifier ! Dans OBS Studio, cela peut se régler en ajoutant un délai à vos sources vidéo : vous pourrez ainsi resynchroniser votre image avec votre son.
