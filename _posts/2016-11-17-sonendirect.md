@@ -46,7 +46,7 @@ Concrètement, voici comment je l'utilise :
   * optionnel : le son du jeu est géré par une autre entrée, à laquelle j'applique une très légère compression (<= 2)
   * le tout est redirigé vers le haut-parleur viruel VB-Audio Cable
 
-Cela signifie que concrètement, si vous avez juste un micro-casque de gamer, vous pouvez vous en sortir.
+En bref, cela signifie que si vous avez juste un micro-casque de gamer et un ordinateur vous pouvez vous en sortir.
 
 Ces réglages peuvent vous servir de base, mais ne les appliquez pas aveuglément : testez, effectuez des enregistrement et écoutez-les ! Il faut que le résultat vous semble satisfaisant. Personnellement, je me fie à mon oreille et à un outil de mesure de volume et de gamme dynamique (j'en parle [ici]({{ site.baseurl }}/VolumeSonore/)). Il se peut par exemple que vous jugiez la compression néfaste sur le son du jeu, ou que le "gate" sur la voix ne vous plaise pas. Fiez-vous donc à votre opinion, et n'hésitez-pas à demander l'avis de vos spectateurs..
 
