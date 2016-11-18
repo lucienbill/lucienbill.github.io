@@ -18,8 +18,8 @@ Faut-il utiliser du matériel dédié pour traiter le son en live, ou utiliser u
 
 ### Hardware
 
-Dans l'idéal, je recommande d'utiliser un compresseur + de-esseur sur chaque microphone, et de compresser légèrement le reste. De nombreux fabriquants proposent du matériel, renseignez-vous avant de choisir un fournisseur. A titre d'exemple, si je devais choisir du hardware, je choisirai du [DBX](https://www.thomann.de/fr/dbx_compresseurs_gates_de_esser.html?viewMode=block) : je n'ai jamais testé mais il paraît que c'est fiable.
-Il faudra également penser au mixage des différentes sources sonores, et pensez également au fait que tous les micro-casques ne fonctionnent pas forcément avec ce type de matériel.
+Dans l'idéal, je recommande d'utiliser un compresseur + de-esseur sur chaque microphone, et de compresser légèrement le reste. De nombreux fabriquants proposent du matériel, renseignez-vous avant de choisir un fournisseur. A titre d'exemple, si je devais aqcuérir du hardware, je choisirais du [DBX](https://www.thomann.de/fr/dbx_compresseurs_gates_de_esser.html?viewMode=block) : je n'ai jamais testé mais il paraît que c'est fiable.
+Il faudra également penser au mixage des différentes sources sonores, et au fait que tous les micro-casques ne fonctionnent pas forcément avec ce type de matériel.
 
 Voici un exemple : 
 
@@ -34,7 +34,7 @@ Matériel :
   * un table de mixage et les câbles adapté pour mixer le tout. J'ai [celle-ci](https://www.thomann.de/fr/alto_zmx_862.htm).
   * une carte son afin de récupérer la sorite de la table de mixage et de l'utiliser comme source pour le stream
 
-Tout ça mis bout-à-bout, c'est cher. Mais j'arrive à me débrouiller autrement.
+Tout ça mis bout-à-bout, c'est cher. Mais j'arrive à me débrouiller avec moins que ça.
 
 ### Logiciel
 
@@ -45,6 +45,8 @@ Concrètement, voici comment je l'utilise :
   * le son de mon micro est géré par une entrée du mixeur virtuel. J'applique une légère compression (valeur : 3), et un très léger gate (pour couper le son quand je ne parle pas, mais pas de façon trop brutale), je règle l'equilizer vous virer les fréquences trop graves et trop aigües, et je passe l'entrée en "mono".
   * optionnel : le son du jeu est géré par une autre entrée, à laquelle j'applique une très légère compression (<= 2)
   * le tout est redirigé vers le haut-parleur viruel VB-Audio Cable
+
+Cela signifie que concrètement, si vous avez juste un micro-casque de gamer, vous pouvez vous en sortir.
 
 Ces réglages peuvent vous servir de base, mais ne les appliquez pas aveuglément : testez, effectuez des enregistrement et écoutez-les ! Il faut que le résultat vous semble satisfaisant. Personnellement, je me fie à mon oreille et à un outil de mesure de volume et de gamme dynamique (j'en parle [ici]({{ site.baseurl }}/VolumeSonore/)). Il se peut par exemple que vous jugiez la compression néfaste sur le son du jeu, ou que le "gate" sur la voix ne vous plaise pas. Fiez-vous donc à votre opinion, et n'hésitez-pas à demander l'avis de vos spectateurs..
 
