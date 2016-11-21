@@ -52,7 +52,8 @@ Ces réglages peuvent vous servir de base, mais ne les appliquez pas aveuglémen
 
 **Bonus : serveur vocal**
 
-Si vous jouez en équipe pendant que vous streamez, vous utilisez certainement un serveur vocal (Skype, Discord, Mumble...). Bonne nouvelle : vous pouvez compresser le son qui sort de ce serveur via Voicmeeter Banana avant de l'envoyer vers le live et/ou vos oreilles ! Vos équipiers pourront continuer d'alterner entre cris et chuchottements : la viriation de volume sonore sera réduite.
+Si vous jouez en équipe pendant que vous streamez, vous utilisez certainement un serveur vocal (Skype, Discord, Mumble...). Bonne nouvelle : vous pouvez compresser le son qui sort de ce serveur avant de l'envoyer vers le live et/ou vos oreilles ! Vos équipiers pourront continuer d'alterner entre cris et chuchottements : la viriation de volume sonore sera réduite.
+Si vous avez du Hardware, c'est facile. Avec du software c'est plus complexe : je ne suis pas certain que Banana Voicmeeter vous permette de le faire (ce doit être possible, mais il faut certainement trudaner avec une carte son supplémentaire).
 
 ### Décalage audio-vidéo
 
