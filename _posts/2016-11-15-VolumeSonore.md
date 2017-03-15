@@ -32,10 +32,10 @@ Des normes ont été définies, [cet article](http://aesfrance.info/le-loudness-
 ![Mesurer le volume]({{ site.baseurl }}/images/posts_data/dynamic.png)
 
 ## Mes réglages
-Pour les productions de type "talk show", on doit entendre distinctement les voix, et le spectateur ne doit pas avoir besoin de retoucher aux réglages sonores durant le visionnage. Je vise dans ce type de situation un volume cible de -10 LU et une gamme dynamique de 9 LU. Pour obtenir un résultat conforme à ces objectifs, je compresse généralement légèrement mon son (ratio = 2,25:1, seuil = -50dB). 
+Pour les productions de type "talk show", on doit entendre distinctement les voix, et le spectateur ne doit pas avoir besoin de retoucher aux réglages sonores durant le visionnage. Je vise dans ce type de situation un volume cible de -10 LU et une gamme dynamique de 9 LU. Pour obtenir un résultat conforme à ces objectifs, je compresse généralement légèrement mon son. 
 
 [Voici un exemple](https://www.youtube.com/watch?v=CL6VzWFI0Dc) : une rediffusion d'un stream dont j'ai retraité le son.
 
 Quand je compose une musique je fais plus simple : je ne mesure pas le volume, je me fie à mon oreille. Je le règle lorsque j'utilise cette musique dans une production.
 
-Lorsque je crée une playlist (exemple : une clé USB contenant des musiques pour les diffuser dans ma voiture), je retraite les musiques de la même façon que je traite les talk shows : l'idée est toujours en encore de ne pas avoir besoin d'augmenter ou de baisser le son en cours d'écoute.
+Lorsque je crée une playlist (exemple : une clé USB contenant des musiques pour les diffuser dans ma voiture), je retraite les musiques de la même façon que je traite les talk shows : l'idée est toujours et encore de ne pas avoir besoin d'augmenter ou de baisser le son en cours d'écoute.
