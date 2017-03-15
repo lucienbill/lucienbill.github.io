@@ -68,9 +68,9 @@ En bref : un compresseur permet de réduire l'écart entre les sons faibles et l
  * C'est le cas de certaines émissions de radio. C'est très perceptible lorsque les intervenants parlent sur une musique de fond : dès qu'ils parlent, la musique de fond diminue fortement, pour augmenter dès qu'ils cessent de parler. C'est parce que la compression est très forte, et je trouve cela très désagréable,
  * J'ai trouvé une vidéo qui montre parfaitement l'effet d'une compression trop agressive sur une musique [ici](https://www.youtube.com/watch?v=-v6ML2DsBfA).
 
-Pour utiliser un compresseur, on définit un seuil et un taux de compression. Dès que le signal en entrée sera plus fort que le seuil, il sera affecté par le taux de compression. Ce taux peut se définir par "pour X décibels en entrée, on aura Y décibels en sortie". Exemple : un ratio de 5:1 signifiera que pour 5 décibels en entrée, on aura 1 décibel en sortie. Expérimentez pour trouver les réglages qui s'adaptent à votre situation, en gardant à l'esprit qu'une compression trop forte dénaturera le son.
+Pour utiliser un compresseur, on définit un seuil et un taux de compression. Dès que le signal en entrée sera plus fort que le seuil, il sera affecté par le taux de compression. Ce taux peut se définir par "pour X décibels en entrée, on aura Y décibels en sortie". Exemple : un ratio de 5:1 signifiera que pour 5 décibels en entrée, on aura 1 décibel en sortie. Expérimentez pour trouver les réglages qui s'adaptent à votre situation, en gardant à l'esprit qu'une compression trop forte dénaturera le son. Je recommande [MCompressor](https://www.meldaproduction.com/MCompressor) qui dispose de réglages assez fins. On peut par exemple paramétrer un compresseur "progessif" qui ne passera pas directement du rapport 1:1 à 5:1, mais passera par des valeurs intermédiaires (cela permet d'avoir une compression plus discrète).
 
-https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Compression_ratio.svg/600px-Compression_ratio.svg.png
+![La compression](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Compression_ratio.svg/600px-Compression_ratio.svg.png)
 
 ### Dé-esseur
 
@@ -88,7 +88,7 @@ Quand je traite une piste de dialogues, je m'arrange pour que le niveau maximum 
  * le volume sonore est globalement constant, mais respecte un certain écart entre les cris et les chuchotements,
  * le son n'est pas trop "monotone" (en fait, c'est lié à un excès de compression).
  
-\[EDIT\] : Ma méthodologie a évolué depuis que j'ai découvert comment mesurer le volume sonore autrement qu'avec mes oreilles. J'en parle [ici]({{ site.baseurl }}/VolumeSonore/) !
+**\[EDIT\] : Ma méthodologie a évolué depuis que j'ai découvert comment mesurer le volume sonore autrement qu'avec mes oreilles. J'en parle [ici]({{ site.baseurl }}/VolumeSonore/) !**
 
 ### Résultat final
 Gardons à l'esprit les buts que je m'étais fixé au départ, et analysons 2 exemples :
