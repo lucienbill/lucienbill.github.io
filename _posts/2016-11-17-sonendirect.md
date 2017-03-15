@@ -43,8 +43,9 @@ J'ai récemment trouvé un logiciel assez magique : une table de mixage virtuell
 Concrètement, voici comment je l'utilise : 
 
   * le son de mon micro est géré par une entrée du mixeur virtuel. J'applique une légère compression (valeur : 3 maximum), et un très léger gate (pour couper le son quand je ne parle pas, mais pas de façon trop brutale), je règle l'equalizer pour virer les fréquences trop graves et trop aigües, et je passe l'entrée en "mono".
-  * optionnel : le son du jeu est géré par une autre entrée, à laquelle j'applique une très légère compression (<= 2) (demande un peu de matériel supplémentaire)
+  * optionnel : le son du jeu est géré par une autre entrée, à laquelle j'applique une très légère compression (<= 2) (demande un peu de matériel supplémentaire)
   * le tout est redirigé vers le haut-parleur virtuel VB-Audio Câble (ou n'importe quelle autre sortie gérée par Banana Voicemeeter : il suffira de configurer le logiciel de streaming pour qu'il capture le bon périphérique) 
+  
 En bref, cela signifie que si vous avez juste un micro-casque de gamer et un ordinateur vous pouvez vous en sortir.
 
 Ces réglages peuvent vous servir de base, mais ne les appliquez pas aveuglément : testez, effectuez des enregistrements et écoutez-les ! Il faut que le résultat vous semble satisfaisant. Personnellement, je me fie à mon oreille et à un outil de mesure de volume et de gamme dynamique (j'en parle [ici]({{ site.baseurl }}/VolumeSonore/)). Il se peut par exemple que vous jugiez la compression néfaste sur le son du jeu, ou que le "gate" sur la voix ne vous plaise pas. Fiez-vous donc à votre opinion, et n'hésitez-pas à demander l'avis de vos spectateurs.
