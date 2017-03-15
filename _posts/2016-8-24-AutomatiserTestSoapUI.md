@@ -33,6 +33,7 @@ Résumé :
 #### Le commencement
 
 Nous allons supposer que vous devez tester un webservice, que votre scénario de tests est prêt est que vous savez comment accéder au webservice. Nous supposerons également que vous avez installé **SoapUI 5.2.1** (ou une version ultérieure) sur votre poste.
+Note : SoapUI pour du XMLHTTP marche très bien. Pour du REST, je suis moins convaincu.
 
 ###### Créer un nouveau projet
 
