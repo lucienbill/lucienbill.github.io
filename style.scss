@@ -47,6 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
+  background: #546e7a;
+  color: rgb(255, 255, 255);
   a {
     color: inherit;
   }
@@ -54,6 +56,7 @@ h1 {
 
 h2 {
   font-size: 24px;
+  background: #90a4ae;
 }
 
 h3 {
@@ -70,12 +73,12 @@ p {
 }
 
 a {
-  color: $blue;
+  color: #006064;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    background-color: #fff;
-    border-radius : 5px;
+    background-color: #006064;
+    color: rgb(255, 255, 255);
     border:0px ;
   }
 }
@@ -177,11 +180,11 @@ img {
     display: block;
     margin: 0 auto;
   }
+}
 
-  img {
+img {
     border-radius: 5px;
   }
-}
 
 .site-info {
   float: left;
