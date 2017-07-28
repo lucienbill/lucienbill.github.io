@@ -45,11 +45,12 @@ La suppression de bruits se fait en deux étapes :
 1. On doit indiquer au réducteur de bruit à quoi ressemble le bruit qu'il doit réduire. Typiquement, lors de la prise de son on aura enregistré 30 secondes de "silence" : personne n'aura parlé/bougé/fait de bruit durant cet enregistrement, mais on aura enregistré le bruit ambiant de la pièce et le bruit lié au matériel d'enregistrement,
 2. On sélectionne une portion de son à traiter, on règle la sensibilité du réducteur et on réduit.
 
-Je recommande de ne pas être trop agressif avec cet effet : cela peut déformer les voix de façon très perceptible. J'ai tendance à trop forcer sur cet effet. La bonne nouvelle, c'est que lorsqu'une musique de fond est ajoutée sur les dialogues, la déformation de la voix peut passer inaperçue. 
+Je recommande de bien doser cet effet : bien réglé, il déforme la voix de manière très discrète ; mal réglé, il ajoute des artéfacts sonores bien plus perceptibles que le bruit original. De manière contre-intuitive, ces artéfacts sonores apparaissent lorsque la suppression de bruit est trop faible : si on supprime trop peu de bruit, la partie qui reste ressemble à du [bruit de quantification](https://fr.wikipedia.org/wiki/Dither_(audio)) -> c'est un son beaucoup moins naturel que le bruit de base, donc notre oreille le remarque. Pour comprendre en détail comment bien utiliser cet outil, lisez le [manuel d'Audacity](http://manual.audacityteam.org/man/noise_reduction.html)
+J'ai tendance à ne pas le doser assez fort, mais la bonne nouvelle est que lorsqu'une musique de fond est ajoutée sur les dialogues, les résidus de bruit peuvent passer inaperçus. 
 
 ### Égalisation
 Si j'ai l'impression qu'un son est trop grave ou trop aigu (ou autre), je modifie l'égalisation. Par exemple, [dans l'épisode 4 de la saison 1 d'IRL - In Raph Life, lors que le personnage de Sam est en voix off](https://youtu.be/yFzmF7tRtZ8?t=4m16s), j'ai atténué les graves (-6 dB pour les fréquences inférieures à 200 Hz).
-Si nécessaire, je me sers de l'égalisation pour couper ce qui est trop grave et trop aigu. Je teste les réglages au fur et à mesure pour obtenir l'effet recherché. Pour couper le vent dans les scènes en extérieur, j'ai tendance à couper tout ce qui est situé en dessous de 150 Hz.
+Si nécessaire, je me sers de l'égalisation pour couper ce qui est trop grave et trop aigu (ça me permet de me débarrasser de certains bruits parasites). Je teste les réglages au fur et à mesure pour obtenir l'effet recherché. Pour couper le vent dans les scènes en extérieur, j'ai tendance à couper tout ce qui est situé en dessous de 150 Hz.
 
 ## Compresseur et limiteur
 Mise en situation : vous visionnez tranquillement une vidéo d'[Antoine Daniel](https://www.youtube.com/watch?v=iOz0GkHYTeE&feature=youtu.be&t=4m44s) ou un épisode de l'excellente websérie [Ephemera](https://www.youtube.com/playlist?list=PLn-a-erCPOXdtJhQl2qv4t5v84-7MGj9p). Vous passez un bon moment, mais vous êtes obligé d'augmenter le son sur certains passages, puis de le baisser sur d'autres pendant le visionnage. Ce n'est pas la fin du monde mais c'est tout de même gênant. En tout cas, ça me gêne. Voici donc ce que je fais pour épargner ce désagrément au spectateur qui visionnera les vidéos d'All Geek Studio.
@@ -96,7 +97,7 @@ Gardons à l'esprit les buts que je m'étais fixé au départ, et analysons 2 ex
 #### [IRL S01E04](https://www.youtube.com/watch?v=yFzmF7tRtZ8)
 Le son est intelligible, le volume des voix est globalement constant. Le mix entre bruitages, dialogues et musiques est satisfaisant (mais je discuterai de ce sujet dans un autre article).
 
-Cependant à certains endroits je trouve les dialogues trop compressés, et j'ai été vraiment trop agressif sur la suppression de bruit. Pour ne pas retarder la date de sortie on a décidé que le son était suffisamment bon : il n'a pas de défaut majeur, il n'est juste pas aussi bon que je l'aurais voulu parce que j'ai eu la main lourde sur certains traitements. C'est une leçon que je retiens pour les prochains épisodes.
+Cependant à certains endroits je trouve les dialogues trop compressés, et j'ai été vraiment mal dosé la suppression de bruit. Pour ne pas retarder la date de sortie on a décidé que le son était suffisamment bon : il n'a pas de défaut majeur, il n'est juste pas aussi bon que je l'aurais voulu parce que j'ai manqué de subtilité sur certains traitements. C'est une leçon que je retiens pour les prochains épisodes.
 
 #### [T-Rex Show : Starfox](https://www.youtube.com/watch?v=1VM9RCIqqKE)
 Il s'agit du replay d'un stream sur un vieux jeu. Le son était traité en direct (j'écrirai sur le traitement du son en live appliqué au stream plus tard) : 
