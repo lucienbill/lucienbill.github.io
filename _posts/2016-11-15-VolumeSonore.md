@@ -7,7 +7,7 @@ title: Le volume sonore
 En lien avec l'article sur le traitement du son, voici un article sur la perception du volume sonore. En bref, si vous vous demandez comment vous débrouiller pour faire en sorte que plusieurs pistes audio soient "au même volume sonore", et comment être certain qu'un spectateur n'ait pas à régler lui-même le son pendant qu'il visionne une de vos productions, cet article vous intéressera !
 
 ## Peak vs Volume
-Le "peak" est l'amplitude maximale d'un signal. Un peak de -2dB signifiera que le signal ne dépassera jamais -2dB. A un instant t, le niveau du signal pourra être -2dB, cependant le volume sonore pourra être différent : ce volume est une perception plus "globale" du signal (la perception de plusieurs instants, considérés comme un ensemble). En bref : le "peak" et le "Volume" sont deux notions différentes, et la notion qui va nous intéresser est celle de volume. Quand une musique nous paraît "forte", on parle de son volume.
+Le "peak" est l'amplitude maximale d'un signal. Un peak de -2dB signifiera que le signal ne dépassera jamais -2dB. A un instant t, le niveau du signal pourra être -2dB, cependant le volume sonore pourra être différent : ce volume est une perception plus "globale" du signal (la perception de plusieurs instants, dont on considère quelque chose qui se rapproche d'une moyenne). En bref : le "peak" et le "Volume" sont deux notions différentes, et la notion qui va nous intéresser est celle de volume. Quand une musique nous paraît "forte", on parle de son volume.
 
 Concrètement, mesurer le peak est facile, et mesurer le volume est un poil plus complexe. Souvent, les débutants confondent ces deux notions et mesurent le peak en pensant mesurer le volume (après tout quand on débute par définition on ne peut pas tout savoir).
 
@@ -32,10 +32,10 @@ Des normes ont été définies, [cet article](http://aesfrance.info/le-loudness-
 ![Mesurer le volume]({{ site.baseurl }}/images/posts_data/dynamic.png)
 
 ## Mes réglages
-Pour les productions de type "talk show", on doit entendre distinctement les voix, et le spectateur ne doit pas avoir besoin de retoucher aux réglages sonores durant le visionnage. Je vise dans ce type de situation un volume cible de -10 LU et une gamme dynamique de 9 LU. Pour obtenir un résultat conforme à ces objectifs, je compresse généralement légèrement mon son. 
+Pour les productions de type "talk show", on doit entendre distinctement les voix, et le spectateur ne doit pas avoir besoin de retoucher aux réglages sonores durant le visionnage. Je vise dans ce type de situation un volume cible de -10 LU et une gamme dynamique de 9 LU pour les dialogues (et une gamme dynamique un peu plus élevée pour les sons hors dialogues, comme par exemple le son du jeu vidéo lors d'un stream). Pour obtenir un résultat conforme à ces objectifs, je compresse généralement légèrement mon son. 
 
 [Voici un exemple](https://www.youtube.com/watch?v=CL6VzWFI0Dc) : une rediffusion d'un stream dont j'ai retraité le son.
 
 Quand je compose une musique je fais plus simple : je ne mesure pas le volume, je me fie à mon oreille. Je le règle lorsque j'utilise cette musique dans une production.
 
-Lorsque je crée une playlist (exemple : une clé USB contenant des musiques pour les diffuser dans ma voiture), je retraite les musiques de la même façon que je traite les talk shows : l'idée est toujours et encore de ne pas avoir besoin d'augmenter ou de baisser le son en cours d'écoute.
+Lorsque je crée une playlist (exemple : une clé USB contenant des musiques pour les diffuser dans ma voiture), je retraite les musiques à peu près de la même façon que je traite les talk shows : l'idée est toujours et encore de ne pas avoir besoin d'augmenter ou de baisser le son en cours d'écoute.
