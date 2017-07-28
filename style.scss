@@ -110,6 +110,7 @@ strong, b {
 
 img {
   max-width: 100%;
+  border-radius: 10px;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -176,11 +177,11 @@ img {
     display: block;
     margin: 0 auto;
   }
-}
-
-img {
+	
+   @img {
     border-radius: 5px;
   }
+}
 
 .site-info {
   float: left;
