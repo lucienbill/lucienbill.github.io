@@ -3,11 +3,11 @@ layout: page
 title: About
 permalink: /about/
 ---
-J'étais un ingénieur mécanique travaillant en tant que codeur, puis j'ai rencontré [Violaine Varicca](http://violainevaricca.fr/) grâce à qui je suis devenu un développeur.
+J'étais un ingénieur mécanique travaillant en tant que codeur, puis j'ai rencontré [Violaine Varicca](https://vvaricca.github.io/) grâce à qui je suis devenu un développeur.
 
 -----
 
-I used to be a mechanical engineer doing some code for a living, then I met [Violaine Varicca](http://violainevaricca.fr/) and she turned me into a developer.
+I used to be a mechanical engineer doing some code for a living, then I met [Violaine Varicca](https://vvaricca.github.io/) and she turned me into a developer.
 
 ### More Information
 
