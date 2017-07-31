@@ -20,10 +20,11 @@ Full automatisé, même le déploiement. Docker = super pour ça !
 env de test partagé, process en "one shot" sans possibilité d'annuler -> pas full automatisable.
 Mais : avant d'atteindre les limites, je peux déjà pas mal automatiser (et puis je ne suis pas décisionnaire sur le SI)
 
-## l'outil que j'utilise (et ses avantes)
+## l'outil que j'utilise (et ses avantages)
+Sahi pro
 
 ## Alternatives
-Sahi 
+Sahi gratuit
 Nightwatch.js
 
 ## outils du Turfu
