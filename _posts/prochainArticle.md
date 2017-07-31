@@ -6,8 +6,7 @@ title: L'Automatisation des tests (end user testing)
 ## tl;dr
 Je travaille actuellement en tant que "développeur de tests automatisés". C'est un travail assez particulier : cet article décrit la façon optimale de le faire, la façon dont je le fais en réalité, et présente des outils intéressants.
 
-## intro
-### end user testing/TNR
+## End user testing / Tests de Non Régression ?
 C'est quoi ?
 Ca sert à quoi ? essentiel (stabilité)
 Manuel = barbant, de quoi rendre fou
