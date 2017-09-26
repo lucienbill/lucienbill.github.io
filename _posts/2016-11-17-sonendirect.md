@@ -27,7 +27,7 @@ Voici un exemple :
 
 Matériel : 
 
-  * un micro XLR (exemples : [celui-ci](https://www.thomann.de/fr/blue_yeti_studio.htm) ou [celui-là](https://www.thomann.de/fr/studio_projects_b3.htm)) ; Lisez les specs, si le micro a besoin d'une alimentation phantom 48, il faudra lui fournir cette alimentation pour qu'il fonctionne.
+  * un micro XLR (exemples : [celui-ci](https://www.thomann.de/fr/samson_q7.htm) ou [celui-là](https://www.thomann.de/fr/audio_technica_at2020.htm)) ; Lisez les specs, si le micro a besoin d'une alimentation phantom 48, il faudra lui fournir cette alimentation pour qu'il fonctionne.
   * un pied de micro (sauf si vous tenez vraiment à le scotcher à l'arrache sur un manche à balais coincé entre une chaise et un canapé)
   * un compresseur de-esseur (pour traiter la voix). Exemple : [DBX 286 S](https://www.thomann.de/fr/dbx_286_s.htm)
   * Optionnel : un compresseur stéréo pour traiter le son qui sort du PC (le son du jeu). Exemple : [DBX 266 XS](https://www.thomann.de/fr/dbx_266_xs.htm) -> note : traiter le son du jeu est rarement nécessaire
