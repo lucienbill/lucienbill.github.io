@@ -29,6 +29,11 @@ body {
   padding: 0 10px;
   width: 100%;
   background: #F5F5F6;
+  box-shadow: 5px 5px 5px;
+}
+
+.wrapper-footer .container {
+    box-shadow: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -74,9 +79,12 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    background-color: #ddd;
-    border:0px ;
+     text-shadow: 2px 2px 5px grey;
   }
+}
+
+a img:hover {
+    box-shadow: 4px 4px 8px grey;
 }
 
 ul, ol {
