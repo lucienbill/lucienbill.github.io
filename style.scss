@@ -80,11 +80,13 @@ a {
 	cursor: pointer;
   &:hover, &:active {
      text-shadow: 2px 2px 5px grey;
+     transition:0.2s;
   }
 }
 
 a img:hover {
     box-shadow: 4px 4px 8px grey;
+    transition:0.2s;
 }
 
 ul, ol {
