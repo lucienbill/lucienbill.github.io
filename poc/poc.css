@@ -1,0 +1,43 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    top: 17%;
+    left:52%;
+    background: rgba(255, 255, 255, 0.2);
+    width: 50px;
+    padding: 20px;
+    opacity: 0;
+}
+
+/* TODO : virer cette classe */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.content:hover {
+    opacity: 20;
+    cursor: pointer;
+}
+
+.tuto {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}

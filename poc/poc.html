@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Zoom Vidéo - Proof Of Concept</title>
+
+		<meta name="description" content="Proof Of Concept : Vidéo avec des zones cliquables (pour faire, par exemple, un zoom sur une zone)">
+		<meta name="author" content="L.B.">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="poc.css">
+    </head>
+    <body>
+
+        <video autoplay muted loop id="myVideo">
+            <source src="./media/vid.mp4" type="video/mp4">
+        </video>
+
+        <div class="content" onclick="myFunction()">
+            <button id="myBtn"> </button>
+            <!-- TODO : virer le bouton ?-->
+        </div>
+
+        <div class="tuto">
+            <p>Mettez le site en plein écran (F11) et cliquez sur l'oeil du T-Rex</p>
+        </div>
+    </body>
+    
+    <script>
+        function myFunction(){
+            alert("Vous avez trouvé l'oeil du T-Rex ! (TODO : remplacer ce message par une modale qui affiche une image)")
+        }
+    </script>
+</html>
