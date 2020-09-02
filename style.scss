@@ -20,6 +20,7 @@ html {
 body {
   background: #5f6265;
   background-image: url("images/bg-min.png");
+  background-attachment: fixed;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
