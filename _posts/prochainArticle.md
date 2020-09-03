@@ -3,6 +3,12 @@ layout: post
 title: L'Automatisation des tests (end user testing)
 ---
 
+TODO : 03/08/2020 - je viens de retrouver ce brouillon, manifestement c'est un vieux truc. A faire :
+- relire ce brouillon
+- peut-être une nouvelle perspective, suite à mon xp ? Essayer de trop automatiser = fausse bonne idée, dire pourquoi (l'auto, c'est utile mais limité)
+- quels outils utiliser ? Sahi : lol nope. Katalon Studio : oskour ; Zeno Pixel : ext-ce tjrs maintenu ? number one : Cypress.io ; Si t'aimes vraiment pas le JS : Watir
+
+
 ## tl;dr
 Je travaille actuellement en tant que "développeur de tests automatisés". C'est un travail assez particulier : cet article décrit la façon optimale de le faire, la façon dont je le fais en réalité, et présente des outils intéressants.
 
