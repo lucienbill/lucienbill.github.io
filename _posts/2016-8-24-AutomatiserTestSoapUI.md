@@ -14,11 +14,9 @@ Résumé :
   * SoapUI supporte le langage de scripting "Groovy" (qui permet de faire presque tout et n'importe quoi, du moment qu'on le code)
 
 2. J'ai créé un projet SoapUI qui utilise les vérifications automatiques et les Groovy Scripts 
-
-  * Ce projet lit un fichier CSV qui contient les données à envoyer au service et les éléments à vérifier dans la réponse du webservice. Pour l'utiliser il faut créer les cas de tests (dans le fichier CSV), paramétrer le projet SoapUI puis cliquer sur le bouton d'exécution -> un rapport d'exécution indiquera le résultat des tests
+  * Ce projet lit un fichier CSV qui contient les données à envoyer au service et les éléments à vérifier dans la réponse du webservice. Pour l'utiliser, il faut créer les cas de tests (dans le fichier CSV), paramétrer le projet SoapUI puis cliquer sur le bouton d'exécution -> un rapport d'exécution indiquera le résultat des tests
 
 3. On peut piloter l'exécution de ce projet SoapUI avec Maven 
-
   * C'est ici que l'automatisation commence vraiment
   * C'est également ici que ça se complique (le plugin maven de SoapUI n'est pas "plug and play")
 
@@ -107,7 +105,7 @@ On peut vouloir copier une étape vers un Test Case précis. On peut :
 La capture d'écran suivante représente un TestCase composé des étapes suivantes : 
 
 1.	Une étape manuelle 
-  * Lors de l'exécution du TestCase, une fenêtre s'affichera, et l'utilisateur devra interragir avec cette fenêtre afin que SoapUI passe à l'étape suivante. 
+  * Lors de l'exécution du TestCase, une fenêtre s'affichera, et l'utilisateur devra interagir avec cette fenêtre afin que SoapUI passe à l'étape suivante. 
   * Note : je recommande de ne pas utiliser ce type d'étapes, c'est incompatible avec l'automatisation (en effet, Jenkins et Squash TA ne vont pas savoir comment les traiter)
 2. Un appel à un webservice A
 3. Une requête SQL 
@@ -217,7 +215,7 @@ Concrètement, à ce stade on sait que l'on peut faire ceci avec SoapUI :
 
 SoapUI permet d'utiliser le langage de scripting "Groovy", qui permet concrètement de coder ses propres fonctionnalités et de les ajouter à SoapUI.
 
-On peut, par exemple, implémenter le scénario de test suivant grace aux scripts Groovy :
+On peut, par exemple, implémenter le scénario de test suivant grâce aux scripts Groovy :
 
 1. Appeler un service de type "GetList" : il doit retourner une liste de résultats.
 2. Pour chaque résultat de cette liste, appeler un service de type "GetDetail" pour obtenir des informations détaillées sur l'entité sélectionnée.
@@ -274,7 +272,7 @@ Décortiquons maintenant ce qu'il s'est passé lorsqu'on a lancé le scénario :
 
 2. "Data injector" a ensuite lu la ligne 2 : 
   1. il a écrit les données de cette ligne dans l'étape "Test_properties" (les noms des propriétés sont les noms donnés dans la première ligne du csv)
-  2. il a renommé le deuxième Step du Test Case ("nom du cas de test (automatique)") avec la valeur de la priopriété "Tst_name" du step "Test_properties"
+  2. il a renommé le deuxième Step du Test Case ("nom du cas de test (automatique)") avec la valeur de la propriété "Tst_name" du step "Test_properties"
 3. le Test Step suivant (qui venait d'être renommé) appelle le webservice. 
   1. Les données qu'il lui envoie sont variabilisées : les valeurs proviennent du step "Test_properties". On remarquera le nom du cas de test est écrit dans un commentaire XML : si le renommage automatique du cas de test ne fonctionne pas, alors le flux envoyé au service permettra d'identifier le cas de test car le nom sera écrit dedans.
 
@@ -495,7 +493,7 @@ Mettre en place un Jenkins qui gèrerait toutes les étapes lui-même aurait don
 
 #### Squash TA
 
-Pour ce projet, Squash TA gèrait les bases de données et l'exécution des tests automatisés. L'intérêt de Squash TA est que les tests automatisés sont liés à leurs équivalents "manuels" dans Squash TM : cela permet de faire un suivi et de faire évoluer les tests plus facilement que si on n'utilisait que Jenkins.
+Pour ce projet, Squash TA gérait les bases de données et l'exécution des tests automatisés. L'intérêt de Squash TA est que les tests automatisés sont liés à leurs équivalents "manuels" dans Squash TM : cela permet de faire un suivi et de faire évoluer les tests plus facilement que si on n'utilisait que Jenkins.
 
 L'inconvénient est que le fonctionnement du plug-in SoapUI de Squash TA n'est ni celui du plugin Maven, ni celui du [GUI]( https://fr.wikipedia.org/wiki/Interface_graphique) de SoapUI :
 
