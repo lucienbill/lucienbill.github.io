@@ -3,7 +3,7 @@ layout: post
 title: Hello World!
 ---
 
-Bonjour cher(e) lecterice/lecteur, et bienvenue sur mon blog! 
+Bonjour cher(e) lectrice/lecteur, et bienvenue sur mon blog! 
 
 Je prévois d'y publier des articles plus ou moins techniques afin de partager une partie de mes connaissances. Il se peut que certains articles soient disponibles en anglais et en français, et d'autres uniquement dans une seule langue. Pour le moment rien n'est vraiment défini, et si je finis par construire un site 100% bilingue il est probable que je change l'architecture du blog.
 
