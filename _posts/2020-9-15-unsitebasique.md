@@ -3,7 +3,6 @@ layout: post
 title: Un site basique - pourquoi ?
 ---
 
-## tl;dr
 Pourquoi mon site est-il si basique ? Je pourrais m'inspirer des [templates de SquareSpace](https://fr.squarespace.com/modeles) : beaucoup de photos et d'animations, ça en jette. J'ai pourtant choisi de faire autrement, et pas uniquement parce que je suis fainéant.
 
 ## Toujours Plus

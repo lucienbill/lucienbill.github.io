@@ -4,7 +4,6 @@ title: Le volume sonore
 category: obsolete
 ---
 
-## tl;dr
 En lien avec l'article sur le traitement du son, voici un article sur la perception du volume sonore. En bref, si vous vous demandez comment vous débrouiller pour faire en sorte que plusieurs pistes audio soient "au même volume sonore", et comment être certain qu'un spectateur n'ait pas à régler lui-même le son pendant qu'il visionne une de vos productions, cet article vous intéressera !
 
 ## Peak vs Volume

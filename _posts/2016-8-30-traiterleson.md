@@ -4,7 +4,6 @@ title: Les bases du traitement du son
 category: obsolete
 ---
 
-## tl;dr
 Traiter le son est un vaste sujet. Pire encore : c'est tout un art et il est extrêmement facile de se planter ! Je ne suis pas ingénieur du son de métier, mais à force de recherche et de pratique j'ai fini par apprendre certaines choses. Cet article est destiné à ceux qui veulent prendre un raccourci et éviter de tomber dans les pièges dans lesquels je suis tombé lors de mon apprentissage.
 
 Concrètement ma façon de traiter le son est encore en évolution, et je ne suis pas encore tout à fait satisfait des résultats que j'ai produit. Si cela ne tenait qu'à moi je remplacerais très régulièrement les vidéos dont j'ai traité le son et les musiques que j'ai composées par des versions améliorées, mais il faut savoir s'arrêter. Ce qui a été produit dans le passé appartient au passé : s'acharner dessus est dangereux et peut empêcher d'avancer. Prenons mes musiques sur SoundCloud : je pourrais les remplacer aujourd’hui par des versions améliorées, mais cela ne m'avancerait à rien car dans 3 mois je voudrai répéter l'opération. Autant ne pas le faire du tout : les musiques que j'ai publiées sont le résultat de ce que je savais faire au moment où je les ai composées, et le fait que je n'en sois pas entièrement satisfait aujourd'hui est bon signe car cela signifie que je me suis amélioré. Ce constat ne me rend pas satisfait de mon insatisfaction mais me permet de relativiser.
