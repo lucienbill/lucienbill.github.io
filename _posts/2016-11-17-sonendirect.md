@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Traiter le son en live
+category: obsolete
 ---
 
 ## tl;dr

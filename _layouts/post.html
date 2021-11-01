@@ -5,6 +5,16 @@ layout: default
 <article class="post">
   <h1>{{ page.title }}</h1>
 
+  {% if page.categories contains "obsolete" %}
+  <details>
+    <summary><mark>Attention : article obsolète</mark></summary>
+    <p>
+      Vous lisez un vieux machin qui est au moins partiellement obsolète.
+      Je le laisse en ligne pour conserver un historique, mais les infos qui y figurent ne sont vraiment pas à jour.
+    </p>
+  </details>
+  {% endif %}
+
   <div class="entry">
     {{ content }}
   </div>

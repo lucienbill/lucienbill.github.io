@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Les bases du traitement du son
+category: obsolete
 ---
 
 ## tl;dr
