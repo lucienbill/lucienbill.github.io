@@ -90,7 +90,7 @@ Quand je traite une piste de dialogues, je m'arrange pour que le niveau maximum 
  * le volume sonore est globalement constant, mais respecte un certain écart entre les cris et les chuchotements,
  * le son n'est pas trop "monotone" (en fait, c'est lié à un excès de compression).
  
-**\[EDIT\] : Ma méthodologie a évolué depuis que j'ai découvert comment mesurer le volume sonore autrement qu'avec mes oreilles. J'en parle [ici]({{ site.baseurl }}/VolumeSonore/) !**
+**\[EDIT\] : Ma méthodologie a évolué depuis que j'ai découvert comment mesurer le volume sonore autrement qu'avec mes oreilles. J'en parle [ici]({% post_url 2016-11-15-VolumeSonore %}) !**
 
 ### Résultat final
 Gardons à l'esprit les buts que je m'étais fixé au départ, et analysons 2 exemples :
