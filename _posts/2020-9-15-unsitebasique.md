@@ -40,7 +40,7 @@ Enfin, mes images sont fortement compressées (je me sers beaucoup de [ce site](
 
 Résultat : mes pages pèsent entre 239 kB et 674 kB :
 
-![Image de l'inspecteur Chrome : la plus grosse page pèse 674 kilooctets]({{ site.baseurl }}/images/posts_data/chr-inspector-network.png)
+![Image de l'inspecteur Chrome : la plus grosse page pèse 674 kilooctets](/images/posts_data/chr-inspector-network.png)
 
 ### A vous de jouer !
 

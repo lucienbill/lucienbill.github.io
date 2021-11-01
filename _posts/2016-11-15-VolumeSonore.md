@@ -12,7 +12,7 @@ Le "peak" est l'amplitude maximale d'un signal. Un peak de -2dB signifiera que l
 Concrètement, mesurer le peak est facile, et mesurer le volume est un poil plus complexe. Souvent, les débutants confondent ces deux notions et mesurent le peak en pensant mesurer le volume (après tout quand on débute par définition on ne peut pas tout savoir).
 
 Voici une illustration simple : le logiciel de mixage que j'utilise (très occasionnellement, je ne suis pas DJ) me montre un peak à 0dB, et un volume bien plus faible.
-![Peak vs Volume]({{ site.baseurl }}/images/posts_data/peak.png)
+![Peak vs Volume](/images/posts_data/peak.png)
 
 ## La "Loudness War" (guerre du volume)
 Mesurer le volume est plutôt compliqué. Tellement compliqué même, que pendant longtemps chacun faisait un peu ce qu'il voulait/pouvait pour gérer le volume des productions. La probélamtique était la suivante : "je produis un disque / une émission de télévision : je veux que le volume sonore soit au moins égal à celui du voisin". Il n'y avait pas de réelle méthode commune pour mesurer le volume ni de norme pour harmoniser le volume des différentes productions : les ingénieurs du son se sont mis à compresser de plus en plus leurs pistes afin que le rendu soit un peu plus fort que celui du voisin, et c'est ainsi que la [Loudness War](https://fr.wikipedia.org/wiki/Guerre_du_volume) est née. 
@@ -29,7 +29,7 @@ Pour mettre fin à cette guerre, il a fallu définir un moyen de mesurer le volu
 
 ## Comment mesurer le volume ?
 Des normes ont été définies, [cet article](http://aesfrance.info/le-loudness-ou-sonie) en parle plutôt bien. Il existe es programmes informatiques conformes à ces normes pour mesurer le volume et vérifier qu'il est "correct", j'utilise [MLoudness Analyser](https://www.meldaproduction.com/MLoudnessAnalyzer). Le schéma suivant résume les informations que j'utilise : 
-![Mesurer le volume]({{ site.baseurl }}/images/posts_data/dynamic.png)
+![Mesurer le volume](/images/posts_data/dynamic.png)
 
 ## Mes réglages
 Pour les productions de type "talk show", on doit entendre distinctement les voix, et le spectateur ne doit pas avoir besoin de retoucher aux réglages sonores durant le visionnage. Je vise dans ce type de situation un volume cible maximum de -10 LU (je ne me sers pas du volume "moyen" mesuré sur la durée totale du fichier) et une gamme dynamique de 9 LU pour les dialogues (ainsi qu'une gamme dynamique un peu plus élevée pour les sons hors dialogues, comme par exemple le son du jeu vidéo lors d'un stream). Pour obtenir un résultat conforme à ces objectifs, je compresse généralement légèrement mon son. 

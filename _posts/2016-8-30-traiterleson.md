@@ -21,7 +21,7 @@ Lorsque je traite un dialogue (ou un monologue. Bref : une scène dont l'éléme
 
 Concrètement, je suis un spectateur fainéant : je veux pouvoir regarder une vidéo sur l'écran d'une télévision, affalé dans le canapé, sans avoir à toucher à la télécommande une fois que la vidéo est lancée. Je ne veux pas devoir faire des efforts pour comprendre ce que raconte un personnage parce que sa voix serait en partie masquée par un bruit de moteur d'avion. Je ne veux pas qu'un sifflement aigu me vrille les tympans tout le long de la vidéo. Je ne veux pas avoir à augmenter le son pour entendre ce que dit un personnage, puis le baisser plus tard car un autre personnage parle beaucoup plus fort.
 
-![Spectateur fainéant]({{ site.baseurl }}/images/posts_data/cute-lazy-cat-watching-tv.jpg)
+![Spectateur fainéant](/images/posts_data/cute-lazy-cat-watching-tv.jpg)
 
 *Quand je regarde la télévision, je ne veux pas faire le moindre effort*
 
