@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: A propos
 permalink: /about/
 ---
 Côté pro, je fais essentiellement du test logiciel.
@@ -11,6 +11,7 @@ A propos de mon code (hors pro) :
 - Je suis très fier d'avoir créé [ce site](https://nomavecjeudemotsdebile.pages.dev/) (un truc débile pour obtenir un nom avec un jeu de mots)
 
 -----
+## About
 As a tech worker, I mostly deal with software testing.
 
 Besides that, I do some technological watch, some stuff with sound, and I code for fun.
