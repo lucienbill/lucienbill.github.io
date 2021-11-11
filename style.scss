@@ -305,6 +305,9 @@ footer {
 details {
   border: 1px dashed grey;
   padding: 10px;
+}
+
+details[open] {
   padding-bottom: 0px;
 }
 
