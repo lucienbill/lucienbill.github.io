@@ -38,7 +38,7 @@ body {
     box-shadow: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .site-name {
   font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1 {
+h1, .site-name {
   font-size: 30px;
   a {
     color: inherit;
