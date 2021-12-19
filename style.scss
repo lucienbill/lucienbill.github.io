@@ -15,12 +15,14 @@
 
 html {
   font-size: 100%;
-}
-
-body {
   background: var(--bgpagecolor);
   background-image: url("images/bg-min.png");
   background-attachment: fixed;
+}
+
+body {
+  background-color: rgba(0,0,0,var(--bgimgtransparency));
+  
   font-size: 1.125rem ;
   line-height: 2rem;
   color: var(--defaultfontcolor);
@@ -33,7 +35,7 @@ body {
   padding: 0 10px;
   width: 100%;
   background: var(--bgcontentcolor);
-  box-shadow: 5px 5px 5px;
+  box-shadow: 5px 5px 5px var(--shadow);
 
   @media (max-width: 1200px) {
     width: 90%;
@@ -91,6 +93,10 @@ h4 {
 
 p {
   margin: 1rem 0;
+}
+
+select {
+  background-color: var(--selectboxbgcolor);
 }
 
 a {
@@ -188,7 +194,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid var(--mastheadtextcolor);
+  border-bottom: 1px solid var(--mastheadbordercolor);
 
   @include mobile {
     text-align: center;
@@ -307,8 +313,8 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid var(--shadow);
+  border-bottom: 1px solid var(--shadow);
   background-color: var(--mastheadtextcolor);
 }
 
@@ -317,8 +323,12 @@ footer {
   text-align: center;
 }
 
+footer .spacer{
+  height: 0.8rem;
+}
+
 details {
-  border: 1px dashed grey;
+  border: 1px dashed var(--h4color);
   padding: 10px;
 }
 
