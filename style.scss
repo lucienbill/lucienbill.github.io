@@ -5,8 +5,8 @@
 // IMPORTS
 //
 
-@import "reset";
 @import "variables";
+@import "reset";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -18,13 +18,13 @@ html {
 }
 
 body {
-  background: $bgpagecolor;
+  background: var(--bgpagecolor);
   background-image: url("images/bg-min.png");
   background-attachment: fixed;
   font-size: 1.125rem ;
   line-height: 2rem;
-  color: $defaultfontcolor;
-  font-family: $fonts;
+  color: var(--defaultfontcolor);
+  font-family: var(--fonts);
 }
 
 .container {
@@ -32,7 +32,7 @@ body {
   max-width: 1100px;
   padding: 0 10px;
   width: 100%;
-  background: $bgcontentcolor;
+  background: var(--bgcontentcolor);
   box-shadow: 5px 5px 5px;
 
   @media (max-width: 1200px) {
@@ -57,7 +57,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, .site-name {
-  color: $titlecolor;
+  color: var(--titlecolor);
   font-weight: bold;
 
   line-height: 3.5rem;
@@ -86,7 +86,7 @@ h3 {
 
 h4 {
   font-size: 1.1rem;
-  color: $h4color;
+  color: var(--h4color);
 }
 
 p {
@@ -98,17 +98,17 @@ p {
 }
 
 a {
-  color: $linkcolor;
+  color: var(--linkcolor);
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-     text-shadow: 2px 2px 5px $shadow;
+     text-shadow: 2px 2px 5px var(--shadow);
      transition:0.2s;
   }
 }
 
 a img:hover {
-    box-shadow: 4px 4px 8px $shadow;
+    box-shadow: 4px 4px 8px var(--shadow);
     transition:0.2s;
 }
 
@@ -153,17 +153,17 @@ img {
 
 .date {
   font-style: italic;
-  color: $h4color;
+  color: var(--h4color);
 }
 
 // Specify the color of the selection
 // ::-moz-selection {
-//   color: $black;
-//   background: $lightGray;
+//   color: var(--black);
+//   background: var(--lightGray);
 // }
 // ::selection {
-//   color: $black;
-//   background: $lightGray;
+//   color: var(--black);
+//   background: var(--lightGray);
 // }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -192,7 +192,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $mastheadtextcolor;
+  border-bottom: 1px solid var(--mastheadtextcolor);
 
   p {
     text-indent: 0;
@@ -234,7 +234,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $defaultfontcolor;
+  color: var(--defaultfontcolor);
   cursor: pointer;
   font-weight: 500;
   font-size: 2rem;
@@ -242,7 +242,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $h4color;
+  color: var(--h4color);
   font-size: 1rem;
 
   @include mobile {
@@ -264,13 +264,13 @@ nav {
   
   a {
     margin-left: 20px;
-    color: $defaultfontcolor;
+    color: var(--defaultfontcolor);
     text-align: right;
     font-weight: bold;
 
     @include mobile {
       margin: 0 10px;
-      color: $linkcolor;
+      color: var(--linkcolor);
     }
   }
 }
@@ -281,7 +281,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2rem;
-  border-bottom: 1px solid $h4color;
+  border-bottom: 1px solid var(--h4color);
 }
 
 .posts > .post:last-child {
@@ -292,9 +292,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8rem .8rem;
-    border-left: 2px solid $h4color;
+    border-left: 2px solid var(--h4color);
     padding: 0.1rem 1rem;
-    color: $h4color;
+    color: var(--h4color);
     font-size: 1.125rem;
     font-style: italic;
   }
@@ -309,7 +309,7 @@ nav {
   }
 	
   .read-more:hover {
-    border-bottom: 2px solid $linkcolor;
+    border-bottom: 2px solid var(--linkcolor);
   }
 }
 
@@ -317,7 +317,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $mastheadtextcolor;
+  background-color: var(--mastheadtextcolor);
 }
 
 footer {
