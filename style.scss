@@ -17,12 +17,11 @@ html {
   font-size: 100%;
   background: var(--bgpagecolor);
   background-image: url("images/bg-min.png");
-  background-attachment: fixed;
+  // background-attachment: fixed;
 }
 
 body {
   background-color: rgba(0,0,0,var(--bgimgtransparency));
-  
   font-size: 1.125rem ;
   line-height: 2rem;
   color: var(--defaultfontcolor);
@@ -31,7 +30,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 900px;
   padding: 0 10px;
   width: 100%;
   background: var(--bgcontentcolor);
@@ -45,11 +44,7 @@ body {
     width: 95%;
   }
 
-  @media (max-width: 800px) {
-    width: 98%;
-  }
-
-  @media (max-width: 700px) {
+  @include mobile {
     width: 100%;
   }
 }
@@ -102,16 +97,14 @@ select {
 a {
   color: var(--linkcolor);
   text-decoration: none;
-	cursor: pointer;
   &:hover, &:active {
      text-shadow: 2px 2px 5px var(--shadow);
-     transition:0.2s;
+     border-bottom: 2px solid;
   }
 }
 
 a img:hover {
     box-shadow: 4px 4px 8px var(--shadow);
-    transition:0.2s;
 }
 
 ul, ol {
@@ -157,16 +150,6 @@ img {
   font-style: italic;
   color: var(--h4color);
 }
-
-// Specify the color of the selection
-// ::-moz-selection {
-//   color: var(--black);
-//   background: var(--lightGray);
-// }
-// ::selection {
-//   color: var(--black);
-//   background: var(--lightGray);
-// }
 
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
@@ -233,7 +216,6 @@ img {
 .site-name {
   margin: 0;
   color: var(--defaultfontcolor);
-  cursor: pointer;
   font-weight: 500;
   font-size: 2rem;
 }
@@ -260,17 +242,17 @@ nav {
     font-size: 1rem;
   }
   
-  a {
-    margin-left: 20px;
-    color: var(--defaultfontcolor);
-    text-align: right;
-    font-weight: bold;
+  // a {
+  //   margin-left: 20px;
+  //   color: var(--defaultfontcolor);
+  //   text-align: right;
+  //   font-weight: bold;
 
-    @include mobile {
-      margin: 0 10px;
-      color: var(--linkcolor);
-    }
-  }
+  //   @include mobile {
+  //     margin: 0 10px;
+  //     color: var(--linkcolor);
+  //   }
+  // }
 }
 
 //
@@ -305,10 +287,7 @@ nav {
     text-transform: uppercase;
     font-size: 0.9rem;
   }
-	
-  .read-more:hover {
-    border-bottom: 2px solid var(--linkcolor);
-  }
+
 }
 
 .wrapper-footer {
