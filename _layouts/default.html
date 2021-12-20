@@ -16,46 +16,7 @@
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
     {% include analytics.html %}
-    <script>
-  // theme switcher logic: from https://techinscribed.com/multiple-themes-using-css-variables/
-  window.onload = function() {
-  // Try to read from local storage, otherwise set to default
-  let currentTheme = localStorage.getItem("mytheme") || "default";
-
-  const themeSelector = document.getElementById("theme-selector");
-
-  // Set the theme that we read from local storage
-  setTheme("default", currentTheme);
-  themeSelector.value = currentTheme;
-
-  // Add change event listener
-  themeSelector.addEventListener("change", function(e) {
-    // Get the user's choice from the event object `e`.
-    const newTheme = e.currentTarget.value;
-
-    // Set the theme
-    setTheme(currentTheme, newTheme);
-  });
-
-  function setTheme(oldTheme, newTheme) {
-    const body = document.getElementsByTagName("html")[0];
-
-    // Remove old theme scope from body's class list
-    // body.classList.remove(oldTheme);
-
-    // // Add new theme scope to body's class list
-    // body.classList.add(newTheme);
-
-    body.setAttribute("data-theme",newTheme);
-
-    // Set it as current theme
-    currentTheme = newTheme;
-
-    // Store the new theme in local storage
-    localStorage.setItem("mytheme", newTheme);
-  }
-};
-    </script>
+    <script src="themeswitcher.js" defer></script>
   </head>
 
   <body>
@@ -74,11 +35,7 @@
           </div>
 
           <nav>
-            Thème : 
-            <select id="theme-selector">
-              <option value="dark">🌒</option>
-              <option value="light">💡</option>
-            </select>
+            <span id="themeSwitcher"></span>
           </nav>
 
         </header>
