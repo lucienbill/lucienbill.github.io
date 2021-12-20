@@ -15,6 +15,7 @@
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
     {% include analytics.html %}
     <script>
+  // theme switcher logic: from https://techinscribed.com/multiple-themes-using-css-variables/
   window.onload = function() {
   // Try to read from local storage, otherwise set to default
   let currentTheme = localStorage.getItem("mytheme") || "default";
