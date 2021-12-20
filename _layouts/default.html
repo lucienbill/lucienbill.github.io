@@ -34,9 +34,7 @@
             <p class="site-description">{{ site.description }}</p>
           </div>
 
-          <nav>
-            <span id="themeSwitcher"></span>
-          </nav>
+          <span id="themeSwitcher"></span>
 
         </header>
       </div>
@@ -49,12 +47,14 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          <a href="{{ site.baseurl }}/">Blog</a> || 
-          <a href="{{ site.baseurl }}/about">A propos</a> || 
-          <a href="https://twitch.tv/billyzetroll" title="twitch.tv/billyzetroll">📺</a> || 
-          <a href="https://www.getrevue.co/profile/billythetroll" title="Ma newsletter sur la tech">📰</a>
+          <nav>
+            <a href="{{ site.baseurl }}/">Blog</a> || 
+            <a href="{{ site.baseurl }}/about">A propos</a> || 
+            <a href="https://twitch.tv/billyzetroll" title="twitch.tv/billyzetroll">📺</a> || 
+            <a href="https://www.getrevue.co/profile/billythetroll" title="Ma newsletter sur la tech">📰</a>
+          </nav>
           <!-- <br> -->
-          <div class="spacer"></div>
+          <!-- <div class="spacer"></div> -->
           {% include svg-icons.html %}
         </footer>
       </div>

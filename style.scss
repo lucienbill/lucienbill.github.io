@@ -26,6 +26,7 @@ body {
   line-height: 2rem;
   color: var(--defaultfontcolor);
   font-family: var(--fonts);
+  transition: var(--themeswitchtransition);
 }
 
 .container {
@@ -34,6 +35,7 @@ body {
   padding: 0 10px;
   width: 100%;
   background: var(--bgcontentcolor);
+  transition: var(--themeswitchtransition);
   box-shadow: 5px 5px 5px var(--shadow);
 
   @media (max-width: 1200px) {
@@ -55,6 +57,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, .site-name {
   color: var(--titlecolor);
+  transition: var(--themeswitchtransition);
   font-weight: bold;
 
   line-height: 3.5rem;
@@ -84,6 +87,7 @@ h3 {
 h4 {
   font-size: 1.1rem;
   color: var(--h4color);
+  transition: var(--themeswitchtransition);
 }
 
 p {
@@ -92,6 +96,7 @@ p {
 
 select {
   background-color: var(--selectboxbgcolor);
+  transition: var(--themeswitchtransition);
 }
 
 a {
@@ -149,6 +154,7 @@ img {
 .date {
   font-style: italic;
   color: var(--h4color);
+  transition: var(--themeswitchtransition);
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -178,6 +184,7 @@ img {
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid var(--mastheadbordercolor);
+  transition: var(--themeswitchtransition);
 
   @include mobile {
     text-align: center;
@@ -216,6 +223,7 @@ img {
 .site-name {
   margin: 0;
   color: var(--defaultfontcolor);
+  transition: var(--themeswitchtransition);
   font-weight: 500;
   font-size: 2rem;
 }
@@ -230,7 +238,7 @@ img {
   }
 }
 
-nav {
+#themeSwitcher {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-size: 1.25rem;
@@ -241,7 +249,13 @@ nav {
     display: block;
     font-size: 1rem;
   }
-  
+
+}
+
+nav{
+  margin-bottom: 0.8rem;
+  margin-top: -0.8rem;
+
   // a {
   //   margin-left: 20px;
   //   color: var(--defaultfontcolor);
@@ -262,6 +276,7 @@ nav {
 .posts > .post {
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--h4color);
+  transition: var(--themeswitchtransition);
 }
 
 .posts > .post:last-child {
@@ -277,6 +292,7 @@ nav {
     color: var(--h4color);
     font-size: 1.125rem;
     font-style: italic;
+    transition: var(--themeswitchtransition);
   }
 
   .comments {
@@ -295,6 +311,7 @@ nav {
   border-top: 1px solid var(--shadow);
   border-bottom: 1px solid var(--shadow);
   background-color: var(--mastheadtextcolor);
+  transition: var(--themeswitchtransition);
 }
 
 footer {
@@ -302,13 +319,10 @@ footer {
   text-align: center;
 }
 
-footer .spacer{
-  height: 0.8rem;
-}
-
 details {
   border: 1px dashed var(--h4color);
   padding: 10px;
+  transition: var(--themeswitchtransition);
 }
 
 details[open] {
