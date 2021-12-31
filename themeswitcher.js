@@ -5,24 +5,22 @@ let currentTheme = localStorage.getItem("data-theme") || "default";
 const lightLogo = "🔆"
 const darkLogo = "🌒"
 
+// set theme on loading page (no transition animation)
 if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && currentTheme=="default") || currentTheme=="dark") {
   // dark mode
-  themeSwitcher.innerText = lightLogo
-  switchTheme(true)
+  switchTheme("dark")
 } else {
   //light mode
-  themeSwitcher.innerText = darkLogo
-  switchTheme(true)
+  switchTheme("light")
 }
+
+// activate theme transition animation
+document.querySelector(':root').style.setProperty('--themeswitchtransition', '0.25s');
 
 themeSwitcher.addEventListener("click", () => {switchTheme()})
 
-function switchTheme(notranstion=false){
-    if (!notranstion){
-        document.querySelector(':root').style.setProperty('--themeswitchtransition', '0.25s');
-    }
-
-    if (themeSwitcher.innerText == lightLogo) {
+function switchTheme(forcetheme="none"){
+    if (themeSwitcher.innerText == lightLogo || forcetheme=="dark") {
         themeSwitcher.innerText = darkLogo
         currentTheme = "dark"
     } else {
