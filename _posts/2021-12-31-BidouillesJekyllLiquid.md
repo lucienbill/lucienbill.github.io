@@ -132,3 +132,10 @@ J'en ai profité pour mettre à jour l'affichage de la date, qui était par déf
   </div>
 ```
 {% endraw %}
+
+## Aller plus loin
+Pour comprendre le fonctionnement de Liquid, j'ai expérimenté sur ma machine...
+Et j'ai aussi et surtout consulté le [manuel](https://jekyllrb.com/docs/liquid/) !
+Si le sujet vous intéresse, ça vous sera utile.
+
+Et si vous avez des questions ou des astuces à partager, contactez-moi (Twitter, LinkedIn, Issue GitHub, ...).
