@@ -37,7 +37,7 @@ Liquid est un moteur de templating : lors de l'étape de compilation, il utilise
 Pour mes 2 problèmes, la solution était donc de modifier certains templates afin de donner les bonnes instructions à Liquid.
 Autrement dit : j'ai codé.
 Ou plutôt : j'ai méta-codé ! 
-Je n'ai pas eu besoin de me plonger dans le code Ruby du moteur de rendu, les fonctions exposées par Liquid ont suffit à obtenir le résultat désiré.
+Je n'ai pas eu besoin de me plonger dans le code Ruby du moteur de rendu, les fonctions exposées par Liquid ont suffi pour obtenir le résultat désiré.
 
 
 ## Mes modifications
@@ -123,7 +123,7 @@ Dans le template de rendu d'articles, j'ai ensuite ajouté le code *"si l'articl
 ```
 {% endraw %}
 
-J'en ai profité pour mettre à jour l'affichage de la date, qui était par défaut en anglais : 
+Puisque j'étais sur le template d'articles de blog, j'en ai profité pour mettre à jour l'affichage de la date (qui était par défaut en anglais) : 
 
 {% raw %}
 ``` liquid
