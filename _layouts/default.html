@@ -27,7 +27,13 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="photo de Lucien Bill"/></a>
+          <a href="{{ site.baseurl }}/" class="site-avatar">
+            <img 
+            src="{{ site.avatar }}" 
+            srcset="{{ site.avatar }}?s=80 80w, {{ site.avatar }}?s=240 240w" 
+            sizes="(min-width:901px) 80px, (max-width:900px) 240px"
+            alt="photo de Lucien Bill"/>
+          </a>
 
           <div class="site-info">
             {% if page.title %}
