@@ -18,6 +18,10 @@ layout: default
   <div class="entry">
     {{ content }}
   </div>
+  <hr>
+  <div class="share">
+    Vous avez aimé cet article ? Partagez-le -> <a id="copyPermalink" title="Cliquez ici pour copier le lien vers cet article." onclick="copyToClipboard()" permalink="{{ site.url }}{{ page.url }}">📄</a>
+  </div>
 
   <div class="date">
     Publié le {{ page.date | date: "%d" }}/{{ page.date | date: "%m" }}/{{ page.date | date: "%Y" }}
