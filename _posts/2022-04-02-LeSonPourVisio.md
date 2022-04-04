@@ -163,6 +163,18 @@ Mais :
 - Avec ce guide, vous devriez être un peu moins perdu
 - Si vous avez besoin d'un coup de main, vous pouvez me contacter sur [Twitter](https://twitter.com/BillyTheTroll) ou [LinkedIn](https://www.linkedin.com/in/lucien-bill-3906b043/)
 
-TODO : pour mieux visualiser, je vais ajouter 3 configurations que je recommande : 
-- les 2 que j'ai
-- une 100% USB
+Pour vous aider un peu plus que cette courte conclusion, voici une liste de configurations que je recommande : 
+- **Starter kit USB** : microphone dynamique **USB** à moins de 50€ + bonette + bras de micro pas cher
+   - Je n'ai pas testé cette configuration, mais en théorie elle devrait plutôt bien fonctionner
+- **Starter kit XLR** : microphone dynamique **XLR** à moins de 50€ + bonette + bras de micro pas cher + table de mixage *the t.mix MicroMix 2 USB*
+   - C'est ce que j'ai installé sur le bureau de ma compagne, et ça fonctionne vraiment très bien. Et on peut régler facilement le gain (ce qui n'est pas toujours le cas avec un micro USB) pour éviter de saturer !
+- **Overkill** : microphone dynamique USB à moins de 50€ + bonette + bras de micro pas cher + DBX 286 S + Steinberg UR 12 MK2
+   - C'est l'équipement que j'utilise sur ma machine personnelle. J'en ai fait l'acquisition pour faire autre chose que de la visio, mais j'étais très content de l'avoir quand je me suis mis au télétravail ! Le rendu est plus précis, plus fin qu'avec le Starter Kit XLR, mais personne d'autre que moi n'entend la différence. Mon conseil : commencez avec le Starter Kit XLR, et si un jour vous souhaitez travailler plus votre son, alors ajoutez-y un DBX 286S
+
+Aussi, si vous partez sur du XLR, achetez de bons câbles.
+En théorie, la conception des câbles XLR minimise les bruits liés aux interférences electromagnétiques.
+En pratique :
+- Prenez-les de la bonne longueur. Trop long, c'est pas pratique, et vous augmentez le risque de capter des interférences
+- Un câble ridiculement fin sera probablement moins robuste qu'un câble plus épais. Mes références sont : 
+    - Longueur 1,50 m : câble Cordial à environ 15€
+    - Longueur 3m : câble Fender à envirion 15€
