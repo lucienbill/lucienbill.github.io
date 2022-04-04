@@ -162,3 +162,7 @@ Le son, c'est quand-même un peu chiant.
 Mais :
 - Avec ce guide, vous devriez être un peu moins perdu
 - Si vous avez besoin d'un coup de main, vous pouvez me contacter sur [Twitter](https://twitter.com/BillyTheTroll) ou [LinkedIn](https://www.linkedin.com/in/lucien-bill-3906b043/)
+
+TODO : pour mieux visualiser, je vais ajouter 3 configurations que je recommande : 
+- les 2 que j'ai
+- une 100% USB
