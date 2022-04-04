@@ -80,9 +80,9 @@ Aussi, avec un système modulaire, je peux faire évoluer petit à petit mon mat
 
 Voici quelques modèles :
 - USB
-  - 40€ : **t.bone MB 88U Dual** : micro dynamique vraiment pas cher, mais pas foufou non plus.
+  - 40€ : **t.bone MB 88U Dual** : micro dynamique vraiment pas cher, devrait faire l'affaire.
   - 50€ : **Razer Seiren Mini** - une alternative au Blue Yeti, qui fait moins de choses mais le fait mieux
-  - 100€ à 200€ : **Eglato Wave** - un micro correct livré avec plein de fonctionnalités intéressantes
+  - 100€ à 200€ : **Elgato Wave** - un micro correct livré avec plein de fonctionnalités intéressantes
 - XLR dynamique
   - ~~30€ : **Samson Q7** - J'en ai 2, le son est d'enfer, c'est pas cher~~ ... et c'est introuvable à ce prix aujourd'hui
   - 25€ : **Superlux PRA D1** - entre 25€ et 50€, on peut trouver ce type de micro, de qualité suffisante pour de la visio ou du podcast
