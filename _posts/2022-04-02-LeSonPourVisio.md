@@ -67,7 +67,7 @@ En bref, les principales familles de micros sont :
 - Les micros dynamiques. On en retrouve sur les plateaux télé et les scènes de concerts : leur sensibilité est faible, ils sont conçus pour capter surtout ce qui est juste devant eux. C'est ce qu'on veut
 
 Notes :
-- Les points ci-dessus sont des généralités, pas des règles absolues. On peut trouver des micros à condensateurs moins sensibles que des dynamiques. Et il existe d'autres types de micro, mais pour aujourd'hui on les met de côté.
+- Les points ci-dessus sont des généralités, pas des règles absolues. On peut trouver des micros à condensateur moins sensibles que des dynamiques. Et il existe d'autres types de micro, mais pour aujourd'hui on les met de côté.
 - La légende raconte que les micros à condensateur ont un meilleur son que les micros dynamiques. Mais la légende est concentrée sur des cas d'usages qui ne sont pas le notre : le cinéma, le chant, etc. De fait, un micro plus sensible capturera mieux les subtilités d'un instrument ou d'une voix. Pour capter votre voix pour une visio, la qualité d'un micro dynamique est amplement suffisante
 - Pour rapprocher le micro de votre bouche, utilisez un pied ou un bras de micro. Si votre micro est léger (exemple : Shure SM 58 : 298g), un modèle premier prix fera l'affaire. S'il est plus lourd (Shure SM 7 B : 766g), investissez dans quelque chose de plus solide
 
@@ -80,9 +80,9 @@ Aussi, avec un système modulaire, je peux faire évoluer petit à petit mon mat
 
 Voici quelques modèles :
 - USB
-  - 40€ : **t.bone MB 88U Dual** : micro dynamique vraiment pas cher, mais pas foufou non plus.
+  - 40€ : **t.bone MB 88U Dual** : micro dynamique vraiment pas cher, devrait faire l'affaire.
   - 50€ : **Razer Seiren Mini** - une alternative au Blue Yeti, qui fait moins de choses mais le fait mieux
-  - 100€ à 200€ : **Eglato Wave** - un micro correct livré avec plein de fonctionnalités intéressantes
+  - 100€ à 200€ : **Elgato Wave** - un micro correct livré avec plein de fonctionnalités intéressantes
 - XLR dynamique
   - ~~30€ : **Samson Q7** - J'en ai 2, le son est d'enfer, c'est pas cher~~ ... et c'est introuvable à ce prix aujourd'hui
   - 25€ : **Superlux PRA D1** - entre 25€ et 50€, on peut trouver ce type de micro, de qualité suffisante pour de la visio ou du podcast
@@ -92,7 +92,7 @@ Voici quelques modèles :
 Quelques notes : 
 - Je ne suis vraiment pas fan du son des micro Behringer et Tonor
 - Je n'ai pas inclus le Shure SM 7 B dans ma liste : il est très cher, très bon... A condition de le brancher au matériel adéquat. Si vous le branchez sur une carte son d'entrée de gamme, elle n'aura pas assez de gain pour en tirer un bon son.
-- _"Le Razer Seirent et le Elgato Wave sont à condensateur, t'as pourtant dit que c'était tout pourri ! Tu nous mens ?"_ -> Non. Les fabricants de micro USB visent la polyvalence : dans ce contexte, un micro sensible est plus adapté, puisqu'il sera plus facile de l'utiliser pour capter un ensemble de personnes. Mais le principe clé reste le même : si vous ne voulez capter que votre voix, rapprochez le micro de votre bouche, et le rapport signal/bruit sera bien meilleur.
+- _"Le Razer Seiren et le Elgato Wave sont à condensateur, t'as pourtant dit que c'était tout pourri ! Tu nous mens ?"_ -> Non. Les fabricants de micro USB visent la polyvalence : dans ce contexte, un micro sensible est plus adapté, puisqu'il sera plus facile de l'utiliser pour capter un ensemble de personnes. Mais le principe clé reste le même : si vous ne voulez capter que votre voix, rapprochez le micro de votre bouche, et le rapport signal/bruit sera bien meilleur.
   
 #### Un filtre anti-pop, c'est bien ? 
 Oui et non.
@@ -162,3 +162,19 @@ Le son, c'est quand-même un peu chiant.
 Mais :
 - Avec ce guide, vous devriez être un peu moins perdu
 - Si vous avez besoin d'un coup de main, vous pouvez me contacter sur [Twitter](https://twitter.com/BillyTheTroll) ou [LinkedIn](https://www.linkedin.com/in/lucien-bill-3906b043/)
+
+Pour vous aider un peu plus que cette courte conclusion, voici une liste de configurations que je recommande : 
+- **Starter kit USB** : microphone dynamique **USB** à moins de 50€ + bonette + bras de micro pas cher
+   - Je n'ai pas testé cette configuration, mais en théorie elle devrait plutôt bien fonctionner
+- **Starter kit XLR** : microphone dynamique **XLR** à moins de 50€ + bonette + bras de micro pas cher + table de mixage *the t.mix MicroMix 2 USB*
+   - C'est ce que j'ai installé sur le bureau de ma compagne, et ça fonctionne vraiment très bien. Et on peut régler facilement le gain (ce qui n'est pas toujours le cas avec un micro USB) pour éviter de saturer !
+- **Overkill** : microphone dynamique USB à moins de 50€ + bonette + bras de micro pas cher + *DBX 286 S* + *Steinberg UR 12 MK2*
+   - C'est l'équipement que j'utilise sur ma machine personnelle. J'en ai fait l'acquisition pour faire autre chose que de la visio, mais j'étais très content de l'avoir quand je me suis mis au télétravail ! Le rendu est plus précis, plus fin qu'avec le Starter Kit XLR, mais personne d'autre que moi n'entend la différence. Mon conseil : commencez avec le Starter Kit XLR, et si un jour vous souhaitez travailler plus votre son, alors ajoutez-y un DBX 286S
+
+Aussi, si vous partez sur du XLR, achetez de bons câbles.
+En théorie, la conception des câbles XLR minimise les bruits liés aux interférences electromagnétiques.
+En pratique :
+- Prenez-les de la bonne longueur. Trop long, c'est pas pratique, et vous augmentez le risque de capter des interférences
+- Un câble ridiculement fin sera probablement moins robuste qu'un câble plus épais. Mes références sont : 
+    - Longueur 1,50 m : câble Cordial à environ 15€
+    - Longueur 3m : câble Fender à envirion 15€
