@@ -14,6 +14,7 @@
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
     {% include analytics.html %}
+    <script src="{{ site.baseurl }}/linkRandomColor.js" defer></script>
     <script src="{{ site.baseurl }}/themeswitcher.js" defer></script>
     {% if page.layout == "post" %}
     <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js" defer></script>
@@ -43,7 +44,7 @@
             <p class="site-description">{{ site.description }}</p>
           </div>
 
-          <span id="themeSwitcher"></span>
+          <a id="themeSwitcher" class="no_underscore"></a>
 
         </header>
       </div>

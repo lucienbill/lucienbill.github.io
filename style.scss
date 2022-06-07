@@ -17,6 +17,9 @@ html {
   font-size: 100%;
   background: var(--bgpagecolor);
   background-image: url("images/bg-min.webp");
+  // background: rgb(2,0,36);
+  // background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%); 
+  // TODO : gradient = aléatoire parmi un array
   // background-attachment: fixed;
 }
 
@@ -37,6 +40,7 @@ body {
   background: var(--bgcontentcolor);
   transition: var(--themeswitchtransition);
   box-shadow: 5px 5px 5px var(--shadow);
+  border-radius: 15px;
 
   @media (max-width: 1200px) {
     width: 90%;
@@ -106,7 +110,7 @@ select {
 
 a {
   color: var(--linkcolor);
-  text-decoration: none;
+  // text-decoration: none;
   &:hover, &:active {
      text-shadow: 2px 2px 5px var(--shadow);
      border-bottom: 2px solid;
@@ -116,6 +120,15 @@ a {
 a img:hover {
     box-shadow: 4px 4px 8px var(--shadow);
 }
+
+h1 a, h2 a, h3 a, h4 a, nav a, .site-name a {
+  text-decoration: none;
+
+  &:hover, &:active {
+    text-decoration: none;
+  }
+}
+
 
 ul, ol {
   margin: 1rem 0;
@@ -183,11 +196,11 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 5px;
 }
 
 .masthead {
-  padding: 20px 0;
+  padding: 10px 0;
   border-bottom: 1px solid var(--mastheadbordercolor);
   transition: var(--themeswitchtransition);
 
@@ -247,6 +260,12 @@ img {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-size: 1.25rem;
+  border-bottom: 0px solid;
+
+  &:hover, &:active {
+    border-bottom: 0px solid;
+    cursor: pointer;
+ }
   
   @include mobile {
     float: none;
@@ -307,6 +326,7 @@ nav{
   .read-more {
     text-transform: uppercase;
     font-size: 0.9rem;
+    text-decoration: none;
   }
 
 }
@@ -321,7 +341,7 @@ hr {
   margin-top: 50px;
   border-top: 1px solid var(--shadow);
   border-bottom: 1px solid var(--shadow);
-  background-color: var(--mastheadtextcolor);
+  // background-color: var(--mastheadtextcolor);
   transition: var(--themeswitchtransition);
 }
 

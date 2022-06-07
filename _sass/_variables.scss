@@ -21,9 +21,9 @@
 
 @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme=light]) {
-      color-scheme: dark;
-    --bgpagecolor: #333;
-    --bgcontentcolor: #222;
+    color-scheme: dark;
+    --bgpagecolor: #222;
+    --bgcontentcolor: #232323;
     --titlecolor: #bbb;
     --linkcolor: #d93b00;
     --defaultfontcolor: #bbb;
@@ -38,8 +38,8 @@
 
 [data-theme=dark] {
   color-scheme: dark;
-  --bgpagecolor: #333;
-  --bgcontentcolor: #222;
+  --bgpagecolor: #222;
+  --bgcontentcolor: #232323;
   --titlecolor: #bbb;
   --linkcolor: #d93b00;
   --defaultfontcolor: #bbb;
@@ -55,14 +55,14 @@
 :root:not([data-theme=dark]) {
   color-scheme: light;
   --bgpagecolor: #666;
-  --bgcontentcolor: #F5F5F6;
+  --bgcontentcolor: #ddd;
   --titlecolor: #222;
   --linkcolor: orangered;
   --defaultfontcolor: #333;
   --h4color: #666;
   --shadow: #666;
-  --mastheadtextcolor: #eee;
-  --mastheadbordercolor: #eee;
+  --mastheadtextcolor: #ddd;
+  --mastheadbordercolor: #ddd;
   --bgimgtransparency: 0;
   --selectboxbgcolor:#ccc;
 }
