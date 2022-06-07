@@ -114,7 +114,7 @@ C'est à ce moment que se pose la question du partitionnement des données, car 
 ## J'ai mal au crâne
 C'est normal.
 J'arrête là, mais pour aller plus loin voici un peu de lecture : 
-1. Pour démystifier le partitionnement des données, lisez [#9 System Design: Sharding](https://devblossoms.hashnode.dev/9-system-design-sharding) par Aishwarya Ravichandran.
+1. Pour démystifier le partitionnement des données, lisez [#9 System Design: Sharding](https://devblossoms.hashnode.dev/9-system-design-sharding) par Aishwarya Ravichandran
 2. Lisez ce comparatif SQL vs NoSQL écrit par [MongoDB](https://www.mongodb.com/compare/relational-vs-non-relational-databases)
 3. Lisez théorème CAP d'après [CouchDB](https://docs.couchdb.org/en/3.2.2/intro/consistency.html)
 4. Lisez théorème CAP d'après [IBM](https://www.ibm.com/fr-fr/cloud/learn/cap-theorem)
