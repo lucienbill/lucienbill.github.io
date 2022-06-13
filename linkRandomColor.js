@@ -1,4 +1,23 @@
 const disclaimer = "I did not create this ; Origin = https://cassidoo.co/script.js"
+const colorsLight =
+     [
+        // "DarkRed ", "Chocolate", //R
+        // "SeaGreen", //G
+        // "SlateBlue", "SteelBlue" //B
+        "#bf415f", "#d44652", //Red
+        "#93407c", //purple
+        "#615bac", "#433db0" //Blue
+    ]
+const colorsDark = 
+     [
+        //  "IndianRed ", "DarkGoldenRod", //R
+        //  "MediumSeaGreen", //G
+        //  "DarkCyan", "MediumPurple" //B
+        "#9c6572", "#891f4f", //Red
+        "#85498c", //purple
+        "#4e6b63", "#326875" //Blue
+     ]
+
 
 function setRandomLinkColor() {
     let currentTheme = localStorage.getItem("data-theme") || "default";
@@ -8,27 +27,11 @@ function setRandomLinkColor() {
 }
 
 function getRandomColor(theme="light") {
-    const allColors = { // R G B
-        light : 
-         [
-            "DarkRed ", "Chocolate",
-            "SeaGreen",
-            "SlateBlue", "SteelBlue"
-        ],
-         dark : 
-         [
-             "IndianRed ", "DarkGoldenRod",
-             "MediumSeaGreen",
-             "DarkCyan", "MediumPurple"
-         ],
-    } 
-    let colors = []
     if (theme == "light"){
-        colors = allColors.light
+        return colorsLight[Math.floor(Math.random() * colorsLight.length)];
     } else {
-        colors = allColors.dark
+        return colorsDark[Math.floor(Math.random() * colorsDark.length)];
     }
-    return colors[Math.floor(Math.random() * colors.length)];
 }
 
 function setColorHoverListener() {
