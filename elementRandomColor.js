@@ -19,9 +19,9 @@ const colorsDark =
      ]
 
 
-function setRandomLinkColor() {
+function setRandomElementColor() {
     let currentTheme = localStorage.getItem("data-theme") || "default";
-    Array.from(document.getElementsByTagName("a")).forEach((e) => {
+    Array.from(document.querySelectorAll("a, h1, h2, h3, h4, h5, strong")).forEach((e) => {
         e.style.color = getRandomColor(currentTheme);
     });
 }
@@ -36,9 +36,9 @@ function getRandomColor(theme="light") {
 
 function setColorHoverListener() {
     Array.from(document.querySelectorAll("a, button")).forEach((e) => {
-    e.addEventListener("mouseover", setRandomLinkColor);
+    e.addEventListener("mouseover", setRandomElementColor);
 });
 }
 
-setRandomLinkColor();
+setRandomElementColor();
 setColorHoverListener();

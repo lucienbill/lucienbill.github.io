@@ -29,5 +29,5 @@ function switchTheme(forcetheme="none"){
     }
     page.setAttribute("data-theme", currentTheme);
     localStorage.setItem("data-theme", currentTheme);
-    setRandomLinkColor();
+    setRandomElementColor();
 }
