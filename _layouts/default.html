@@ -14,13 +14,14 @@
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
     {% include analytics.html %}
-    <script src="{{ site.baseurl }}/elementRandomColor.js" defer></script>
     <script src="{{ site.baseurl }}/themeswitcher.js" defer></script>
     {% if page.layout == "post" %}
     <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js" defer></script>
     <script src="{{ site.baseurl }}/showAnchor.js" defer></script>
     <script src="{{ site.baseurl }}/copypermalink.js" defer></script>
+    <script src="{{ site.baseurl }}/postSummaryGenerator.js" defer></script>
     {% endif %}
+    <script src="{{ site.baseurl }}/elementRandomColor.js" defer></script>
   </head>
 
   <body>
