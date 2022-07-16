@@ -1,21 +1,15 @@
 const disclaimer = "I did not create this ; Origin = https://cassidoo.co/script.js"
 const colorsLight =
      [
-        // "DarkRed ", "Chocolate", //R
-        // "SeaGreen", //G
-        // "SlateBlue", "SteelBlue" //B
         "#bf415f", "#d44652", //Red
         "#93407c", //purple
         "#615bac", "#433db0" //Blue
     ]
 const colorsDark = 
      [
-        //  "IndianRed ", "DarkGoldenRod", //R
-        //  "MediumSeaGreen", //G
-        //  "DarkCyan", "MediumPurple" //B
-        "#9c6572", "#891f4f", //Red
-        "#85498c", //purple
-        "#4e6b63", "#326875" //Blue
+        "#b48b96", "#aeb48b",
+        "#b48ba9",
+        "#8e8bb4", "#8bb4a8"
      ]
 
 
