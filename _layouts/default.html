@@ -45,7 +45,14 @@
             <p class="site-description">{{ site.description }}</p>
           </div>
 
-          <a id="themeSwitcher" class="no_underscore"></a>
+          <nav>
+            <a id="themeSwitcher" class="no_underscore" title="changer de thème (sombre/clair)"></a> ||
+            <a href="{{ site.baseurl }}/" title="Mes articles de blog">Blog</a> || 
+            <a href="{{ site.baseurl }}/about" title="Pour en savoir plus sur moi">A propos</a> || 
+            <a href="https://twitch.tv/billyzetroll" title="twitch.tv/billyzetroll">📺</a> || 
+            <a href="https://www.getrevue.co/profile/billythetroll" title="Ma newsletter sur la tech">📰</a> ||
+            <a href="https://counter.dev/dashboard.html?user=BillyTheTroll&amp;token=8%2FMpwBhCIS8zWc0R" title="Données des visites de mes sites">📊</a>
+          </nav>
 
         </header>
       </div>
@@ -58,13 +65,6 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a> || 
-            <a href="{{ site.baseurl }}/about">A propos</a> || 
-            <a href="https://twitch.tv/billyzetroll" title="twitch.tv/billyzetroll">📺</a> || 
-            <a href="https://www.getrevue.co/profile/billythetroll" title="Ma newsletter sur la tech">📰</a> ||
-            <a href="https://counter.dev/dashboard.html?user=BillyTheTroll&amp;token=8%2FMpwBhCIS8zWc0R" title="Données des visites de mes sites">📊</a>
-          </nav>
           <!-- <br> -->
           <!-- <div class="spacer"></div> -->
           {% include svg-icons.html %}

@@ -55,9 +55,9 @@ body {
   }
 }
 
-.wrapper-footer .container {
-    box-shadow: none;
-}
+// .wrapper-footer .container {
+//     box-shadow: none;
+// }
 
 h1, h2, h3, h4, h5, h6, .site-name {
   color: var(--titlecolor);
@@ -257,30 +257,38 @@ img {
   }
 }
 
-#themeSwitcher {
+// #themeSwitcher {
+//   float: right;
+//   margin-top: 23px; // @TODO: Vertically middle align
+//   font-size: 1.25rem;
+//   border-bottom: 0px solid;
+
+//   &:hover, &:active {
+//     border-bottom: 0px solid;
+//     cursor: pointer;
+//  }
+  
+//   @include mobile {
+//     float: none;
+//     margin-top: 9px;
+//     display: block;
+//     font-size: 1rem;
+//   }
+
+// }
+
+nav{
+  // margin-bottom: 0.8rem;
+  // margin-top: -0.8rem;
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-size: 1.25rem;
-  border-bottom: 0px solid;
 
-  &:hover, &:active {
-    border-bottom: 0px solid;
-    cursor: pointer;
- }
-  
   @include mobile {
     float: none;
     margin-top: 9px;
     display: block;
-    font-size: 1rem;
+    font-size: 16px;
   }
-
-}
-
-nav{
-  margin-bottom: 0.8rem;
-  margin-top: -0.8rem;
-
   // a {
   //   margin-left: 20px;
   //   color: var(--defaultfontcolor);
@@ -339,9 +347,9 @@ hr {
 
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid var(--shadow);
-  border-bottom: 1px solid var(--shadow);
+  margin-top: 15px;
+  // border-top: 1px solid var(--shadow);
+  // border-bottom: 1px solid var(--shadow);
   // background-color: var(--mastheadtextcolor);
   transition: var(--themeswitchtransition);
 }

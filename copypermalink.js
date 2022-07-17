@@ -6,7 +6,7 @@ var timerID = null
     navigator.clipboard.writeText(copyLink.getAttribute("permalink"));
 
     // Notify the user that "copy" is done
-    copyLink.innerHTML = "✔ (copié)";
+    copyLink.innerHTML = "☑️";
 
     // Cancel the timer if it exists
     if (timerID !== null)
@@ -19,6 +19,6 @@ var timerID = null
         () => {
           copyLink.innerHTML = "📄";
         }
-        , 5000
+        , 2000
     )
   }
