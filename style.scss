@@ -17,10 +17,6 @@ html {
   font-size: 100%;
   background: var(--bgpagecolor);
   background-image: url("images/bg-min.webp");
-  // background: rgb(2,0,36);
-  // background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%); 
-  // TODO : gradient = aléatoire parmi un array
-  // background-attachment: fixed;
 }
 
 body {
@@ -29,7 +25,7 @@ body {
   line-height: 2rem;
   color: var(--defaultfontcolor);
   font-family: var(--fonts);
-  transition: var(--themeswitchtransition);
+  transition: var(--themeswitchtransition);  
 }
 
 .container {
@@ -371,6 +367,10 @@ details summary{
 
 details[open] {
   padding-bottom: 0px;
+}
+
+.entry {
+  padding-bottom: 5px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
