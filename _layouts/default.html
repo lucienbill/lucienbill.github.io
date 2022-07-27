@@ -19,6 +19,8 @@
     <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js" defer></script>
     <script src="{{ site.baseurl }}/showAnchor.js" defer></script>
     <script src="{{ site.baseurl }}/copypermalink.js" defer></script>
+    {% endif %}
+    {% if page.layout == "post" %}
     <script src="{{ site.baseurl }}/postSummaryGenerator.js" defer></script>
     {% endif %}
     <script src="{{ site.baseurl }}/elementRandomColor.js" defer></script>
