@@ -15,7 +15,7 @@
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now --> 
     {% include analytics.html %}
     <script src="{{ site.baseurl }}/themeswitcher.js" defer></script>
-    {% if page.layout == "post" %}
+    {% if page.layout == "post" or page.layout == "page" %}
     <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js" defer></script>
     <script src="{{ site.baseurl }}/showAnchor.js" defer></script>
     <script src="{{ site.baseurl }}/copypermalink.js" defer></script>
