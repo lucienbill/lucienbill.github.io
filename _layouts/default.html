@@ -24,6 +24,9 @@
     <script src="{{ site.baseurl }}/postSummaryGenerator.js" defer></script>
     {% endif %}
     <script src="{{ site.baseurl }}/elementRandomColor.js" defer></script>
+    {% if page.layout == "dynamicpage" %}
+    <script src="{{ site.baseurl }}/getRandomNewsSnippet.js" defer></script>
+    {% endif %}
   </head>
 
   <body>
