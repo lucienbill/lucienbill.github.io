@@ -118,7 +118,7 @@ a img:hover {
     box-shadow: 4px 4px 8px var(--shadow);
 }
 
-h1 a, h2 a, h3 a, h4 a, nav a, .site-name a, .next, .previous {
+h1 a, h2 a, nav a, .site-name a, .next, .previous {
   text-decoration: none;
 
   &:hover, &:active {
@@ -126,6 +126,16 @@ h1 a, h2 a, h3 a, h4 a, nav a, .site-name a, .next, .previous {
   }
 }
 
+.entry h2 a::before {
+  content: "🔗➡ ";
+}
+
+.entry h2 a{
+  text-decoration: underline;
+    &:hover, &:active {
+    text-decoration: none;
+  }
+}
 
 ul, ol {
   margin: 1rem 0;
