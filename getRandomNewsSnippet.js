@@ -34,7 +34,7 @@ async function displaySnippet(fetchkey=null){
     let footer = ""
     if (key != null){
         footer = `<hr><p>Cet extrait vous plait ? <a title="lien vers cet\
- extrait" href="${location.toString().split("?")[0]}?key=${key}" target:\
+ extrait" href="${location.toString().split("?")[0].replace('#', '')}?key=${key}" target:\
  blank>Partagez-le</a> !<br>Vous pouvez aussi cliquer <a onclick=\
  'displaySnippet()' title='afficher un autre extrait' href='#'>ici</a> pour\
   afficher un autre extrait.<p>`
