@@ -126,8 +126,8 @@ h1 a, h2 a, nav a, .site-name a, .next, .previous {
   }
 }
 
-.entry h2 a::before {
-  content: "🔗➡ ";
+#dynamicContent h2 a::before {
+    content: "🔗➡ ";
 }
 
 .entry h2 a{
