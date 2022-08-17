@@ -31,30 +31,45 @@ Vous pouvez me retrouver sur :
 - [Twitter](https://twitter.com/BillyTheTroll)
 - [Linkedin](https://www.linkedin.com/in/lucien-bill-3906b043/)
 
+### Bonus : 
+Si vous voulez me faire plaisir, vous pouvez toujours m'aider à étoffer ma [collection de vinyles](https://docs.google.com/spreadsheets/d/1qVlzgiIQIhZKqyDke20DyCsFKQOKxEn86y7QqmQWfGg/edit?usp=sharing) 🤩.
+
 -----
-## About
-I started to work in computer science because I just needed a job, I turned it into a career by choice.
+<div lang='en'>
+<h2 id="about">About</h2>
+<p>I started to work in computer science because I just needed a job, I turned it into a career by choice.</p>
 
-In short:
+<p>In short:</p>
 
-- I test,
-- I code,
-- I help groups of people to become efficient teams.
+<ul>
+  <li>I test,</li>
+  <li>I code,</li>
+  <li>I help groups of people to become efficient teams.</li>
+</ul>
 
-I thrive to work less to achieve more: this is what drives me to automate things.
-This, and the "fun factor": I actually enjoy coding!
+<p>I thrive to work less to achieve more: this is what drives me to automate things.
+This, and the “fun factor”: I actually enjoy coding!</p>
 
-I started as a dev in a "Waterfall" context.
-Fixing my bugs several weeks after delivering my pieces of software was something I never looked forward to, so I started testing my code. Precisely: I put the effort into testing it well and early, to avoid spending too much energy correcting it later.
+<p>I started as a dev in a “Waterfall” context.
+Fixing my bugs several weeks after delivering my pieces of software was something I never looked forward to, so I started testing my code. Precisely: I put the effort into testing it well and early, to avoid spending too much energy correcting it later.</p>
 
-From a «developer who tests», I then became a «tester who codes».
-This designation is a good fit for what I do: automation is a tool, and to me the purpose it serves is more important than the tool itself.
+<p>From a «developer who tests», I then became a «tester who codes».
+This designation is a good fit for what I do: automation is a tool, and to me the purpose it serves is more important than the tool itself.</p>
 
-Beyond these technical aspects, I try daily to help my colleagues, to simplify the flow of information, and to facilitate the proper functioning of human groups.
+<p>Beyond these technical aspects, I try daily to help my colleagues, to simplify the flow of information, and to facilitate the proper functioning of human groups.</p>
 
-You can reach me on:
-- [My newsletter](https://www.getrevue.co/profile/billythetroll) about the tech world (in French)
-- [Github](https://github.com/lucienbill)
-    - I am the proud creator of [this website](https://getanamewithapun.pages.dev/) (a very useful tool if you need to get a name with a pun)
-- [Twitter](https://twitter.com/BillyTheTroll)
-- [Linkedin](https://www.linkedin.com/in/lucien-bill-3906b043/)
+<p>You can reach me on:</p>
+<ul>
+  <li><a href="https://www.getrevue.co/profile/billythetroll">My newsletter</a> about the tech world (in French)</li>
+  <li><a href="https://github.com/lucienbill">Github</a>
+    <ul>
+      <li>I am the proud creator of <a href="https://getanamewithapun.pages.dev/">this website</a> (a very useful tool if you need to get a name with a pun)</li>
+    </ul>
+  </li>
+  <li><a href="https://twitter.com/BillyTheTroll">Twitter</a></li>
+  <li><a href="https://www.linkedin.com/in/lucien-bill-3906b043/">Linkedin</a></li>
+</ul>
+
+<h3>Extra:</h3>
+<p>If you’d like to make me happy, you can always help me expand my <a href="https://docs.google.com/spreadsheets/d/1qVlzgiIQIhZKqyDke20DyCsFKQOKxEn86y7QqmQWfGg/edit?usp=sharing">vinyl records collection</a> 🤩.</p>
+</div>
