@@ -16,11 +16,9 @@
 html {
   font-size: 100%;
   background: var(--bgpagecolor);
-  background-image: url("images/bg-min.webp");
 }
 
 body {
-  background-color: rgba(0,0,0,var(--bgimgtransparency));
   font-size: 1.125rem ;
   line-height: 2rem;
   color: var(--defaultfontcolor);

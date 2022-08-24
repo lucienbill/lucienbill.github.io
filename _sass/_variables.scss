@@ -5,7 +5,8 @@
 
 // css variables
 :root { //default = dark
-  --bgpagecolor: #9E8D9E;
+  --bgpagecolor: #2b272b;
+  background-image: url("images/bg-min-dark.webp");
   --bgcontentcolor: #282828;
   --titlecolor: #bbb;
   --linkcolor: #d93b00;
@@ -13,7 +14,6 @@
   --h4color: #999;
   --shadow: #666;
   --mastheadtextcolor: #444;
-  --bgimgtransparency: 0.5;
   --selectboxbgcolor:#555;
   --fonts: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;;
   --themeswitchtransition:0s;
@@ -22,7 +22,8 @@
 @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme=light]) {
     color-scheme: dark;
-    --bgpagecolor: #9E8D9E;
+    --bgpagecolor: #2b272b;
+    background-image: url("images/bg-min-dark.webp");
     --bgcontentcolor: #282828;
     --titlecolor: #bbb;
     --linkcolor: #d93b00;
@@ -31,14 +32,14 @@
     --shadow: #000;
     --mastheadtextcolor: #444;
     --mastheadbordercolor: #222;
-    --bgimgtransparency: 0.5;
     --selectboxbgcolor:#555;
   }
 }
 
 [data-theme=dark] {
   color-scheme: dark;
-  --bgpagecolor: #9E8D9E;
+  --bgpagecolor: #2b272b;
+  background-image: url("images/bg-min-dark.webp");
   --bgcontentcolor: #282828;
   --titlecolor: #bbb;
   --linkcolor: #d93b00;
@@ -47,7 +48,6 @@
   --shadow: #000;
   --mastheadtextcolor: #444;
   --mastheadbordercolor: #222;
-  --bgimgtransparency: 0.5;
   --selectboxbgcolor:#555;
 }
 
@@ -55,6 +55,7 @@
 :root:not([data-theme=dark]) {
   color-scheme: light;
   --bgpagecolor: #9E8D9E;
+  background-image: url("images/bg-min.webp");
   --bgcontentcolor: #ddd;
   --titlecolor: #222;
   --linkcolor: orangered;
@@ -63,7 +64,6 @@
   --shadow: #666;
   --mastheadtextcolor: #ddd;
   --mastheadbordercolor: #ddd;
-  --bgimgtransparency: 0;
   --selectboxbgcolor:#ccc;
 }
 
