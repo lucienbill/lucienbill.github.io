@@ -41,8 +41,8 @@ cliquez <a href="https://www.getrevue.co/profile/billythetroll" title=\
             const newUrl = `${location.toString().replace("#", "").split("?")[0]}?key=${key}`
             footer = `<hr><p>Cet extrait vous plait ? <a title="lien vers cet \
 extrait" href="${newUrl}" target:\
-blank>Partagez-le</a> !<br>Vous pouvez aussi cliquer <a onclick=\
-'displaySnippet()' title='afficher un autre extrait (aléatoire)' href='#'>ici</a> pour \
+blank>Partagez-le</a> !<br>Vous pouvez aussi cliquer <button onclick=\
+'displaySnippet()' title='afficher un autre extrait (aléatoire)' class='specialButton'>ici</button> pour \
 afficher un autre extrait.<p>${subscribe}`
         }
         document.getElementById("dynamicContent").innerHTML = pageInfo + await response.json() + footer

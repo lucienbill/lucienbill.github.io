@@ -15,7 +15,7 @@ const colorsDark =
 
 function setRandomElementColor() {
     let currentTheme = localStorage.getItem("data-theme") || "default";
-    Array.from(document.querySelectorAll("a, h1, h2, h3, h4, h5, strong")).forEach((e) => {
+    Array.from(document.querySelectorAll("a, h1, h2, h3, h4, h5, strong, .specialButton")).forEach((e) => {
         e.style.color = getRandomColor(currentTheme);
     });
 }
