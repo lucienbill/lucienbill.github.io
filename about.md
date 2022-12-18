@@ -25,7 +25,7 @@ Cette appellation me semble adéquate : l’automatisation est un outil, et je p
 Au-delà de ces aspects techniques, j’essaie au quotidien d’aider mes collègues, de simplifier la circulation des informations, et de faciliter le bon fonctionnement des groupes d’humains.
 
 Vous pouvez me retrouver sur : 
-- [Ma newsletter](https://www.getrevue.co/profile/billythetroll) pour suivre les actualités du monde la tech
+- [Ma newsletter](https://tinyletter.com/lucienbill) pour suivre les actualités du monde la tech
 - [Github](https://github.com/lucienbill)
     - Je suis très fier d'avoir créé [ce site](https://nomavecjeudemotsdebile.pages.dev/) (un outil d'une grande utilité si vous avez besoin d'un nom avec un jeu de mots)
 - [Twitter](https://twitter.com/BillyTheTroll)
@@ -60,7 +60,7 @@ This designation is a good fit for what I do: automation is a tool, and to me th
 
 <p>You can reach me on:</p>
 <ul>
-  <li><a href="https://www.getrevue.co/profile/billythetroll">My newsletter</a> about the tech world (in French)</li>
+  <li><a href="https://tinyletter.com/lucienbill">My newsletter</a> about the tech world (in French)</li>
   <li><a href="https://github.com/lucienbill">Github</a>
     <ul>
       <li>I am the proud creator of <a href="https://getanamewithapun.pages.dev/">this website</a> (a very useful tool if you need to get a name with a pun)</li>
