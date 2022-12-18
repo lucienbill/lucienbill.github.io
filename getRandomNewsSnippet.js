@@ -50,8 +50,8 @@ afficher un autre extrait.<p>${subscribe}`
     } else {
         let message = ""
         const title = `<h2>Erreur ${response.status}</h2>`
-        const footer = `<hr><p>Retentez votre chance en cliquant <a onclick=\
-        'displaySnippet()' title='afficher un autre extrait (aléatoire)' href='#'>ici</a>.<p>${subscribe}`
+        const footer = `<hr><p>Retentez votre chance en cliquant <button onclick=\
+'displaySnippet()' title='afficher un autre extrait (aléatoire)' class='specialButton'>ici</button>.<p>${subscribe}`
         if(response.status == 404){
             message = `<p>Donnée non trouvée (il n'existe pas d'entrée pour la clé ${fetchkey}).<p>`
         } else {
