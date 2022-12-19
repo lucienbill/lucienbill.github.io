@@ -18,6 +18,7 @@ function findGetParameter(parameterName) {
 }
 
 async function displaySnippet(fetchkey=null){
+    document.getElementById("dynamicContent").innerHTML = "Chargement en cours ⌛"
     // Display an element from the database: a specific key, or random
     const subscribe = '<p>Pour retrouver ma newsletter dans son intégralité, \
 cliquez <a href="https://tinyletter.com/lucienbill" title=\
@@ -50,7 +51,7 @@ afficher un autre extrait.<p>${subscribe}`
     } else {
         let message = ""
         const title = `<h2>Erreur ${response.status}</h2>`
-        const footer = `<hr><p>Retentez votre chance en cliquant <button onclick=\
+        const footer = `<br><p>Retentez votre chance en cliquant <button onclick=\
 'displaySnippet()' title='afficher un autre extrait (aléatoire)' class='specialButton'>ici</button>.<p>${subscribe}`
         if(response.status == 404){
             message = `<p>Donnée non trouvée (il n'existe pas d'entrée pour la clé ${fetchkey}).<p>`
