@@ -29,6 +29,7 @@ Vous pouvez me retrouver sur :
 - [Github](https://github.com/lucienbill)
     - Je suis très fier d'avoir créé [ce site](https://nomavecjeudemotsdebile.pages.dev/) (un outil d'une grande utilité si vous avez besoin d'un nom avec un jeu de mots)
 - [Twitter](https://twitter.com/BillyTheTroll)
+- [Mastodon](https://mastodon.comwork.io/@billythetroll)
 - [Linkedin](https://www.linkedin.com/in/lucien-bill-3906b043/)
 
 ### Bonus : 
@@ -67,6 +68,7 @@ This designation is a good fit for what I do: automation is a tool, and to me th
     </ul>
   </li>
   <li><a href="https://twitter.com/BillyTheTroll">Twitter</a></li>
+  <li><a href="https://mastodon.comwork.io/@billythetroll">Mastodon</a></li>
   <li><a href="https://www.linkedin.com/in/lucien-bill-3906b043/">Linkedin</a></li>
 </ul>
 
