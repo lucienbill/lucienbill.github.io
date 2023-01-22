@@ -21,8 +21,10 @@
 title: Lucien Bill (blog)
 name: Lucien Bill (blog)
 email: lucien.bill@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Le blog de Lucien, bidouilleur de code et testeur logiciel.
+description-fr: >- # this means to ignore newlines until "baseurl:"
+  Salut, et bienvenue sur mon site! Je suis Lucien, bidouilleur de code et testeur de logiciels. Pour en savoir plus, explorez les liens ci-dessous
+description-en: >- # this means to ignore newlines until "baseurl:"
+  Hi there, welcome to my website! I'm Lucien, code tinkerer and software tester. Please feel free to click and explore.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lucienbill.fr" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: billyzetroll

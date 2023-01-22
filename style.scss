@@ -284,13 +284,14 @@ img {
 nav{
   // margin-bottom: 0.8rem;
   // margin-top: -0.8rem;
-  float: right;
+  float: left;
   margin-top: 23px; // @TODO: Vertically middle align
 
   @include mobile {
-    float: none;
+    // float: left;
+    text-align: left;
     margin-top: 9px;
-    display: block;
+    // display: block;
     font-size: 16px;
   }
   // a {

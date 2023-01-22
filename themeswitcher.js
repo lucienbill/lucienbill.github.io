@@ -1,5 +1,6 @@
 // theme switcher
 const themeSwitcher = document.getElementById("themeSwitcher")
+const themeSwitcherIcon = document.getElementById("themeSwitcherIcon")
 const page = document.getElementsByTagName("html")[0];
 let currentTheme = localStorage.getItem("data-theme") || "default";
 const lightLogo = "🔆"
@@ -20,11 +21,11 @@ document.querySelector(':root').style.setProperty('--themeswitchtransition', '0.
 themeSwitcher.addEventListener("click", () => {switchTheme()})
 
 function switchTheme(forcetheme="none"){
-    if (themeSwitcher.innerText == lightLogo || forcetheme=="dark") {
-        themeSwitcher.innerText = darkLogo
+    if (themeSwitcherIcon.innerText == lightLogo || forcetheme=="dark") {
+        themeSwitcherIcon.innerText = darkLogo
         currentTheme = "dark"
     } else {
-        themeSwitcher.innerText = lightLogo
+        themeSwitcherIcon.innerText = lightLogo
         currentTheme = "light"
     }
     page.setAttribute("data-theme", currentTheme);
