@@ -37,35 +37,28 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a rel="me" href="{{ site.baseurl }}" class="site-avatar">
-            <img 
-            src="{{ site.avatar }}" 
-            srcset="{{ site.avatar }}?s=80 80w, {{ site.avatar }}?s=240 240w" 
-            sizes="(min-width:901px) 80px, (max-width:900px) 240px"
-            alt="photo de Lucien Bill"/>
-          </a>
-
-          <div class="site-info">
+          <div>
             {% if page.title %}
             <div class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></div>
             {% else %}
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             {% endif %}
+          </div>
+
+          <div class="site-info">
             <p class="site-description" lang="fr">{{ site.description-fr }}</p>
             <hr>
             <p class="site-description" lang="en-GB">{{ site.description-en }}</p>
             <hr>
           </div>
           <nav>
-            <ul>
-              <li><a id="themeSwitcher"><span id="themeSwitcherIcon"></span> Changer de thème (sombre/clair)</a></li>
-              <li><a href="{{ site.baseurl }}/">📖 Mes derniers articles de blog</a></li>
-              <li><a href="{{ site.baseurl }}/allarticles">🗃️ Tous mes articles</a></li>
-              <li><a href="https://tinyletter.com/lucienbill">📰 Newsletter</a></li>
-              <li><a href="{{ site.baseurl }}/getSnippet">🎲 Un extrait de ma newsletter au hasard</a></li>
-              <li><a href="{{ site.baseurl }}/about" title="Pour en savoir plus sur moi">ℹ️ A propos de moi / About me</a></li>
-              <li><a href="https://counter.dev/dashboard.html?user=BillyTheTroll&token=8_MpwBhCIS8zWc0R">📊 Données des visites de mes sites</a></li>
-            </ul>
+              <a id="themeSwitcher" title="switch theme (light/dark)"><span id="themeSwitcherIcon"></span> Changer de thème (sombre/clair)</a> | 
+              <a href="{{ site.baseurl }}/" title="My latest blog articles">📖 Mes derniers articles de blog</a> | 
+              <a href="{{ site.baseurl }}/allarticles" title="All latest blog articles">🗃️ Tous mes articles</a> | 
+              <a href="https://tinyletter.com/lucienbill">📰 Newsletter</a> | 
+              <a href="{{ site.baseurl }}/getSnippet" title="A random snippet from my newsletter (in French)">🎲 Un extrait de ma newsletter au hasard</a> | 
+              <a href="{{ site.baseurl }}/about">ℹ️ A propos de moi / About me</a> | 
+              <a href="https://counter.dev/dashboard.html?user=BillyTheTroll&token=8_MpwBhCIS8zWc0R" title="analytics">📊 Données des visites de mes sites</a> | 
           </nav>
 
         </header>

@@ -214,24 +214,24 @@ img {
   }
 }
 
-.site-avatar {
-  float: left;
-  width: 5rem;
-  height: 5rem;
-  margin-right: 1rem;
+// .site-avatar {
+//   float: left;
+//   width: 5rem;
+//   height: 5rem;
+//   margin-right: 1rem;
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-    width: 15rem;
-    height: 15rem;
-  }
+//   @include mobile {
+//     float: none;
+//     display: block;
+//     margin: 0 auto;
+//     width: 15rem;
+//     height: 15rem;
+//   }
 	
-   img {
-    border-radius: 5px;
-  }
-}
+//    img {
+//     border-radius: 5px;
+//   }
+// }
 
 .site-info {
   float: left;
@@ -249,6 +249,13 @@ img {
   transition: var(--themeswitchtransition);
   font-weight: 500;
   font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  // padding-bottom: -2rem;
+  // vertical-align: bottom;
+  // border-width: 1px;
+  // border-color: red;
+  // border-style: dotted;
 }
 
 .site-description {
@@ -284,14 +291,13 @@ img {
 nav{
   // margin-bottom: 0.8rem;
   // margin-top: -0.8rem;
-  float: left;
+  float: right;
   margin-top: 23px; // @TODO: Vertically middle align
 
   @include mobile {
-    // float: left;
-    text-align: left;
+    float: none;
     margin-top: 9px;
-    // display: block;
+    display: block;
     font-size: 16px;
   }
   // a {
