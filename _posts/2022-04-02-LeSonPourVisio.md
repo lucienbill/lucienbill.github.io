@@ -5,14 +5,14 @@ excerpt_separator: <!--more-->
 ---
 
 Entre le télétravail et les équipes réparties sur différents sites, si vous êtes dans l'informatique, vous ~~subissez~~ participez probablement à beaucoup de visio-conférences.
-Vous avez certainement au moins un collègue dont le son est systématiquement dégueulasse. D'ailleurs, maintenant que vous y pensez, vous réalisez que vous ne savez pas vraiment gérer votre micro ?
+Vous avez certainement au moins un·e collègue dont le son est systématiquement dégueulasse. D'ailleurs, maintenant que vous y pensez, vous réalisez que vous ne savez pas vraiment gérer votre micro ?
 Pas de panique, j'ai quelques astuces !
 <!--more-->
 
 ## Un bon son, mais pour quoi faire ?
 J'ai été preneur de son et ingé son pour une websérie : travailler le son est devenu un passe temps qui me plaît beaucoup.
 Personnellement, cette raison me suffit, mais j'en ai une autre qui vous sera plus utile : 
-- Vous semblerez plus intelligent avec un son de bonne qualité (c'est pas moi qui le dit, c'est "[prouvé scientifiquement](https://tips.ariyh.com/p/good-sound-quality-smarter)" comme les machins qu'on voit au téléachat)
+- Vous semblerez plus intelligent·e avec un son de bonne qualité (c'est pas moi qui le dit, c'est "[prouvé scientifiquement](https://tips.ariyh.com/p/good-sound-quality-smarter)" comme les machins qu'on voit au téléachat)
 
 Notes : 
 - Ce guide sera également utile si vous faites des podcasts ou du stream
@@ -38,14 +38,14 @@ Quel que soit le matériel, quels que soient les réglages, je vous recommande d
 - Utilisez Audacity (ou n'importe quel logiciel du même genre), enregistrez, et écoutez
   - Le signal de votre micro devrait être entre -18 dB et -6 dB environ. Trop en dessous, et personne ne vous entendra parler. Trop au dessus, et vous risquez de saturer
   - Vous entendrez aussi les plus gros défaut de votre son (saturation, trop étouffé, strident, etc.)
-- Appelez un ami via Teams, Zoom, Discord ou autre et demandez-lui ce qu'il pense de votre son
-  - Il vous dira si votre son est trop faible, s'il sature, si on entend trop les collègues qui parlent à côté, etc.
+- Appelez une connaissance via Teams, Zoom, Discord ou autre et demandez-lui ce qu'elle pense de votre son
+  - Elle vous dira si votre son est trop faible, s'il sature, si on entend trop les collègues qui parlent à côté, etc.
 
 ## En déplacement
 Si vous travaillez en mode nomade, privilégiez du matériel simple : quelque chose de léger, qui fonctionne dès qu'on le branche, et qui possède quelques touches média (couper le micro, augmenter/baisser le son de sortie, etc.)
 
 J'ai une préférence pour le classique "combiné micro casque USB avec suppression de bruits intégrée" à environ une cinquantaine d'euros.
-C'est basique, vous n'aurez pas un son d'animateur de radio, mais ça sera bien mieux que le son de votre webcam parce que le micro sera beaucoup plus proche de votre bouche !
+C'est basique, vous n'aurez pas un son d'animatrice de radio, mais ça sera bien mieux que le son de votre webcam parce que le micro sera beaucoup plus proche de votre bouche !
 A ce tarif là, le rendu sera correct, mais le confort sera probablement très limité.
 
 Si vous avez chez vous un combiné écouteur + micro pour smartphone, testez : si vous êtes satisfait du résultat, pas besoin d'acheter quoi que ce soit !
@@ -58,9 +58,9 @@ Si vous avez un espace de travail fixe (un vrai bureau, dans les locaux d'une en
 Vous pourrez installer un mini studio de radio.
 
 ### Micro
-Vous voulez acheter un Blue Yeti pour faire comme les copains ?
+Vous voulez acheter un Blue Yeti pour faire comme les copains et les copines ?
 C'est probablement une très mauvaise idée : c'est cher, et ce n'est probablement pas adapté à votre usage.
-Ni à celui de vos copains : la vraie force de Blue, c'est le marketing, pas le produit.
+Ni à celui de vos ami·es : la vraie force de Blue, c'est le marketing, pas le produit.
 
 En bref, les principales familles de micros sont :
 - Les micros à condensateur. Ils sont généralement très sensibles : on branche, ça capte du son. C'est intéressant, mais vos collègues entendront aussi très bien vos enfants qui jouent dans la pièce d'à côté. Pour notre utilisation, c'est pas terrible (a moins de vivre dans un studio de musique, vous vivez probablement dans le bruit)
@@ -115,7 +115,7 @@ Si vous comptez retraiter le son en post prod, choisissez plutôt du 24 bits, ma
 Voici une sélection de matériel : 
 - 16 bits
   - 40€ : **Behringer U-Phoria UM2** - pas cher, compact
-  - 40€ : **the t.mix MicroMix 2 USB** - fonctionne très bien avec mon Samson Q7. Possède un EQ basique, prend peu de place sur le bureau
+  - 40€ : **the t.mix MicroMix 2 USB** - fonctionne très bien avec mon Samson Q7. Possède un EQ basique, prend peu de place sur le bureau et a clairement un bruit de fond que j'entends, mais qui ne perturbe pas les autres
 - 24 bits
   - 90 € : **Steinberg UR12** - C'est ce que j'ai pris parce que les drivers sont stables. Aujourd'hui, il existe de meilleures options : mêmes performances pour moins cher, ou plus de prestations pour le même tarif
   - 60€ : **Swissonic UA-2x2** - Le son est bon, mais certains utilisateurs rencontrent des problèmes de drivers plutôt pénibles
@@ -123,10 +123,10 @@ Voici une sélection de matériel :
   - 90€ : **Native Instruments Komplete Audio 1** - Pareil que l'IMG Stageline MX-1IO, mais produit par une marque plus connue
 
 ### Egalisation
-Si vous prenez un EQ basique de table de mixage entrée de gamme, c'est suffisant pour démarrer.
+Si vous n'avez pas le budget, ne prenez pas d'EQ : votre micro étant conçu pour la voix, ça devrait le faire.
+Si vraiment vous voulez un EQ, prenez une table de mixage entrée de gamme (certaines font aussi office de carte son 16 bits), c'est suffisant pour démarrer.
 Pour aller plus loin, je préfère les EQ paramétriques : plus compliqués à prendre en main, mais permettent des réglages plus subtils.
 Vous vous en servirez surtout en post prod.
-Pour de la visio, si votre micro est à peu près équilibré, pas besoin d'y toucher.
 
 J'utilise la tranche "Enhancer" de mon **DBX 286 S**.
 Le nom des boutons est obscur ("LF DETAIL", "HF DETAIL"), le manuel aussi, mais en bref : 
@@ -134,12 +134,14 @@ Le nom des boutons est obscur ("LF DETAIL", "HF DETAIL"), le manuel aussi, mais 
 - Le bouton HF sert à booster les aigus
 - Evitez de les pousser à fond, leur effet n'est pas vraiment subtil
 
+Quand j'en ai la possibilité, j'aime baisser aggressivement les fréquences inférieures à 70Hz, et baisser celles inférieures à 100Hz.
+
 ### Compresseur
 Si vous parlez à un volume plutôt constant, ne prenez pas de compresseur.
 Si vous alternez les cris et les chuchotements, cela peut vous servir : le compresseur va baisser le son quand il sera trop fort.
 - Bien réglé, il vous permettra d'éviter de saturer
 - Très bien réglé, il permettra à vos interlocuteurs ou auditeurs de ne pas avoir besoin de monter le son quand vous chuchotez, et de ne pas le baisser quand vous hurlez
-- Mal réglé, le son sera désagréable. Vos moindres respirations seront sur-amplifiées, votre son n'aura aucune dynamique (puisque tout sera au même niveau sonore), et l'écoute sera très fatigante. C'est le type de réglage utilisé par Virgin Radio et NRJ
+- Mal réglé, le son sera désagréable. Vos moindres respirations seront sur-amplifiées, votre son n'aura aucune dynamique (puisque tout sera au même niveau sonore), et l'écoute sera très fatigante. C'est le type de réglage utilisé par Virgin Radio et NRJ (car le besoin est "être intelligibile même sur un autoradio pourri dans une voiture bruyante")
 
 J'utilise un **DBX 286 S** (160€) : c'est plein de boutons, c'est un peu le bazar, mais c'est polyvalent.
 Je branche mon micro sur l'entrée de l'appareil, puis la sortie du DBX 286 S sur ma carte son, et ça fonctionne.
@@ -155,18 +157,18 @@ Pour la suppression de bruit, au niveau matériel je n'ai rien d'autre.
 Mais ce n'est pas gênant puisque j'ai un micro peu sensible, qui capte surtout ma voix.
 
 Par curiosité, j'ai testé NVidia Broadcast (en branchant un micro sensible, un jour où mon voisin faisait des travaux etc) : ça fonctionne très bien.
-C'est aussi très utile quand vous êtes en visio avec un collègue qui a un micro très sensible et un environnement de travail bruyant : oubliez la solidarité, et laissez-le souffrir en n'écoutant que sa voix, sans bruit parasite (c'est moche, mais vous n'aidez personne en souffrant inutilement).
+C'est aussi très utile quand vous êtes en visio avec un·e collègue qui a un micro très sensible et un environnement de travail bruyant : oubliez la solidarité, et laissez-la souffrir, et n'écoutez que sa voix sans bruit parasite (c'est moche, mais vous n'aidez personne en souffrant inutilement).
 
 ## Conclusion
 Le son, c'est quand-même un peu chiant.
 Mais :
-- Avec ce guide, vous devriez être un peu moins perdu
-- Si vous avez besoin d'un coup de main, vous pouvez me contacter sur [Twitter](https://twitter.com/BillyTheTroll) ou [LinkedIn](https://www.linkedin.com/in/lucien-bill-3906b043/)
+- Avec ce guide, vous devriez être un peu moins perdu·e
+- Si vous avez besoin d'un coup de main, vous pouvez me contacter sur [Mastodon](https://hachyderm.io/@lucienbill), [LinkedIn](https://www.linkedin.com/in/lucien-bill-3906b043/) ou [BlueSky](https://bsky.app/profile/lucienbill.fr)
 
 Pour vous aider un peu plus que cette courte conclusion, voici une liste de configurations que je recommande : 
 - **Starter kit USB** : microphone dynamique **USB** à moins de 50€ + bonnette + bras de micro pas cher
    - Je n'ai pas testé cette configuration, mais en théorie elle devrait plutôt bien fonctionner
-- **Starter kit XLR** : microphone dynamique **XLR** à moins de 50€ + bonnette + bras de micro pas cher + table de mixage *the t.mix MicroMix 2 USB*
+- **Starter kit XLR** : microphone dynamique **XLR** à moins de 50€ + bonnette + bras de micro pas cher + table de mixage *Behringer U-Phoria UM2*
    - C'est ce que j'ai installé sur le bureau de ma compagne, et ça fonctionne vraiment très bien. Et on peut régler facilement le gain (ce qui n'est pas toujours le cas avec un micro USB) pour éviter de saturer !
 - **Overkill** : microphone dynamique USB à moins de 50€ + bonnette + bras de micro pas cher + *DBX 286 S* + *Steinberg UR 12 MK2*
    - C'est l'équipement que j'utilise sur ma machine personnelle. J'en ai fait l'acquisition pour faire autre chose que de la visio, mais j'étais très content de l'avoir quand je me suis mis au télétravail ! Le rendu est plus précis, plus fin qu'avec le Starter Kit XLR, mais personne d'autre que moi n'entend la différence. Mon conseil : commencez avec le Starter Kit XLR, et si un jour vous souhaitez travailler plus votre son, alors ajoutez-y un DBX 286S
