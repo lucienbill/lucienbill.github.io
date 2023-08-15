@@ -6,9 +6,10 @@ layout: default
 
   <!-- This loops through the paginated posts -->
   {% for post in paginator.posts %}
+    {% assign current_year = post.date | date: "%Y"  %}
   <article class="post">
 
-    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{current_year}} - {{ post.title }}</a></h2>
 
     <div class="entry">
       {{ post.excerpt }}
