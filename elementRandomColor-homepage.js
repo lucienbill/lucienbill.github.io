@@ -2,7 +2,7 @@ const disclaimer = "I did not create this ; Origin = https://cassidoo.co/script.
 const colorsLight =
      [
         "#5e8fe6", "#109ca7", //blue
-        "#cb924f", //orange
+        "#C57415", //orange
         "#51ae23", //green
         "#cb4f5e" //red
     ]
