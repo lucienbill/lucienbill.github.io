@@ -20,6 +20,20 @@ layout: none
     
     <link rel="stylesheet" href="{{ site.baseurl }}/style-homepage.css">
     <script src="{{ site.baseurl }}/elementRandomColor-homepage.js" defer></script>
+    <script>
+        // This JS fixes a weird rendering issue on Firefox Mobile
+        function hideOtherSections(sectionToShow){
+            sections = document.getElementsByTagName("section")
+            for (let index = 0; index < sections.length; index++) {
+                const element = sections[index];
+                if (element.id == sectionToShow){
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            }
+        }
+    </script>
             
   </head>
   <body>
@@ -29,10 +43,10 @@ layout: none
       <nav>
         <ul class="list-lang">
             <li>
-                <a href="#home"><span lang='fr-fr'>Version française</span> (<span lang='en'>French version</span>)</a>
+                <a href="#home" onclick="hideOtherSections('home')"><span lang='fr-fr'>Version française</span> (<span lang='en'>French version</span>)</a>
             </li>
             <li>
-                <a href="#home_en"><span lang='fr-fr'>Version anglaise</span> (<span lang='en'>English version</span>)</a>
+                <a href="#home_en" onclick="hideOtherSections('home_en')"><span lang='fr-fr'>Version anglaise</span> (<span lang='en'>English version</span>)</a>
             </li>
         </ul>
       </nav>
