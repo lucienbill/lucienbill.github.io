@@ -29,7 +29,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lucienbill.fr" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: billyzetroll
 github_username:  lucienbill
-paginate: 5
 
 avatar: https://avatars1.githubusercontent.com/u/20946333
 counter_dev: "bd3ca2cc-2c84-44a5-a598-3279e256c211"
@@ -48,7 +47,6 @@ footer-links:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,40 +1,235 @@
 ---
-layout: default
+layout: none
 ---
 
-<div class="posts">
+<!-- forked from https://john-doe.neocities.org -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <!-- This loops through the paginated posts -->
-  {% for post in paginator.posts %}
-    {% assign current_year = post.date | date: "%Y"  %}
-  <article class="post">
+    {% include analytics.html %}
+    
+    <title>Lucien Bill - Homepage</title>
+    <meta property="title" content="Lucien Bill's Homepage">
+    <meta name="description" content="Welcome to my website. Find out more about who I am and what I do.">
+    
+    <meta property="og:title" content="Lucien Bill's Homepage">
+    <meta property="og:description" content="Welcome to my website. Find out more about who I am and what I do.">
+    
+    <link rel="stylesheet" href="{{ site.baseurl }}/style-homepage.css">
+    <script src="{{ site.baseurl }}/elementRandomColor-homepage.js" defer></script>
+            
+  </head>
+  <body>
+    
+    <header>
+      <h1>Lucien Bill</h1>
+      <nav>
+        <ul class="list-lang">
+            <li>
+                <a href="#home"><span lang='fr-fr'>Version française</span> (<span lang='en'>French version</span>)</a>
+            </li>
+            <li>
+                <a href="#home_en"><span lang='fr-fr'>Version anglaise</span> (<span lang='en'>English version</span>)</a>
+            </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
 
-    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{current_year}} - {{ post.title }}</a></h2>
+    <section id="home" lang='fr'>
+        
+        <h2 class="emo-hello">Salut !</h2>
+        <p>
+            Je suis Lucien, bienvenue sur mon site web !
+            Cette page d'accueil contient une brève description de qui je suis et de ce que je fais, ainsi que la liste de certains de mes projets en cours.
+        </p>
 
-    <div class="entry">
-      {{ post.excerpt }}
-    </div>
+        <h2 class="emo-job">Mon travail : Ingénieur de Développement Logiciel en Test (SDET)</h2>
 
-    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Lire l'article</a>
-  </article>
-  {% endfor %}
+        <p>
+            J'ai eu de nombreuses discussions intéressantes avec des ingénieur·es logiciels qui étaient animé·es par la passion dès le début de leurs études.
+        </p>
 
-  <!-- Pagination links -->
-  <div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous" title="Articles plus récents">
-      ⬅️
-    </a>
-  {% else %}
-    <span class="next ">◼️</span>
-  {% endif %}
-  <span class="page_number ">
-    || Page : {{ paginator.page }} sur {{ paginator.total_pages }} ||
-  </span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next" title="Articles plus anciens">➡️</a>
-  {% else %}
-    <span class="next ">◼️</span>
-  {% endif %}
-  </div>
-</div>
+        <p>
+            Ce n'est pas tout à fait mon cas.
+            J'ai obtenu mon diplôme d'ingénieur en mécanique en 2013 avec l'intime conviction que j'étais nul dans ce domaine.
+            Bizarrement cela ne m'a pas aidé à trouver du travail, mais je n'ai pas abandonné.
+            J'ai fini par trouver une offre d'emploi qui ressemblait à : <i>"Besoin d'un changement de carrière ? Venez apprendre à coder"</i>.
+            La seule condition était d'avoir un diplôme de master, et je l'avais !
+            Je me suis dit : <i>"Je suis déjà un nerd, c'est le temps d'assumer pleinement"</i>.
+        </p>
+
+        <p>
+            Ainsi commenca ma carrière dans l'informatique : par nécessité.
+            Par chance j'ai rapidement développé un véritable intérêt pour ce domaine.
+            Ma reconversion s'est bien passée et je suis devenu développeur de logiciels... 
+            Puis un développeur qui teste.
+        </p>
+
+        <p>
+            Je suis maintenant un testeur qui code : bien que j'utilise des outils d'automatisation, je n'oublie pas qu'ils ne sont pas magiques.
+            Formulé différemment : faire les bonnes étapes manuellement a plus de valeur que d'automatiser quelque chose d'incorrect.
+            Mes principales compétences sont :
+        </p>
+        <ul class="list-skills">
+            <li>
+                Concevoir les tests d'un logiciel - <i>"Quelles actions peut-on faire pour vérifier s'il fait bien ce qu'on veut qu'il fasse ?"</i>
+            </li>
+            <li>
+                Automatiser les tests de non régression - Ils doivent être exécutés souvent pour être utiles, mais tout exécuter manuellement régulièrement est une corvée
+            </li>
+            <li>
+                Partage de connaissances - La clé d'un protocole de test efficace est le travail d'équipe
+            </li>
+        </ul>
+
+        <h2 class="emo-projects">Mes autres projets</h2>
+        <p>
+            En dehors du travail, je suis musicien, un peu nerd du son, passionné d'amplis vintage, je collectionne les disques vinyles...
+            Et je fais aussi d'autres choses :
+        </p>
+        <ul class="list-projects">
+            <li>
+                <a href="{{ site.baseurl }}/allarticles">Mon blog</a>
+            </li>
+            <li>
+                <a href="https://tinyletter.com/lucienbill">Ma newsletter tech et justice sociale</a>
+            </li>
+            <li>
+                <a href="https://nomavecjeudemotsdebile.pages.dev/">Le meilleur outil pour nommer vos persona</a>
+            </li>
+            <li>
+                <a href="https://github.com/lucienbill/obsidian-daily-notes/blob/main/fr-FR/README.md">Mon outillage de prises de notes quotidiennes</a>
+            </li>
+            <li>
+                <a href="https://counter.dev/dashboard.html?user=BillyTheTroll&token=8_MpwBhCIS8zWc0R">Les statistiques publiques de mes sites</a>
+            </li>
+            <li>
+                <span class="randomcolor">Bientôt : du livestream et des replays</span>
+            </li>
+            
+        </ul>
+
+        <h2 class="emo-contact">Où me trouver</h2>
+        <ul class="list-contacts">
+            <li>
+                <a href="https://www.linkedin.com/in/%F0%9F%A4%B7-lucien-bill-3906b043/">LinkedIn</a>
+            </li>
+            <li>
+                <a rel="me" href="https://hachyderm.io/@lucienbill">Mastodon</a>
+            </li>
+            <li>
+                <a href="https://bsky.app/profile/lucienbill.fr">BlueSky</a>
+            </li>
+            <li>
+                <a href="https://github.com/lucienbill">GitHub</a>
+            </li>
+            <li>
+                <span class="randomcolor">Plus-ou-moins bientôt : un formulaire de contact</span>
+            </li>
+        </ul>
+    </section>
+
+        <!-- -->
+      
+    <section id="home_en" lang='en'>
+
+        <h2 class="emo-hello">Hello there!</h2>
+        <p>
+            I am Lucien, welcome to my website!
+            This is the homepage: it contains a brief description of who I am and what I do, and the list of some of my ongoing projects.
+        </p>
+
+        <h2 class="emo-job">My job: Software Development Engineer in Test (SDET)</h2>
+
+        <p>
+        I've had many interesting discussions with Software Engineers who have been driven by passion from the very begining of their learning curriculum.
+        </p>
+
+        <p>
+        I am not exactly like them.
+        I graduated as a mechanical Engineer in 2013 with one very strong conviction: <i>"I suck at this"</i>.
+        This oddly did'nt help me to find a job, but I didn't give up.
+        I eventually found an offer that read like <i>"need a career change? Come in and learn to code"</i>.
+        The only requirement was a master's degree, which I had!
+        I thought : <i>"I'm already a nerd, let's fully embrace it"</i>.
+        </p>
+
+        <p>
+        And so began my career in computer science: out of necessity.
+        Luckily I quickly developed a genuine interest for it.
+        My retraining went well and I became a Software Developper... 
+        Then a developer who tests.
+        </p>
+
+        <p>
+        I am now a tester who codes: while I leverage automation tools, I do keep in mind that they aren't magical.
+        Put differently: doing the right thing manually has more value than automating the wrong thing.
+        My main skills are:
+        </p>
+        <ul class="list-skills">
+            <li>
+                Writing tests for Software - <i>"What actions can be done to verify whether it does what we want it to do?"</i>
+            </li>
+            <li>
+                Automating regresion tests - They must be run often to be useful, but doing so manually over and over is a chore
+            </li>
+            <li>
+                Knowledge sharing - The key to an efficient testing process is teamwork
+            </li>
+        </ul>
+
+        <h2 class="emo-projects">My other projects</h2>
+        <p>
+            Besides work, I am a musician, a bit of a sound nerd, a vintage amp enthusiast, I collect vinyl records...
+            And I do some other stuff too:
+        </p>
+        <ul class="list-projects">
+            <li>
+                <a href="{{ site.baseurl }}/allarticles">My blog (in French)</a>
+            </li>
+            <li>
+                <a href="https://tinyletter.com/lucienbill">My newsletter about tech and social justice (in French)</a>
+            </li>
+            <li>
+                <a href="https://getanamewithapun.pages.dev/">The perfect tool to choose a name for a persona</a>
+            </li>
+            <li>
+                <a href="https://github.com/lucienbill/obsidian-daily-notes/blob/main/en-US/README.md">My daily notes tooling</a>
+            </li>
+            <li>
+                <a href="https://counter.dev/dashboard.html?user=BillyTheTroll&token=8_MpwBhCIS8zWc0R">The public analytics of my websites</a>
+            </li>
+            <li>
+                <span class="randomcolor">Coming soon: livestreams and replays</span>
+            </li>
+        </ul>
+
+        <h2 class="emo-contact">Where to reach me</h2>
+        <ul class="list-contacts">
+            <li>
+                <a href="https://www.linkedin.com/in/%F0%9F%A4%B7-lucien-bill-3906b043/">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://hachyderm.io/@lucienbill">Mastodon</a>
+            </li>
+            <li>
+                <a href="https://bsky.app/profile/lucienbill.fr">BlueSky</a>
+            </li>
+            <li>
+                <a href="https://github.com/lucienbill">GitHub</a>
+            </li>
+            <li>
+                <span class="randomcolor">Comming soon-ish: a contact form</span>
+            </li>
+        </ul>
+    
+    </section>
+    </main>
+
+  </body>
+</html>

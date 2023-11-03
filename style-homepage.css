@@ -1,0 +1,197 @@
+* { margin: 0; padding: 0; box-sizing: border-box;
+  
+    /* Color scheme */
+    
+    --textcolor: #252525;
+    --bgcolor: #d6d6d6;
+    --highlight: #2749c9;
+  
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    * {
+      --textcolor: #e3e3e3;
+      --bgcolor: #252525;
+      --highlight: #ffc400;
+    }
+  }
+  
+  body {
+    font-size: 1em;
+    font-family: Trebuchet MS, sans-serif;
+    line-height: 1.7em;
+    color: var(--textcolor);
+    background: var(--bgcolor);
+    position: relative;
+    max-width: 64em;
+    margin: 0 auto;  /* centers the layout */
+  }
+  
+  /* ------- Sections ------- */
+  
+  section {
+    padding: 10em 5vw 10em 5vw;
+    /* ! Everything below is needed ! */
+    display: none;
+    position: absolute;
+    top: 0;
+    min-height: 100vh;
+    max-width: 100ch;
+    background: var(--bgcolor);
+    margin: 0 auto;
+  }
+  
+  section:target { /* Show section */
+    display: block;
+  }
+  
+  section#home { /* Show this section by default */
+    display: block;
+  }
+  
+  /* ------- Header ------- */
+  
+  header {
+    padding: 2em 0 1em 5vw;
+    display: block;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    /* flex: 1; */
+    white-space: nowrap;
+    padding: 0 0 .5em 0;
+  }
+  
+  nav {
+    display: block;
+  }
+  
+  
+  /* ------- General ------- */
+
+
+  a {
+    text-decoration: underline;
+    color: var(--highlight);
+  }
+  
+  a:hover {
+    border-bottom: 1px solid;
+  }
+  
+  h2, h3, h4 {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.5em;
+    padding: 1em 0 0 0;
+    text-align: center;
+  }
+  
+  p, ul, ol, article, h2, h3, h4 {
+    max-width: 100%;
+    margin-bottom: 1em;
+  }
+
+  p {
+    margin-bottom: 2em;
+  }
+  
+  li {
+    margin-bottom: .5em;
+    padding-left: .5em;
+  }
+  
+  ul, ol {
+    padding-left: 3em;
+  }
+  
+  b, strong {
+    font-weight: 600;
+  }
+  
+  /* External links */
+  
+  a[href*="//"]:after { 
+    font-weight: 300;
+    font-size: .85em;
+    content: "\2197"; /* top right arrow: â†— */
+    opacity: .25;
+  }
+  
+  a[href*="//"]:hover:after {
+    opacity: 1;
+  }
+
+  /* -------- Emojis -------- */
+
+  @counter-style counter-lang {
+    system: fixed;
+    symbols: 🥖 🍵;
+    suffix: " ";
+  }
+  .list-lang{
+      list-style-type: counter-lang;
+  }
+
+  @counter-style counter-skills {
+    system: fixed;
+    symbols: 📐 🤖 🎓;
+    suffix: " ";
+  }
+  .list-skills{
+      list-style-type: counter-skills;
+  }
+
+  @counter-style counter-projects {
+    system: fixed;
+    symbols: ✍️ 📰 😎 🛠️ 📊 ⏳;
+    suffix: " ";
+  }
+  .list-projects{
+    list-style-type: counter-projects;
+  }   
+  
+  @counter-style counter-contact {
+    system: fixed;
+    symbols: 👔 🐘 🟦 👨‍💻 ⏳;
+    suffix: " ";
+  }
+  .list-contacts{
+      list-style-type: counter-contact;
+  }
+
+  .emo-hello::before{
+    content: "👋 ";
+  }
+  .emo-job::before{
+    content: "💻 ";
+  }
+  .emo-projects::before{
+    content: "💡 ";
+  }
+  .emo-contact::before{
+    content: "📨 ";
+  }
+  
+  /* ------- Smaller screens ------- */
+  
+  @media only screen and (max-width: 680px) {
+    body { font-size: 16px; }
+  }
+  
+  @media only screen and (max-width: 540px) {
+    nav { width: 100%; } /* Fix for older webkit versions */
+  }
+  
+  /* ------- Print ------- */
+  
+  @media print {
+
+    nav, .lightbox:target:after { display: none; }
+      
+  }
