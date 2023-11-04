@@ -27,26 +27,17 @@
     margin: 0 auto;  /* centers the layout */
   }
   
-  /* ------- Sections ------- */
+  /* ------- article ------- */
   
-  section {
+  article {
     padding: 10em 5vw 10em 5vw;
-    /* ! Everything below is needed ! */
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
     min-height: 100vh;
     max-width: 100ch;
     background: var(--bgcolor);
     margin: 0 auto;
-  }
-  
-  section:target { /* Show section */
-    display: block;
-  }
-  
-  section#home { /* Show this section by default */
-    display: block;
   }
   
   /* ------- Header ------- */
