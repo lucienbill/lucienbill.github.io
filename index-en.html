@@ -1,0 +1,139 @@
+---
+layout: none
+---
+
+<!-- forked from https://john-doe.neocities.org -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    {% include analytics.html %}
+    
+    <title>Lucien Bill - Homepage</title>
+    <meta property="title" content="Lucien Bill's Homepage">
+    <meta name="description" content="Welcome to my website. Find out more about who I am and what I do.">
+    
+    <meta property="og:title" content="Lucien Bill's Homepage">
+    <meta property="og:description" content="Welcome to my website. Find out more about who I am and what I do.">
+    
+    <link rel="stylesheet" href="{{ site.baseurl }}/style-homepage.css">
+    <script src="{{ site.baseurl }}/elementRandomColor-homepage.js" defer></script>
+            
+  </head>
+  <body>
+    
+    <header>
+      <h1>Lucien Bill</h1>
+      <nav>
+        <ul class="list-lang">
+            <li>
+                <a href="{{ site.baseurl }}/index-fr"><span lang='fr-fr'>Aller à la version française</span> (<span lang='en'>Go to French version</span>)</a>
+            </li>
+            <li class="selected">
+                <span lang='en'>English version</span> (<span lang='fr-fr'>version anglaise</span>)</l>
+            </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+
+    <article id="home_en" lang='en'>
+
+        <h2 class="emo-hello">Hello there!</h2>
+        <p>
+            I am Lucien, welcome to my website!
+            This is the homepage: it contains a brief description of who I am and what I do, and the list of some of my ongoing projects.
+        </p>
+
+        <h2 class="emo-job">My job: Software Development Engineer in Test (SDET)</h2>
+
+        <p>
+        I've had many interesting discussions with Software Engineers who have been driven by passion from the very begining of their learning curriculum.
+        </p>
+
+        <p>
+        I am not exactly like them.
+        I graduated as a mechanical Engineer in 2013 with one very strong conviction: <i>"I suck at this"</i>.
+        This oddly did'nt help me to find a job, but I didn't give up.
+        I eventually found an offer that read like <i>"need a career change? Come in and learn to code"</i>.
+        The only requirement was a master's degree, which I had!
+        I thought : <i>"I'm already a nerd, let's fully embrace it"</i>.
+        </p>
+
+        <p>
+        And so began my career in computer science: out of necessity.
+        Luckily I quickly developed a genuine interest for it.
+        My retraining went well and I became a Software Developper... 
+        Then a developer who tests.
+        </p>
+
+        <p>
+        I am now a tester who codes: while I leverage automation tools, I do keep in mind that they aren't magical.
+        Put differently: doing the right thing manually has more value than automating the wrong thing.
+        My main skills are:
+        </p>
+        <ul class="list-skills">
+            <li>
+                Writing tests for Software - <i>"What actions can be done to verify whether it does what we want it to do?"</i>
+            </li>
+            <li>
+                Automating regresion tests - They must be run often to be useful, but doing so manually over and over is a chore
+            </li>
+            <li>
+                Knowledge sharing - The key to an efficient testing process is teamwork
+            </li>
+        </ul>
+
+        <h2 class="emo-projects">My other projects</h2>
+        <p>
+            Besides work, I am a musician, a bit of a sound nerd, a vintage amp enthusiast, I collect vinyl records...
+            And I do some other stuff too:
+        </p>
+        <ul class="list-projects">
+            <li>
+                <a href="{{ site.baseurl }}/allarticles">My blog (in French)</a>
+            </li>
+            <li>
+                <a href="https://tinyletter.com/lucienbill">My newsletter about tech and social justice (in French)</a>
+            </li>
+            <li>
+                <a href="https://getanamewithapun.pages.dev/">The perfect tool to choose a name for a persona</a>
+            </li>
+            <li>
+                <a href="https://github.com/lucienbill/obsidian-daily-notes/blob/main/en-US/README.md">My daily notes tooling</a>
+            </li>
+            <li>
+                <a href="https://counter.dev/dashboard.html?user=BillyTheTroll&token=8_MpwBhCIS8zWc0R">The public analytics of my websites</a>
+            </li>
+            <li>
+                <span class="randomcolor">Coming soon: livestreams and replays</span>
+            </li>
+        </ul>
+
+        <h2 class="emo-contact">Where to reach me</h2>
+        <ul class="list-contacts">
+            <li>
+                <a href="https://www.linkedin.com/in/%F0%9F%A4%B7-lucien-bill-3906b043/">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://hachyderm.io/@lucienbill">Mastodon</a>
+            </li>
+            <li>
+                <a href="https://bsky.app/profile/lucienbill.fr">BlueSky</a>
+            </li>
+            <li>
+                <a href="https://github.com/lucienbill">GitHub</a>
+            </li>
+            <li>
+                <span class="randomcolor">Comming soon-ish: a contact form</span>
+            </li>
+        </ul>
+    
+    </article>
+    </main>
+
+  </body>
+</html>

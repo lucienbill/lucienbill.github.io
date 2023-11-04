@@ -4,6 +4,7 @@
     
     --textcolor: #252525;
     --bgcolor: #d6d6d6;
+    --bodybgcolor:#e5e5e5;
     --highlight: #2749c9;
   
   }
@@ -12,41 +13,33 @@
     * {
       --textcolor: #e3e3e3;
       --bgcolor: #252525;
+      --bodybgcolor:#797979;
       --highlight: #ffc400;
     }
   }
   
   body {
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: Trebuchet MS, sans-serif;
-    line-height: 1.7em;
+    line-height: 1.9em;
     color: var(--textcolor);
-    background: var(--bgcolor);
+    background: var(--bodybgcolor);
     position: relative;
     max-width: 64em;
     margin: 0 auto;  /* centers the layout */
   }
   
-  /* ------- Sections ------- */
+  /* ------- article ------- */
   
-  section {
+  article {
     padding: 10em 5vw 10em 5vw;
-    /* ! Everything below is needed ! */
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
     min-height: 100vh;
     max-width: 100ch;
     background: var(--bgcolor);
     margin: 0 auto;
-  }
-  
-  section:target { /* Show section */
-    display: block;
-  }
-  
-  section#home { /* Show this section by default */
-    display: block;
   }
   
   /* ------- Header ------- */
@@ -69,6 +62,10 @@
   
   nav {
     display: block;
+  }
+
+  .selected{
+    background-color: var(--bodybgcolor);
   }
   
   
@@ -181,7 +178,7 @@
   /* ------- Smaller screens ------- */
   
   @media only screen and (max-width: 680px) {
-    body { font-size: 16px; }
+    body { font-size: 1.2em; }
   }
   
   @media only screen and (max-width: 540px) {
@@ -192,6 +189,6 @@
   
   @media print {
 
-    nav, .lightbox:target:after { display: none; }
+    nav { display: none; }
       
   }

@@ -1,17 +1,21 @@
 const disclaimer = "I did not create this ; Origin = https://cassidoo.co/script.js"
 const colorsLight =
      [
-        "#5e8fe6", "#109ca7", //blue
-        "#C57415", //orange
-        "#51ae23", //green
-        "#cb4f5e" //red
+        "rgb(0, 54, 150)", //blue
+        "rgb(0, 98, 106)", //teal
+        "rgb(138, 71, 0)", //orange
+        "rgb(174, 0, 122)", //pink
+        "rgb(35, 106, 0)", //green
+        "rgb(135, 0, 0)" //red
     ]
 const colorsDark = 
      [
-        "#527fcf", "#24a6b0", //bleu
+        "rgb(139, 168, 220)", //blue
+        "#24a6b0", //teal
         "#cb8736", //orange
-        "#3ca409", //green
-        "#9d3c48" //red
+        "rgb(199, 177, 0)", //yellow
+        "rgb(76, 191, 20)", //green
+        "rgb(229, 145, 156)" //red
      ]
 
 
