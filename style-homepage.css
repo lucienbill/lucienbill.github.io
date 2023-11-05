@@ -157,7 +157,7 @@
   
   @counter-style counter-contact {
     system: fixed;
-    symbols: 👔 🐘 🟦 👨‍💻 ⏳;
+    symbols: 👔 🐘 🟦 👨‍💻 📧;
     suffix: " ";
   }
   .list-contacts{
