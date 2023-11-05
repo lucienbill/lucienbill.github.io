@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Toutes les articles du site
+title: Tous les articles du site
 permalink: /allarticles/
 ---
 

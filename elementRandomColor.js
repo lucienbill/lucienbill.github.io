@@ -1,9 +1,9 @@
 const disclaimer = "I did not create this ; Origin = https://cassidoo.co/script.js"
 const colorsLight =
      [
-        "#bf415f", "#d44652", //Red
+        "#a53a53", "#b41d29", //Red
         "#93407c", //purple
-        "#615bac", "#433db0" //Blue
+        "#57529f", "#433db0" //Blue
     ]
 const colorsDark = 
      [
