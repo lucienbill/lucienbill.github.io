@@ -21,7 +21,7 @@ async function displaySnippet(fetchkey=null){
     document.getElementById("dynamicContent").innerHTML = "Chargement en cours ⌛"
     // Display an element from the database: a specific key, or random
     const subscribe = '<p>Pour retrouver ma newsletter dans son intégralité, \
-cliquez <a href="https://tinyletter.com/lucienbill" title=\
+cliquez <a href="{{ site.projects-links.newsletter }}" title=\
 "Ma newsletter sur la tech">là 📰</a> !'
     let response = null
     if (fetchkey != null){

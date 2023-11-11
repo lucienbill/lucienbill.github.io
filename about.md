@@ -9,7 +9,7 @@ Je me suis reconverti dans l'informatique par nécessité, et ai rapidement dév
 De "développeur qui teste" à "testeur qui code", j'ai adopté les outils d'automatisation en me concentrant sur les besoins auxquels ils répondent. J'essaie aussi de contribuer au bon fonctionnement des équipes et je m'efforce d'aider mes collègues de diverses façons. 
 
 Vous pouvez me trouver sur 
-[ma newsletter](https://tinyletter.com/lucienbill)
+[ma newsletter]({{ site.projects-links.newsletter }})
 sur la technologie (en français),
 [Github](https://github.com/lucienbill)
 ,

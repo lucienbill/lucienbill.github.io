@@ -25,7 +25,7 @@ Ces derniers mois, j'ai donc un peu changé de façon de faire : j'ai structuré
 Quand je trouve une info qui m'intéresse, je la synthétise et la note dans un coin.
 Pour mon utilisation personnelle, c'est très pratique et je gagne beaucoup de temps.
 
-Ensuite, je me sers de ces notes pour faire une [newsletter](https://www.getrevue.co/profile/billythetroll) : cela représente peu d'efforts (puisque c'est dérivé de ce que je fais déjà pour moi), mais ça peut potentiellement faire gagner du temps à d'autres.
+Ensuite, je me sers de ces notes pour faire une [newsletter]({{ site.projects-links.newsletter }}) : cela représente peu d'efforts (puisque c'est dérivé de ce que je fais déjà pour moi), mais ça peut potentiellement faire gagner du temps à d'autres.
 
 ## Mon site débile
 Je suis un employé de la tech, mais vous le savez probablement déjà.
