@@ -4,12 +4,18 @@ title: Conseils pour se faire recruter - édition 2023
 excerpt_separator: <!--more-->
 ---
 
-Structure : 
-j'ai un vieil article [Quelques astuces pour se faire recruter dans la tech] - il est temps de réviser mon opinion
+J'ai un vieil article sur ce sujet [Quelques astuces pour se faire recruter dans la tech]({{ site.url }}/SeFaireRecruter) - il date un peu, il est temps de le dépoussiérer.
 
-Ajd : crise de financement des start up, se faire recruter est plus difficile.
-Mes conseils, dans le but "effort minimal, impact maximal".
-Chercher du taff peut être une occupation à plein temps, attention au burn out
+Aujourd'hui se faire recruter est plus difficile qu'en 2021. La crise des financements des start-up secoue encore pas mal le secteur de l'IT, et je vois autour de moi quelques effets dont je me serais bien passé : 
+- Les juniors et les reconverti·es galèrent à trouver des entreprises qui leur donnent leur chance (pourtant les avoir des une équipe est une vraie richesse)
+- Même les profils plus expérimentés ne trouvent pas aussi facilement qu'avant
+
+Je vous propose ici quelques conseils, dans le but "effort minimal, impact maximal".
+<!--more-->
+
+Les premières choses à prendre en compte sont : 
+- Je ne suis pas un expert. Mes conseils ne sont pas parole d'évangile, on n'est jamais à l'abri que je sois totalement à côté de la plaque
+- Chercher du taff peut consommer beaucoup d'énergie, attention au burn out
 
 - Portfolio : un truc de privilégiés. Je l'ai fait et ça ne m'a pas directement aidé (j'ai jamais été recruté pour ça)
 - L'astuce de Marcy sur "mettre l'intitulé"
