@@ -112,4 +112,4 @@ Personne ne peut deviner tous vos talents, c'est à vous de les mettre en avant.
 ## Autopromo
 - Pour me contacter, venez sur [Twitter](https://twitter.com/BillyTheTroll) ou [LinkedIn](https://www.linkedin.com/in/lucien-bill-3906b043/).
 - Pour papoter en direct, je suis aussi sur [Twitch](https://www.twitch.tv/billyzetroll/schedule) (en ce moment, je code et je fais de la veille technologique).
-- Et une fois par semaine, j'essaie de partager des choses intéressantes dans ma [Newsletter](https://www.getrevue.co/profile/billythetroll).
+- Et une fois par semaine, j'essaie de partager des choses intéressantes dans ma [Newsletter]({{newsletter_url}}).

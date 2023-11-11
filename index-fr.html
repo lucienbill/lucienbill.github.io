@@ -18,8 +18,8 @@ layout: none
     <meta property="og:title" content="Lucien Bill - Homepage">
     <meta property="og:description" content="Bienvenue sur mon site web. Découvrez qui je suis et ce que je fais.">
     
-    <link rel="stylesheet" href="{{ site.baseurl }}/style-homepage.css">
-    <script src="{{ site.baseurl }}/elementRandomColor-homepage.js" defer></script>
+    <link rel="stylesheet" href="{{ site.url }}/style-homepage.css">
+    <script src="{{ site.url }}/elementRandomColor-homepage.js" defer></script>
             
   </head>
   <body>
@@ -34,7 +34,7 @@ layout: none
                 <span>Version française</span> (<span lang='en'>French version</span>)
             </li>
             <li>
-                <a href="{{ site.baseurl }}/index-en"><span lang='en'>Go to English version</span> (<span lang='fr-fr'>Aler à la version anglaise</span>)</a>
+                <a href="{{ site.url }}/index-en"><span lang='en'>Go to English version</span> (<span lang='fr-fr'>Aler à la version anglaise</span>)</a>
             </li>
         </ul>
       </nav>
@@ -57,10 +57,10 @@ layout: none
         </p>
         <ul class="list-projects">
             <li>
-                <a href="{{ site.baseurl }}/allarticles">Mon blog</a>
+                <a href="{{ site.url }}/allarticles">Mon blog</a>
             </li>
             <li>
-                <a href="https://tinyletter.com/lucienbill">Ma newsletter tech et justice sociale</a>
+                <a href="{{ site.projects-links.newsletter }}">Ma newsletter tech et justice sociale</a>
             </li>
             <li>
                 <a href="https://nomavecjeudemotsdebile.pages.dev/">Le meilleur outil pour nommer vos personas</a>

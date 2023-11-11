@@ -18,8 +18,8 @@ layout: none
     <meta property="og:title" content="Lucien Bill's Homepage">
     <meta property="og:description" content="Welcome to my website. Find out more about who I am and what I do.">
     
-    <link rel="stylesheet" href="{{ site.baseurl }}/style-homepage.css">
-    <script src="{{ site.baseurl }}/elementRandomColor-homepage.js" defer></script>
+    <link rel="stylesheet" href="{{ site.url }}/style-homepage.css">
+    <script src="{{ site.url }}/elementRandomColor-homepage.js" defer></script>
             
   </head>
   <body>
@@ -31,7 +31,7 @@ layout: none
       <nav>
         <ul class="list-lang">
             <li>
-                <a href="{{ site.baseurl }}/index-fr"><span lang='fr-fr'>Aller à la version française</span> (<span lang='en'>Go to French version</span>)</a>
+                <a href="{{ site.url }}/index-fr"><span lang='fr-fr'>Aller à la version française</span> (<span lang='en'>Go to French version</span>)</a>
             </li>
             <li class="selected">
                 <span lang='en'>English version</span> (<span lang='fr-fr'>version anglaise</span>)
@@ -57,10 +57,10 @@ layout: none
         </p>
         <ul class="list-projects">
             <li>
-                <a href="{{ site.baseurl }}/allarticles">My blog (in French)</a>
+                <a href="{{ site.url }}/allarticles">My blog (in French)</a>
             </li>
             <li>
-                <a href="https://tinyletter.com/lucienbill">My newsletter about tech and social justice (in French)</a>
+                <a href="{{ site.projects-links.newsletter }}">My newsletter about tech and social justice (in French)</a>
             </li>
             <li>
                 <a href="https://getanamewithapun.pages.dev/">The perfect tool to choose a name for a persona</a>

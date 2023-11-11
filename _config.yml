@@ -42,6 +42,9 @@ footer-links:
   twitter: billythetroll
   soundcloud: lucien-bill-1
 
+projects-links:
+  newsletter: "https://tinyletter.com/lucienbill"
+
 # Build settings
 # theme: minima
 plugins:
