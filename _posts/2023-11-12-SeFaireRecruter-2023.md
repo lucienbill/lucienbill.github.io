@@ -90,6 +90,9 @@ Je pense qu'en envoyant un message à [l'Ecole du recrutement](https://www.linke
 
 Si vous préférez les grosses structures aux indep, c'est possible aussi.
 Au début de ma carrière j'étais en contact avec [Page Personnel](https://www.linkedin.com/company/pagepersonnel/) et ça m'a aidé.
+
+Je sais que [WeLoveDevs](https://school.welovedevs.com/) a aussi du contenu sur ces sujets : connaissant l'équipe, c'est certainement un bon pan.
+
 L'essentiel est de trouver l'accompagnement qui vous correspond.
 
 Et surtout : budgétisez !
