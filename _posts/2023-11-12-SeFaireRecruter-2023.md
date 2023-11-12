@@ -25,7 +25,7 @@ Mes conseils et avis sont les suivants
 
 Faire un portfolio pour démontrer vos savoirs-faire, c'est un truc de privilégié·e.
 J'en ai un, sous la forme de quelques projets dont je suis plutôt fier ([là](https://github.com/lucienbill/obsidian-daily-notes/blob/main/fr-FR/README.md), [là](https://gist.github.com/lucienbill/9b8ec098557eda9c5ce70e3e0780f6ff) et [là](https://nomavecjeudemotsdebile.pages.dev/)) et de ce site internet parce que j'ai la chance d'avoir pu y consacrer du temps en dehors de mon travail.
-La bonne nouvelle est que je n'ai jamais été recruté pour tout ça ni pour ma newsletter.
+La bonne nouvelle est que je n'ai jamais été recruté pour tout ça ni pour ma [newsletter]({{ site.projects-links.newsletter }}).
 C'est une bonne nouvelle parce ça signifie que vous n'en avez pas besoin ! 
 Faites des side-projects si ça vous éclate, et c'est tout : ne pas en faire, c'est cool aussi.
 
