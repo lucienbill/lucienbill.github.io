@@ -37,13 +37,14 @@ permalink: /:title/
 
 footer-links:
   github: lucienbill
-  linkedin: 🤷-lucien-bill-3906b043/
+  linkedin: lucienbill/
   rss: yes # just type anything here for a working RSS icon
   twitter: billythetroll
   soundcloud: lucien-bill-1
 
 projects-links:
   newsletter: "https://tinyletter.com/lucienbill"
+  linkedin: "https://www.linkedin.com/in/lucienbill/"
 
 # Build settings
 # theme: minima
