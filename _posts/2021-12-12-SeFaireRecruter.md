@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Quelques astuces pour se faire recruter dans la tech
+category: obsolete
 ---
 
 Le secteur de l'informatique attire beaucoup de monde : il est ouvert aux reconversions, et les conditions de travail proposées sont généralement intéressantes.
