@@ -146,7 +146,7 @@
 
   @counter-style counter-projects {
     system: fixed;
-    symbols: ✍️ 📰 😎 🛠️ ⏳;
+    symbols: ✍️ 📰 😎 🛠️ 📺;
     suffix: " ";
   }
   .list-projects{
