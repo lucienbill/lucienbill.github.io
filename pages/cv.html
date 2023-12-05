@@ -1,0 +1,41 @@
+---
+layout: page
+title: Recrutez des personnes talentueuses
+permalink: /recrutez/
+---
+
+<div id="listOfCv">
+    <noscript>Cette page a besoin de JavaScript pour fonctionner</noscript>
+</div>
+
+<script>
+    const cvs = [
+        {
+            "name":"Nadine Amo",
+            "text":"Lorem Elsass ipsum Oberschaeffolsheim ullamcorper Chulia Roberstau Richard Schirmeck lotto-owe wie amet hopla gravida libero, Yo dû. turpis dolor und tellus ac sit rossbolla bissame consectetur leverwurscht blottkopf, knack rucksack Heineken sit picon bière elementum réchime nüdle placerat Carola non nullam gal yeuh. eget id eleifend schnaps Salut bisamme Strasbourg condimentum et vielmols, hopla turpis, Miss Dahlias chambon ornare bredele Christkindelsmärik kartoffelsalad ornare sagittis porta so munster flammekueche geht's ac ante quam, aliquam suspendisse hopla Coopé de Truchtersheim Hans Pellentesque amet, non Spätzle auctor, hoplageiss baeckeoffe Huguette ch'ai Oberschaeffolsheim mollis leo sed id, messti de Bischheim dui schpeck knepfle amet kougelhopf libero. lacus leo libero, pellentesque purus Morbi Pfourtz ! varius rhoncus in, senectus Wurschtsalad merci vielmols "
+        },
+        {
+            "name":"Nordine Ateur",
+            "text":"Lorem Elsass ipsum Oberschaeffolsheim ullamcorper Chulia Roberstau Richard Schirmeck lotto-owe wie amet hopla gravida libero, Yo dû. turpis dolor und tellus ac sit rossbolla bissame consectetur leverwurscht blottkopf, knack rucksack Heineken sit picon bière elementum réchime nüdle placerat Carola non nullam gal yeuh. eget id eleifend schnaps Salut bisamme Strasbourg condimentum et vielmols, hopla turpis, Miss Dahlias chambon ornare bredele Christkindelsmärik kartoffelsalad ornare sagittis porta so munster flammekueche geht's ac ante quam, aliquam suspendisse hopla Coopé de Truchtersheim Hans Pellentesque amet, non Spätzle auctor, hoplageiss baeckeoffe Huguette ch'ai Oberschaeffolsheim mollis leo sed id, messti de Bischheim dui schpeck knepfle amet kougelhopf libero. lacus leo libero, pellentesque purus Morbi Pfourtz ! varius rhoncus in, senectus Wurschtsalad merci vielmols "
+        }
+    ]
+    
+    const listOfCV = document.getElementById("listOfCv")
+
+    for (let index = 0; index < cvs.length; index++) {
+        const cv = cvs[index];
+        let fragment = document.createDocumentFragment();
+        let div = document.createElement('div')
+        let h3 = document.createElement('h3')
+        let p = document.createElement('p')
+
+        h3.textContent = cv.name
+        p.textContent = cv.text
+        
+        div.appendChild(h3);
+        div.appendChild(p);
+        fragment.appendChild(div);
+        listOfCV.appendChild(fragment);
+    }
+
+</script>
