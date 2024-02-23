@@ -49,11 +49,11 @@ Je suis trop teubé pour faire du Clean Code et de la programmation orientée ob
 Enfin, aujourd'hui je le vis bien !
 Pendant longtemps, j'ai pensé que j'avais un problème.
 
-Je répète aux quelques personnes que j'aide à se lancer dans le code qu'il n'y a pas Une Façon Parfaite Et Unique de répondre à un besoin avec du code : si ton code marche mais ne ressemble pas à celui qu'à fait ton ou ta camarade, c'est pas grave, c'est justement la preuve qu'on peut arriver à la même fin par plusieurs de moyens.
+Je répète aux quelques personnes que j'aide à se lancer dans le code qu'il n'y a pas Une Façon Parfaite Et Unique de répondre à un besoin avec du code : si ton code marche mais ne ressemble pas à celui qu'à fait ton ou ta camarade, c'est pas grave, c'est justement la preuve qu'on peut arriver à la même fin par plusieurs moyens.
 Si j'applique ce principe aux autres, alors je peux me l'appliquer : il m'a juste fallu un peu de temps pour m'en rendre compte.
 
 Dans ce même état esprit : peut-être que Clean Code est la façon de coder qui vous parle, celle qui vous semble la plus accessible.
-Dans ce cas : ne brûler pas ce bouquin parce que quelqu'un sur internet a dit "*ouais, c'est pas trop mon truc en fait*" !
+Dans ce cas : ne brûlez pas ce bouquin parce que quelqu'un sur internet a dit "*ouais, c'est pas trop mon truc en fait*" !
 Retenez simplement que c'est une façon de faire parmi tant d'autres.
 
 ## ⭐ Bonus
