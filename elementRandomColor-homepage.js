@@ -18,6 +18,21 @@ const colorsDark =
         "rgb(229, 145, 156)" //red
      ]
 
+function shuffle(array) {
+    let currentIndex = array.length;
+
+    // While there remain elements to shuffle...
+    while (currentIndex != 0) {
+
+        // Pick a remaining element...
+        let randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+}
 
 function setRandomElementColor() {
     let currentTheme = "light"
@@ -26,16 +41,22 @@ function setRandomElementColor() {
     }
     elements = Array.from(document.querySelectorAll("a, h1, h2, h3, h4, h5, strong, .randomcolor"))
 
+    if (currentTheme == "light"){
+        shuffle(colorsLight)
+    } else {
+        shuffle(colorsDark)
+    }
+
     for (let index = 0; index < elements.length; index++) { // Faster than foreach
-        elements[index].style.color = getRandomColor(currentTheme);
+        elements[index].style.color = getColorRoundRobin(currentTheme, index);
     }
 }
 
-function getRandomColor(theme="light") {
+function getColorRoundRobin(theme="light", index) {
     if (theme == "light"){
-        return colorsLight[Math.floor(Math.random() * colorsLight.length)];
+        return colorsLight[index % colorsLight.length];
     } else {
-        return colorsDark[Math.floor(Math.random() * colorsDark.length)];
+        return colorsDark[index % colorsDark.length];
     }
 }
 
