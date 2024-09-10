@@ -135,15 +135,6 @@
       list-style-type: counter-lang;
   }
 
-  @counter-style counter-skills {
-    system: fixed;
-    symbols: 📐 🤖 🎓;
-    suffix: " ";
-  }
-  .list-skills{
-      list-style-type: counter-skills;
-  }
-
   @counter-style counter-projects {
     system: fixed;
     symbols: ✍️ 📰 😎 🛠️ 📺;
