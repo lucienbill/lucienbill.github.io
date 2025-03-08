@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article class="post">
+  <h1> #{{ page.issuenb }} {{ page.title }}</h1>
+  <div class="date">
+    Publiée le {{ page.date | date: "%d" }}/{{ page.date | date: "%m" }}/{{ page.date | date: "%Y" }}
+  </div>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+  <hr>
+  <div class="share">
+    Vous avez aimé cette issue de ma Newsletter ?
+    Vous pouvez : 
+    <ul>
+      <li>La partager -> <a id="copyPermalink" title="Cliquez ici pour copier le lien vers cette page." onclick="copyToClipboard()" permalink="{{ site.url }}{{ page.url }}">📄</a></li>
+      <li><a href="{{ site.projects-links.newsletter }}">Vous abonner avec votre e-mail</a></li>
+      <li>Vous abonner via le <a href="{{ site.baseurl }}/feed.xml">flux RSS</a></li>
+    </ul>
+  </div>  
+</article>

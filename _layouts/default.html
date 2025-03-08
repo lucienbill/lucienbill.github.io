@@ -15,7 +15,7 @@
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now --> 
     {% include analytics.html %}
     <script src="{{ site.baseurl }}/themeswitcher.js" defer></script>
-    {% if page.layout == "post" or page.layout == "page" %}
+    {% if page.layout == "post" or page.layout == "page" or page.layout == "newsletter"%}
     <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js" defer></script>
     <script src="{{ site.baseurl }}/showAnchor.js" defer></script>
     <script src="{{ site.baseurl }}/copypermalink.js" defer></script>
@@ -54,7 +54,8 @@
           <nav>
               <a id="themeSwitcher" title="switch theme (light/dark)"><span id="themeSwitcherIcon"></span> Changer de thème (sombre/clair)</a> | 
               <a href="{{ site.url }}">⭐ Homepage</a> | 
-              <a href="{{ site.url }}/allarticles" title="All latest blog articles">🗃️ Tous mes articles</a> | 
+              <a href="{{ site.url }}/allarticles" >🗃️ Tous mes articles</a> | 
+              <a href="{{ site.url }}/newsletter" >🗞️ Ma newsletter</a> | 
           </nav>
 
         </header>

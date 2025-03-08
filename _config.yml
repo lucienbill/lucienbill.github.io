@@ -39,7 +39,8 @@ footer-links:
   github: lucienbill
   linkedin: lucienbill/
   rss: yes # just type anything here for a working RSS icon
-  twitter: billythetroll
+  # twitter: billythetroll
+  bluesky: lucienbill.fr
   soundcloud: lucien-bill-1
 
 projects-links:
