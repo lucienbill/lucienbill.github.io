@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Tous les articles du site
-permalink: /allarticles/
+permalink: /newsletter/
 ---
 
 <article class="page">
   <div class="posts">
   {% assign prev_year = 0 %}
   {% for post in site.posts %}
-    {% unless post.category == "newsletter" %}
+    {% if post.category == "newsletter" %}
       {% assign open_ul = false %}
       {% assign close_ul = false %}
       {% assign current_year = post.date | date: "%Y"  %}
@@ -29,7 +29,7 @@ permalink: /allarticles/
         <li>
           <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </li>
-    {% endunless %}
+    {% endif %}
   {% endfor %}
   </ul>
   </div>
