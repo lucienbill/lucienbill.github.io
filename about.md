@@ -15,9 +15,9 @@ sur la technologie (en français),
 ,
 [Twitter](https://twitter.com/BillyTheTroll)
 ,
-[Mastodon](https://mastodon.comwork.io/@billythetroll)
+[Mastodon]({{ site.footer-links.mastodon }})
 et
-[Linkedin](https://www.linkedin.com/in/lucien-bill-3906b043/)
+[Linkedin](https://www.linkedin.com/in/{{ site.footer-links.linkedin }})
 .
 J'ai également créé
 [ce site d'une utilité cruciale](https://nomavecjeudemotsdebile.pages.dev/)
@@ -46,9 +46,9 @@ You can find me on
 , 
 <a href="https://twitter.com/BillyTheTroll">Twitter</a>
 , 
-<a href="https://mastodon.comwork.io/@billythetroll">Mastodon</a>
+<a href="{{ site.footer-links.mastodon }}">Mastodon</a>
 , and 
-<a href="https://www.linkedin.com/in/lucien-bill-3906b043/">Linkedin</a>
+<a href="{{ site.projects-links.linkedin }}">Linkedin</a>
 .
 Also, I made <a href="https://getanamewithapun.pages.dev/">this definitely very useful website</a>.
 </p>

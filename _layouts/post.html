@@ -29,6 +29,9 @@ layout: default
   </div>
 
   <div class="date">
-    Publié le {{ page.date | date: "%d" }}/{{ page.date | date: "%m" }}/{{ page.date | date: "%Y" }}
+    Publié le {{ page.date | date: "%d" }}/{{ page.date | date: "%m" }}/{{ page.date | date: "%Y" }}.
+    {% if page.updatedOn %}
+    Mis à jour le {{page.updatedOn}}
+    {% endif %}
   </div>
 </article>
