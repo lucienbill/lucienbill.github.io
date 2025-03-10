@@ -35,7 +35,7 @@ Pour vous abonner, vous pouvez donc <a href="{{ site.projects-links.newsletter }
         <ul class="post">
       {% endif %}
         <li>
-          <a href="{{ site.baseurl }}{{ post.url }}">#{{post.issuenb}} - {{ post.title }}</a>
+          <a href="{{ site.baseurl }}{{ post.url }}">#{{ post.title }}</a>
         </li>
     {% endif %}
   {% endfor %}
