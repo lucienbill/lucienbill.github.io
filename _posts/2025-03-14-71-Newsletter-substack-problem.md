@@ -96,7 +96,7 @@ Un résumé grossier serait :
 - La licence MIT n'impose pas cette restriction : n'importe quelle entreprise va donc pouvoir en dériver un produit dont le code est propriétaire
 
 C'est un peu plus subtil que ça, sinon les licences seraient pas aussi longues à lire, et je n'ai pas encore tout à fait les réponses à toutes mes questions, telles que : 
-- Si mon logiciel est licensé GPL V2, est-ce que je peux dire *"vous avez accès au code source, par contre pour l'utiliser il faut payer une license"*?
+- Si mon logiciel est licencé GPL V2, est-ce que je peux dire *"vous avez accès au code source, par contre pour l'utiliser il faut payer une licence"*?
 - GPL V2 ou V3, quelles sont les différences ?
 
 En tout cas pour les composants de Linux, je ne suis pas certain que laisser la porte ouverte aux portes fermées soit une bonne idée.
