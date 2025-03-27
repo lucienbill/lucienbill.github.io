@@ -9,9 +9,67 @@ subtitle: TODO
 Publiée le {{ page.date | date: "%d" }}/{{ page.date | date: "%m" }}/{{ page.date | date: "%Y" }}
 </div>
 
+TODO
+Coucou !
+Quoi de neuf ces 2 dernières semaines pour vous ?
+Vraie question : qu'on se connaisse ou pas, envoyez moi un message.
+De mon côté, j'ai un sujet administratif important en cours mais très chouette, peut-être qu'un jour je vous en parlerai.
+
+En autre info chouette : jeudi, j'ai encore participé à un tournage en tant que preneur de son.
+Ca s'inscrit dans le même contexte que [cette vidéo](https://www.youtube.com/watch?v=dZBuUoNoWj4), dès que c'est disponible je vous partage le résultat !
+
+J'ai une amie qui cherche une alternanc : domaine = XXX, date = XXX -> contactez-moi
 
 
 Bonne lecture !
+
+## Trucs techniques
+### [🤯 Un étudiant parvient à faire mieux que les hashtables](https://www.quantamagazine.org/undergraduate-upends-a-40-year-old-data-science-conjecture-20250210/)
+Les hashtables sont des structures de données très performantes, et bien connues.
+Il y a 40 ans, une limite à leur performance a été conjecturée, et depuis personne n'a su faire mieux.
+
+Et là, un étudiant qui ignorait cette conjecture a dépassé cette limite.
+L'article ne décrit pas le principe utilisé, mais [cette vidéo](https://www.youtube.com/watch?v=ArQNyOU1hyE) l'explique bien.
+La solution est élégante, mais il fallait y penser !
+
+### [🕹️ La SNES devient plus rapide avec le temps](https://arstechnica.com/gaming/2025/03/this-small-snes-timing-issue-is-causing-big-speedrun-problems/)
+Automatiser des speedrun sur un émulateur de SNES, ça se fait bien.
+Transposer cette automatisation sur du hardware, par contre, ça déconne !
+C'est à cause d'un composant de génération de fréquence pas assez stable : elle provoque des changements aléatoires dans le comportement de la console.
+A priori, pas assez importants pour gêner un joueur ou une joueuse, mais bel et bien gênants pour des automates.
+
+### [📧 Auto-hébergement d'e-mails](https://nilsnh.no/2023/09/02/celebrating-8-years-of-self-hosting-mail-in-a-box/)
+Si vous souhaitez héberger vous-même votre serveur mail, c'est faisable mais pas simple.
+
+### [👩‍💻 Apprendre l'assembleur](https://github.com/FFmpeg/asm-lessons)
+Quand on a besoin qu'un bout de code soit très performant, on abandonne souvent Java, Javascript, et Python pour faire du C ou du Rust.
+Dans certains cas, C et Rust ne suffisent pas : on fait alors de l'assembleur.
+
+Dans le cas de FFmpeg, on parle de traitement de vidéo et de son, parfois en temps réel : c'est donc de l'assembleur fait-main !
+
+Si le sujet vous intéresse, FFmpeg a mis à disposition des cours pour rendre ce savoir faire plus accessible
+
+### [📄 Pour extraire des données de PDF, bon courage !](https://arstechnica.com/ai/2025/03/why-extracting-data-from-pdfs-is-still-a-nightmare-for-data-experts/)
+En résumé : extraire des données de PDF, c'est souvent un bon casse-tête.
+Imaginez : vous êtes un organisme d'assurance, et vous demandez à un·e client·e un relevé de compte. 
+D'une personne à l'autre, le format du document peut fortement varier.
+Parfois, c'est même des images embarquées dans du PDF !
+
+Les adeptes de l'IA tentent d'utiliser des LLM pour résoudre ce problème.
+C'est pas bête, mais comme je le répète assez souvent : l'IA va pouvoir aider une vraie personne à faire le travail, mais ne saura pas le remplacer.
+Je ne suis pas le seul à penser que le LLM ont des limites : 
+
+<blockquote lang="en">
+<p>
+AI researcher and data journalist Simon Willison identified several critical concerns of using LLMs for OCR in a conversation with Ars Technica. "I still think the biggest challenge is the risk of accidental instruction following," he says, always wary of prompt injections (in this case accidental) that might feed nefarious or contradictory instructions to a LLM.
+</p>
+<p>
+"That and the fact that table interpretation mistakes can be catastrophic," Willison adds. "In the past I've had lots of cases where a vision LLM has matched up the wrong line of data with the wrong heading, which results in absolute junk that looks correct. Also that thing where sometimes if text is illegible a model might just invent the text."
+</p>
+<p>
+These issues become particularly troublesome when processing financial statements, legal documents, or medical records, where a mistake might put someone's life in danger. The reliability problems mean these tools often require careful human oversight, limiting their value for fully automated data extraction.
+</p>
+</blockquote>
 
 ## Tech Shit Show
 ### [🤢 Un chatbot se fait passer pour un ado suicidé](https://arstechnica.com/tech-policy/2025/03/mom-horrified-by-character-ai-chatbots-posing-as-son-who-died-by-suicide/)
@@ -40,33 +98,9 @@ C'est génial, parce que :
 - Ca passe à la moulinette du LLM qui hallucine bien comme il faut. A la fin de vos journées, vous lisez le résumé et doutez de vos propres souvenirs en essayant de démêler la réalité de la fiction
 - Le bouton "mets toi en pause, je ne veux pas que tu écoutes ça" ne semble pas fonctionner
 
-## Trucs techniques
-### [🤯 Un étudiant parvient à faire mieux que les hashtables](https://www.quantamagazine.org/undergraduate-upends-a-40-year-old-data-science-conjecture-20250210/)
-Les hashtables sont des structures de données très performantes, et bien connues.
-Il y a 40 ans, une limite à leur performance a été conjecturée, et depuis personne n'a su faire mieux.
 
-Et là, un étudiant qui ignorait cette conjecture a dépassé cette limite.
-L'article ne décrit pas le principe utilisé, mais [cette vidéo](https://www.youtube.com/watch?v=ArQNyOU1hyE) l'explique bien.
-La solution est élégante, mais il fallait y penser !
+## Social et politique
 
-### [🕹️ La SNES devient plus rapide avec le temps](https://arstechnica.com/gaming/2025/03/this-small-snes-timing-issue-is-causing-big-speedrun-problems/)
-Automatiser des speedrun sur un émulateur de SNES, ça se fait bien.
-Transposer cette automatisation sur du hardware, par contre, ça déconne !
-C'est à cause d'un composant de génération de fréquence pas assez stable : elle provoque des changements aléatoires dans le comportement de la console.
-A priori, pas assez importants pour gêner un joueur ou une joueuse, mais bel et bien gênants pour des automates.
-
-### [📧 Auto-hébergement d'e-mails](https://nilsnh.no/2023/09/02/celebrating-8-years-of-self-hosting-mail-in-a-box/)
-Si vous souhaitez héberger vous-même votre serveur mail, c'est faisable mais pas simple.
-
-### [👩‍💻 Apprendre l'assembleur](https://github.com/FFmpeg/asm-lessons)
-Quand on a besoin qu'un bout de code soit très performant, on abandonne souvent Java, Javascript, et Python pour faire du C ou du Rust.
-Dans certains cas, C et Rust ne suffisent pas : on fait alors de l'assembleur.
-
-Dans le cas de FFmpeg, on parle de traitement de vidéo et de son, parfois en temps réel : c'est donc de l'assembleur fait-main !
-
-Si le sujet vous intéresse, FFmpeg a mis à disposition des cours pour rendre ce savoir faire plus accessible
-
-## A trier
 ### [👮‍♂️ Le narcotrafic a bon dos](https://www.laquadrature.net/narcotraficotage/)
 Le gouvernement veut lutter contre le narcotrafic.
 A priori, c'est "bien".
@@ -85,6 +119,8 @@ Je n'ai cependant pas l'impression qu'une telle pression soit mise sur les respo
 
 ### [👑 Ne m'appelez pas Queen](https://bsky.app/profile/dollywood.bsky.social/post/3lks675khac2y)
 On peut manifester son soutien sans passer par le culte à la personnalité.
+
+## Vers un meilleur usage de la tech
 
 ### [🔋 Une batterie sodium-ion](https://www.theverge.com/news/631357/elecom-power-bank-battery-sodium-ion)
 Cette alternative aux batteries au lithium continue de se développer : si tout va bien, il sera bientôt possible d'en acheter !
