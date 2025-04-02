@@ -1,36 +1,45 @@
 ---
 layout: newsletter
-title: 72 - TODO
+title: 72 - Hashtables du futur
 category: newsletter
-subtitle: TODO
+subtitle: Des tables qu'on ne trouve pas dans les magasins de meubles
 ---
 *{{ page.subtitle }}*
 <div class="date">
 Publiée le {{ page.date | date: "%d" }}/{{ page.date | date: "%m" }}/{{ page.date | date: "%Y" }}
 </div>
 
-TODO
 Coucou !
-Quoi de neuf ces 2 dernières semaines pour vous ?
+
+J'ai une amie qui cherche une alternance en tant que technicienne supérieure système et réseaux.
+Les infos : 
+- Elle cherche une entreprise pour l'accompagner, de septembre 2025 à septembre 2026
+- Si vous aveez des plans ou des contacts, envoyez moi un message
+- La description du cursus est [ici](https://www.cefim.eu/formations/technicien-superieur-systemes-et-reseaux/)
+
+Sinon, quoi de neuf ces 2 dernières semaines pour vous ?
 Vraie question : qu'on se connaisse ou pas, envoyez moi un message.
 De mon côté, j'ai un sujet administratif important en cours mais très chouette, peut-être qu'un jour je vous en parlerai.
 
 En autre info chouette : jeudi, j'ai encore participé à un tournage en tant que preneur de son.
 Ca s'inscrit dans le même contexte que [cette vidéo](https://www.youtube.com/watch?v=dZBuUoNoWj4), dès que c'est disponible je vous partage le résultat !
 
-J'ai une amie qui cherche une alternanc : domaine = XXX, date = XXX -> contactez-moi
-
+Maintenant que vous avez terminé les infos chouettes (à laquelle on ajoute la condamnation de Marine Le Pen 🎉), préparez-vous pour des news de la tech.
 
 Bonne lecture !
 
+PS: oui, je suis en retard! Une fois le week-end passé, j'ai préféré attendre aujourd'hui pour laisser la place à nos adelphes pour la journée internationale de visibilité transgenre (qui ont besoin de notre soutien tout court, pas juste le 31 mars), puis esquiver le 1er avril.
+
 ## Trucs techniques
-### [🤯 Un étudiant parvient à faire mieux que les hashtables](https://www.quantamagazine.org/undergraduate-upends-a-40-year-old-data-science-conjecture-20250210/)
+### [🤯 Un étudiant parvient à améliorer les hashtables](https://www.quantamagazine.org/undergraduate-upends-a-40-year-old-data-science-conjecture-20250210/)
 Les hashtables sont des structures de données très performantes, et bien connues.
 Il y a 40 ans, une limite à leur performance a été conjecturée, et depuis personne n'a su faire mieux.
 
-Et là, un étudiant qui ignorait cette conjecture a dépassé cette limite.
+Et là, un étudiant qui ignorait l'existance de cette conjecture l'a juste explosée.
 L'article ne décrit pas le principe utilisé, mais [cette vidéo](https://www.youtube.com/watch?v=ArQNyOU1hyE) l'explique bien.
 La solution est élégante, mais il fallait y penser !
+
+A quand une implémentation pratique de ce concept ?
 
 ### [🕹️ La SNES devient plus rapide avec le temps](https://arstechnica.com/gaming/2025/03/this-small-snes-timing-issue-is-causing-big-speedrun-problems/)
 Automatiser des speedrun sur un émulateur de SNES, ça se fait bien.
@@ -42,7 +51,7 @@ A priori, pas assez importants pour gêner un joueur ou une joueuse, mais bel et
 Si vous souhaitez héberger vous-même votre serveur mail, c'est faisable mais pas simple.
 
 ### [👩‍💻 Apprendre l'assembleur](https://github.com/FFmpeg/asm-lessons)
-Quand on a besoin qu'un bout de code soit très performant, on abandonne souvent Java, Javascript, et Python pour faire du C ou du Rust.
+Quand on a besoin qu'un bout de code soit très performant, on abandonne parfois Java, Javascript, et Python pour faire du C ou du Rust.
 Dans certains cas, C et Rust ne suffisent pas : on fait alors de l'assembleur.
 
 Dans le cas de FFmpeg, on parle de traitement de vidéo et de son, parfois en temps réel : c'est donc de l'assembleur fait-main !
@@ -71,6 +80,8 @@ These issues become particularly troublesome when processing financial statement
 </p>
 </blockquote>
 
+Au delà des limites techniques des IA génératives, je rappelle qu'elles sont entraînées de façons qui ne sont pas du tout éthiques.
+
 ## Tech Shit Show
 ### [🤢 Un chatbot se fait passer pour un ado suicidé](https://arstechnica.com/tech-policy/2025/03/mom-horrified-by-character-ai-chatbots-posing-as-son-who-died-by-suicide/)
 
@@ -86,9 +97,9 @@ J'ai hâte que ce genre d'entreprise fasse faillite et qu'on arrête ces délire
 Oui, Roku a déployé à titre expérimental la fonctionnalité suivante : afficher une publicité (vidéo + son) à l'allumage de la télévision.
 J'imagine la feature request !
 
-> En tant qu'utilisateur·ice de ma télévision
-> Quand j'allume ma télé
-> Alors je veux qu'une publicité s'affiche
+> En tant qu'utilisateur·ice de ma télévision,
+> Quand j'allume ma télé,
+> Alors je veux qu'une publicité s'affiche,
 > Afin que je puisse hurler de frustration et avoir envie de l'éteindre à tout jamais
 
 ### [🪄 Mémoire assistée par l'IA : une fanfiction de votre vie](https://www.theverge.com/reviews/627056/bee-review-ai-wearable)
@@ -106,7 +117,8 @@ Le gouvernement veut lutter contre le narcotrafic.
 A priori, c'est "bien".
 Je sors juste ce court extrait de l'article de la Quadrature du Net : 
 
-> - La loi dite « Narcotrafic » attaque la protection des messageries chiffrées (comme Signal ou WhatsApp) en imposant la mise en place de portes dérobées pour la police et le renseignement.
+> La loi dite « Narcotrafic » attaque la protection des messageries chiffrées (comme Signal ou WhatsApp) en imposant la mise en place de portes dérobées pour la police et le renseignement.
+> 
 > En modifiant le régime juridique de la criminalité organisée, applicable en d’autres cas, cette loi ne s’applique pas uniquement au trafic de drogues. Elle peut même être utilisée pour surveiller des militant·es.
 
 Là, on se rend compte que ça pue, et que le nacrotrafic n'est qu'un prétexte.
@@ -133,7 +145,7 @@ On a peut-être besoin de ré-apprendre la patience, de ré-apprendre à cherche
 
 ### [Peut-on se passer facilement des GAFAM pour le sous-titrage automatique ?](https://emmanuelle-aboaf.netlify.app/blog/article/peut-on-se-passer-facilement-des-gafam-pour-le-sous-titrage-automatique)
 Réponse courte : malheureusement, non.
-Lisez tout de même l'article d'Emmanuelle ABOAF, elle explique bien pourquoi.
+Lisez l'article d'Emmanuelle ABOAF, elle explique bien pourquoi.
 Et comme elle l'écrit : 
 > Au lieu de nous faire culpabiliser, proposez nous (ou construisez nous) des alternatives correctes et accessibles. 
 
