@@ -145,7 +145,7 @@ On a peut-être besoin de ré-apprendre la patience, de ré-apprendre à cherche
 
 ### [Peut-on se passer facilement des GAFAM pour le sous-titrage automatique ?](https://emmanuelle-aboaf.netlify.app/blog/article/peut-on-se-passer-facilement-des-gafam-pour-le-sous-titrage-automatique)
 Réponse courte : malheureusement, non.
-Lisez l'article d'Emmanuelle ABOAF, elle explique bien pourquoi.
+Lisez l'article d'Emmanuelle Aboaf, elle explique bien pourquoi.
 Et comme elle l'écrit : 
 > Au lieu de nous faire culpabiliser, proposez nous (ou construisez nous) des alternatives correctes et accessibles. 
 
