@@ -14,7 +14,7 @@ Coucou !
 J'ai une amie qui cherche une alternance en tant que technicienne supérieure système et réseaux.
 Les infos : 
 - Elle cherche une entreprise pour l'accompagner, de septembre 2025 à septembre 2026
-- Si vous aveez des plans ou des contacts, envoyez moi un message
+- Si vous avez des plans ou des contacts, envoyez moi un message
 - La description du cursus est [ici](https://www.cefim.eu/formations/technicien-superieur-systemes-et-reseaux/)
 
 Sinon, quoi de neuf ces 2 dernières semaines pour vous ?
@@ -35,7 +35,7 @@ PS: oui, je suis en retard! Une fois le week-end passé, j'ai préféré attendr
 Les hashtables sont des structures de données très performantes, et bien connues.
 Il y a 40 ans, une limite à leur performance a été conjecturée, et depuis personne n'a su faire mieux.
 
-Et là, un étudiant qui ignorait l'existance de cette conjecture l'a juste explosée.
+Et là, un étudiant qui ignorait l'existence de cette conjecture l'a juste explosée.
 L'article ne décrit pas le principe utilisé, mais [cette vidéo](https://www.youtube.com/watch?v=ArQNyOU1hyE) l'explique bien.
 La solution est élégante, mais il fallait y penser !
 
