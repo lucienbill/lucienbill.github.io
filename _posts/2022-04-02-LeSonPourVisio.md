@@ -2,7 +2,7 @@
 layout: post
 title: Comment avoir un bon son en visio ?
 excerpt_separator: <!--more-->
-updatedOn: 09/03/2025
+updatedOn: 05/06/2025
 ---
 
 Entre le télétravail et les équipes réparties sur différents sites, si vous êtes dans l'informatique, vous ~~subissez~~ participez probablement à beaucoup de visio-conférences.
@@ -68,6 +68,13 @@ En bref, les principales familles de micros sont :
 - Les micros à condensateur. Ils sont généralement très sensibles : on branche, ça capte du son. C'est intéressant, mais vos collègues entendront aussi très bien vos enfants qui jouent dans la pièce d'à côté. Pour notre utilisation, c'est pas terrible (a moins de vivre dans un studio de musique, vous vivez probablement dans le bruit)
 - Les micros dynamiques. On en retrouve sur les plateaux télé et les scènes de concerts : leur sensibilité est faible, ils sont conçus pour capter surtout ce qui est juste devant eux. C'est ce qu'on veut
 
+**Mise à jour - 2025-06-05 :**
+> Là, je suis totalement tombé dans le piège de la sensiblité.
+> Un microphone moins sensible ne rejettera pas mieux le bruit ambiant qu'un microphone très sensible : s'ils ont la même directivité, sont placés au même endroit par rapport à votre bouche, et qu'on règle le gain pour que votre voix soit au même volume sur les 2 micros, le bruit ambiant sera lui aussi au même volume sur les 2 micros.
+> Il faudra plus de gain pour obtenir un signal exploitable avec un microphone peu sensisble : avec une interface audio bas de gamme, cela va introduire un bruit de fond très audible.
+> 
+> Une petite vidéo de démo : [ici](https://www.youtube.com/watch?v=R5n6r8frees)
+
 Notes :
 - Les points ci-dessus sont des généralités, pas des règles absolues. On peut trouver des micros à condensateur moins sensibles que des dynamiques. Et il existe d'autres types de micro, mais pour aujourd'hui on les met de côté.
 - La légende raconte que les micros à condensateur ont un meilleur son que les micros dynamiques. Mais la légende est concentrée sur des cas d'usages qui ne sont pas le notre : le cinéma, le chant, etc. De fait, un micro plus sensible capturera mieux les subtilités d'un instrument ou d'une voix. Pour capter votre voix pour une visio, la qualité d'un micro dynamique est amplement suffisante
@@ -82,11 +89,11 @@ Aussi, avec un système modulaire, je peux faire évoluer petit à petit mon mat
 
 Voici quelques modèles :
 - USB
-  - 40€ : **t.bone MB 88U Dual** : micro dynamique vraiment pas cher, devrait faire l'affaire.
+  - 40€ : **t.bone MB 88U Dual** : micro dynamique vraiment pas cher, probablement le meilleur son de tous les temps, devrait faire l'affaire pour de la visio
   - 50€ : **Razer Seiren Mini** - une alternative au Blue Yeti, qui fait moins de choses mais le fait mieux
   - 100€ à 200€ : **Elgato Wave** - un micro correct livré avec plein de fonctionnalités intéressantes
 - XLR dynamique
-  - ~~30€ : **Samson Q7** - J'en ai 2, le son est d'enfer, c'est pas cher~~ ... et c'est introuvable à ce prix aujourd'hui
+  - ~~30€ : **Samson Q7** - J'en ai 2, le son est exploitable, c'est pas cher~~ ... et c'est introuvable à ce prix aujourd'hui
   - 25€ : **Superlux PRA D1** - entre 25€ et 50€, on peut trouver ce type de micro, de qualité suffisante pour de la visio ou du podcast
   - 100€ : **Shure SM58** - une référence, fonctionne bien, solide. Personnellement, je n'aime pas le son qui en sort, testez plutôt le **Sennheiser E835** avant de vous décider.
     - Pourquoi c'est plus cher ? A mon avis, c'est en partie parce que le micro est moins sensible aux bruits de manipulation
@@ -117,8 +124,8 @@ Si vous comptez retraiter le son en post prod, choisissez plutôt du 24 bits, ma
 
 Voici une sélection de matériel : 
 - 16 bits
-  - 40€ : **Behringer U-Phoria UM2** - pas cher, compact
-  - 40€ : **the t.mix MicroMix 2 USB** - fonctionne très bien avec mon Samson Q7. Possède un EQ basique, prend peu de place sur le bureau et a clairement un bruit de fond que j'entends, mais qui ne se remarque pas en visio
+  - 40€ : **Behringer U-Phoria UM2** - pas génial niveau son, mais pas cher et compact
+  - 40€ : **the t.mix MicroMix 2 USB** - Même principe, mais possède un EQ basique plutôt utile. Elle a clairement un bruit de fond que j'entends, mais qui ne se remarque pas en visio
 - 24 bits
   - 90 € : **Steinberg UR12** - C'est ce que j'ai pris parce que les drivers sont stables. Aujourd'hui, il existe de meilleures options : mêmes performances pour moins cher, ou plus de prestations pour le même tarif
   - 60€ : **Swissonic UA-2x2** - Le son est bon, mais certains utilisateur·ices rencontrent des problèmes de drivers plutôt pénibles
@@ -154,10 +161,9 @@ Notes :
 
 ### Suppression de bruits
 Ma boite à tout faire (le machin de chez DBX) propose un "gate" : quelque chose qui coupe le son quand il est trop faible.
-C'est sympa, mais c'est limité.
+Même si les réglages sont limités, c'est très utile : je peux le régler pour qu'on m'entende quand je parle bien près du micro, et qu'on n'entende pas ma voisine de bureau quand elle parle, à 2 mètres de moi.
 
 Pour la suppression de bruit, au niveau matériel je n'ai rien d'autre.
-Mais ce n'est pas gênant puisque j'ai un micro peu sensible, qui capte surtout ma voix.
 
 Par curiosité, j'ai testé NVidia Broadcast (en branchant un micro sensible, un jour où mon voisin faisait des travaux etc) : ça fonctionne très bien.
 C'est aussi très utile quand vous êtes en visio avec un·e collègue qui a un micro très sensible et un environnement de travail bruyant : oubliez la solidarité, et laissez-la souffrir, et n'écoutez que sa voix sans bruit parasite (c'est moche, mais vous n'aidez personne en souffrant inutilement).
@@ -169,17 +175,17 @@ Mais :
 - Si vous avez besoin d'un coup de main, vous pouvez me contacter sur [Mastodon]({{ site.footer-links.mastodon }}), [LinkedIn](https://www.linkedin.com/in/{{ site.footer-links.linkedin }}) ou [BlueSky](https://bsky.app/profile/{{ site.footer-links.bluesky }})
 
 Pour vous aider un peu plus que cette courte conclusion, voici une liste de configurations que je recommande : 
-- **Starter kit USB** : microphone dynamique **USB** à moins de 50€ + bonnette + bras de micro pas cher
+- **Starter kit USB** : microphone **USB** à moins de 50€ + bonnette + bras de micro pas cher
    - Je n'ai pas testé cette configuration, mais en théorie elle devrait plutôt bien fonctionner
-- **Starter kit XLR** : microphone dynamique **XLR** à moins de 50€ + bonnette + bras de micro pas cher + table de mixage *Behringer U-Phoria UM2*
-   - C'est ce que j'ai installé sur le bureau de ma compagne, et ça fonctionne vraiment très bien. Et on peut régler facilement le gain (ce qui n'est pas toujours le cas avec un micro USB) pour éviter de saturer !
-- **Overkill** : microphone dynamique USB à moins de 50€ + bonnette + bras de micro pas cher + *DBX 286 S* + *Steinberg UR 12 MK2*
-   - C'est l'équipement que j'utilise sur ma machine personnelle. J'en ai fait l'acquisition pour faire autre chose que de la visio, mais j'étais très content de l'avoir quand je me suis mis au télétravail ! Le rendu est plus précis, plus fin qu'avec le Starter Kit XLR, mais personne d'autre que moi n'entend la différence. Mon conseil : commencez avec le Starter Kit XLR, et si un jour vous souhaitez travailler plus votre son, alors ajoutez-y un DBX 286S
+- **Starter kit XLR** : microphone **XLR** à moins de 50€ + bonnette + bras de micro pas cher + table de mixage 16 bits
+   - C'est ce que j'ai installé sur le bureau de ma compagne, et ça fonctionne sufisamment bien. Et on peut régler facilement le gain (ce qui n'est pas toujours le cas avec un micro USB) pour éviter de saturer !
+- **Confort** : microphone à moins de 50€ + bonnette + bras de micro pas cher + *DBX 286 S* + interface audio 24 bits
+   - C'est l'équipement que j'utilise sur ma machine personnelle. J'en ai fait l'acquisition pour faire autre chose que de la visio, mais j'étais très content de l'avoir quand je me suis mis au télétravail ! Le rendu est plus précis, le gate qui coupe le son quand je ne parle pas est un vrai plus (il permet d'éviter qu'on entend les bruits de mon environnement). Mon conseil : commencez avec le Starter Kit XLR, et si un jour vous souhaitez travailler plus votre son, alors ajoutez-y un DBX 286S
 
 Aussi, si vous partez sur du XLR, achetez de bons câbles.
 En théorie, la conception des câbles XLR minimise les bruits liés aux interférences électromagnétiques.
 En pratique :
-- Prenez-les de la bonne longueur. Trop long, c'est pas pratique, et vous augmentez le risque de capter des interférences
-- Un câble ridiculement fin sera probablement moins robuste qu'un câble plus épais. Mes références sont : 
+- Prenez-les de la bonne longueur. Trop long, c'est pas pratique
+- Un câble ridiculement fin sera probablement mécaniquement moins robuste qu'un câble plus épais. Mes références sont : 
     - Longueur 1,50 m : câble Cordial à environ 15€
     - Longueur 3m : câble Fender à environ 15€
