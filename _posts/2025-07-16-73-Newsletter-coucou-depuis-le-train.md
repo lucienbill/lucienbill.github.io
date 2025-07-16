@@ -1,8 +1,8 @@
 ---
 layout: newsletter
-title: 73 - TBD
+title: 73 - Coucou depuis le train
 category: newsletter
-subtitle: TBD
+subtitle: J'ai un train de retard, mais j'avance quand même !
 ---
 *{{ page.subtitle }}*
 <div class="date">
