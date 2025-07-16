@@ -56,7 +56,7 @@ L'autrice indique s'être sentie soulagée après avoir supprimé ses 7 années 
 Et même si elle cite DHH (personne très problématique), son système n'est pas mauvais : un fichier de notes avec les sujets en cours, c'est tout.
 
 ### [💡 Flounder Mode](https://joincolossus.com/article/flounder-mode)
-On peut chasser le "succès" à tout prix et founder sa start-up, au risque de devenir au moins aussi sympathique de Zucky, Bezos ou Steve Jobs.
+On peut chasser le "succès" à tout prix et fonder sa start-up, au risque de devenir au moins aussi sympathique de Zucky, Bezos ou Steve Jobs.
 
 On peut broyer de l'humain pour faire de jolis chiffres.
 
@@ -87,7 +87,7 @@ Techniquement, je pense qu'elle ne le pourra jamais (ou, du moins, pas à un co�
 ### [🤑 Klarna remplace ses IA par des vraies personnes](https://fortune.com/2025/05/09/klarna-ai-humans-return-on-investment)
 En bref, sans grande surprise : remplacer les vraies personnes par des bots, ça marche pas.
 
-Un soupçon de compétence technique sur le sujet aurait probablement permis de déterminer rapidement que c'était même complètement con. Pourtant beacoup le font, se plantent, regrettent, et reviennent en arrière.
+Un soupçon de compétence technique sur le sujet aurait probablement permis de déterminer rapidement que c'était même complètement con. Pourtant beaucoup le font, se plantent, regrettent, et reviennent en arrière.
 
 Moralité : ce n'est pas parce que le voisin ou la voisine fait un truc complètement con qu'on doit faire pareil.
 
@@ -95,7 +95,7 @@ Moralité : ce n'est pas parce que le voisin ou la voisine fait un truc complèt
 Quand une IA hallucine un package qui n'existe pas, c'est relou mais pas grave... Sauf quand des personnes malveillantes s'en rendent compte et créent des packages pour vous faire télécharger leur code !
 
 ### [👔 Mon collègue Julius](https://ploum.net/2024-12-23-julius-fr.html)
-Les assitants IA, est-ce vraiment si performant ?
+Les assistants IA, est-ce vraiment si performant ?
 Si vous avez lu le reste de cette newsletter, vous savez que ma réponse est "non"
 
 ## Social et politique
