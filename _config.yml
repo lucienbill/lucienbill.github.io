@@ -20,7 +20,7 @@
 
 title: Lucien Bill (blog)
 name: Lucien Bill (blog)
-email: lucien.bill@gmail.com
+email: contact@lucienbill.fr
 description-fr: >- # this means to ignore newlines until "baseurl:"
   Salut, et bienvenue sur mon site! Je suis Lucien, bidouilleur de code et testeur de logiciels. Pour en savoir plus, explorez les liens ci-dessous
 description-en: >- # this means to ignore newlines until "baseurl:"
@@ -46,6 +46,7 @@ footer-links:
 
 projects-links:
   newsletter: "https://lucien.run/newsletter"
+  newsletter_subscribe: "https://open.substack.com/pub/lucienbill" 
   linkedin: "https://www.linkedin.com/in/lucienbill/"
   twitch: "https://www.twitch.tv/billyzetroll/schedule"
   replays: "https://www.youtube.com/@billyzetroll/shorts"
