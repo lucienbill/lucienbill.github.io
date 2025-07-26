@@ -10,7 +10,7 @@ Cette page permet d'accéder aux issues publiées de ma newsletter.
 Je n'ai pas toutes les archives : j'ai migré plusieurs fois de système, et j'ai a chaque fois un peu eu la flemme de tout migrer.
 
 Je tente un nouveau système : publier à la fois sur mon site perso, et envoyer par e-mail.
-Pour vous abonner, vous pouvez donc <a href="{{ site.projects-links.newsletter }}">cliquer ici</a> ou vous servir du <a href="{{ site.baseurl }}/feed.xml">flux RSS</a>.
+Pour vous abonner, vous pouvez donc <a href="{{ site.projects-links.newsletter_subscribe }}">cliquer ici</a> ou vous servir du <a href="{{ site.baseurl }}/feed.xml">flux RSS</a>.
 </p>
 </div>
   <div class="posts">
