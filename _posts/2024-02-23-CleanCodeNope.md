@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "\"Clean Code\" et moi, ça fait 2 !"
+title: "'Clean Code' et moi, ça fait 2 !"
 excerpt_separator: <!--more-->
 ---
 
