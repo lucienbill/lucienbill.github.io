@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article class="post">
+  <h1>#{{ page.title }}</h1>
+  <div class="entry">
+    {{ content }}
+  </div>
+  <!-- note : je mets la date et le subtitle directement dans chaque newsletter
+  pour que ces infos apparaissent bien dans le flux RSS 
+  -->
+  <hr>
+  <div class="share">
+    Vous avez aimé cette issue de ma Newsletter ?
+    Vous pouvez : 
+    <ul>
+      <li>Partager <a href="https://www.lucienbill.fr{{ page.url }}">ce lien</a></li>
+      <li><a href="{{ site.projects-links.newsletter_subscribe }} ">Vous abonner avec votre e-mail</a></li>
+      <li>Vous abonner via le <a href="https://www.lucienbill.fr/feed.xml">flux RSS</a></li>
+    </ul>
+  </div>  
+</article>
