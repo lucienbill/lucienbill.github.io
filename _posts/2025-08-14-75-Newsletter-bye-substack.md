@@ -19,7 +19,7 @@ J'ai commencé à mettre quelque chose en place chez Infomaniak : [https://lucie
 L'expérience utilisateur·ice pour éditer n'est pas aussi bien pensée, mais c'est pas cher.
 Il me reste à vérifier que ça fonctionne (ça sera pour le prochain billet), et à réparer la page d'inscription : elle est moche, et charger plus de 80 ko de données pour 2 paragraphes et un petit formulaire, ça me paraît beaucoup.
 
-Bref : si tout va bien, c'est la dernière fois que vous me lisez sur Substack, et les prochains e-mails viendront d'une adreesse en `*@lucienbill.tech`
+Bref : si tout va bien, c'est la dernière fois que vous me lisez sur Substack, et les prochains e-mails viendront d'une adresse  en `*@lucienbill.tech`
 
 Bonne lecture !
 
@@ -64,7 +64,7 @@ Et j'ai trouvé l'article un peu alarmiste, d'autant plus que l'étude référen
 À mon précédent emploi, je testais des outils d'aide au diagnostic médical basés sur le machine learning (ML).
 Sans me prétendre expert du sujet, j'ai développé un avis sur la question. 
 
-Dans le mode médical, "IA" signigie souvent "ML" plutôt que "LLM".
+Dans le mode médical, "IA" signifie souvent "ML" plutôt que "LLM".
 Je pense qu'un bon algo de ML utilisé à bon escient peut littéralement sauver des vies, et que dans la plupart des cas les médecins qui les utilisent sont plus performant·es que les médecins qui ne l'utilisent pas.
 
 Devenir moins bon·ne sans l'outil parce qu'on est devenu habitué·e à l'outil, ce n'est qu'une partie de l'histoire.
@@ -124,12 +124,12 @@ Mais ma paix dépendait de l'acception de 2 individus de contourner le système 
 ### [Crise des opioïdes : Purdue Pharma et la famille Sackler vont payer 7,4 milliards de dollars](https://www.lemonde.fr/economie/article/2025/01/23/crise-des-opioides-purdue-pharma-et-la-famille-sackler-vont-payer-7-4-milliards-de-dollars_6512731_3234.html)
 Dans cette crise, la famille Sackler a une part de responsabilité importante.
 
-Iels ont caché le côté ultra adictif d'un opioïde et l'ont très agressivement poussé sur le marché, résultat : 700 000 mort·es.
+Iels ont caché le côté ultra addictif d'un opioïde et l'ont très agressivement poussé sur le marché, résultat : 700 000 mort·es.
 
 Pas de prison à la clé pour les coupables, mais une amende sévère : 6,5 milliards de dollars a payer sur 15 ans.
 
 C'est beaucoup, et pas grand chose à la fois.
-Leur fortune était estiméee à [10,8 milliards en 2024](https://www.yahoo.com/entertainment/sackler-family-net-worth-2024-005044669.html).
+Leur fortune était estimée à [10,8 milliards en 2024](https://www.yahoo.com/entertainment/sackler-family-net-worth-2024-005044669.html).
 
 
 En admettant que les 6,5Md disparaissent de suite et qu'iels ne collectent plus aucun revenus (ce qui est faux), il ne leur resterait "que" 4,3Md
