@@ -18,4 +18,4 @@ Bonne lecture !
 
 ## Trucs techniques
 ### TODO
-J'aurais pû mettre un Rickroll, j'ai eu la flemme un peu
+J'aurais pû mettre un Rickroll, j'ai eu la flemme un peu.
