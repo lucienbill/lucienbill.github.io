@@ -49,7 +49,8 @@ Une faille en 0 click, c'est malheureux mais ça arrive.
 Une non-réaction en mode "*oui, boh, ça va hein, on s'en fout c'est pas si grave*", ça me déçoit bien plus.
 
 ### [Le Symbole Clippy](https://trending.knowyourmeme.com/editorials/guides/why-is-everyone-making-clippy-their-profile-picture-the-clippy-cult-movement-against-tech-companies-explained)
-Vous en avez marre que de grosses corportations de la tech fouillent dans vos créations pour entraîner leurs IA ? 
+Vous en avez marre que les corportations de la tech fouillent dans vos données dans votre réel consentement ? 
 Vous n'êtes pas seul·e, et le symbole de ce mouvement est Clippy, en hommage à cet assistant que nous proposais des conseils génériques et respectait notre vie privée.
+
 
 Tout part de [cette vidéo de Louis Rossmann](https://www.youtube.com/watch?v=2_Dtmpe9qaQ)
