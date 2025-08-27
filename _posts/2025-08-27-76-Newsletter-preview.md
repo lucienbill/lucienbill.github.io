@@ -23,7 +23,7 @@ En attendant, vous n'esquiverez pas mes news, sauf si vous faites parties des 8 
 Notez : vous recevez ce message à un moment qui m'arrange, après je serai occupé dans les cartons pour une durée indéterminée.
 Je ne garantis pas d'être de retour dans 2 semaines, il faudra probablement patienter un peu.
 
-Et peut-être qu'un jour, j'écrirai sur mon système de newsletter et d'archives, pour répondres à ce genre de questions : 
+Et peut-être qu'un jour, j'écrirai sur mon système de newsletter et d'archives, pour répondre à ce genre de questions : 
 - Techniquement, ça fonctionne comment ? Je fais quoi pour publier ?
 - Ca me coûte combien exactement ?
 - Pourquoi je fais n'importe quoi avec le CSS sur mon site (avec des liens qui changent de couleur quand on les survolle), mais je n'embarque pas de CSS dans les e-mails que j'envoie ?
