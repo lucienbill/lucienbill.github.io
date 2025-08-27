@@ -17,11 +17,16 @@ Mais avec le déménagement, où trouve-je le temps d'écrire ce message ?
 C'est très simple : je suis en déplacement professionnel ! 
 Malin ! 
 
-Blague à part, si j'avais pû esquiver ce déplacement, je l'aurais fait. 
-En attendant, vous n'esquiverez pas mes news, sauf si vous faites parties des 8 personnes dont les adresses e-mails ont été déclarées *invalides* par le système.
+Blague à part, si j'avais pû esquiver ce déplacement, je l'aurais fait ; c'est essentiellement la faute à pas de chance. 
+En attendant, vous n'esquiverez pas mes news, sauf si vous faites parties des 8 personnes dont les adresses e-mail ont été déclarées *invalides* par le système.
 
 Notez : vous recevez ce message à un moment qui m'arrange, après je serai occupé dans les cartons pour une durée indéterminée.
 Je ne garantis pas d'être de retour dans 2 semaines, il faudra probablement patienter un peu.
+
+Et peut-être qu'un jour, j'écrirai sur mon système de newsletter et d'archives, pour répondres à ce genre de questions : 
+- Techniquement, ça fonctionne comment ? Je fais quoi pour publier ?
+- Ca me coûte combien exactement ?
+- Pourquoi je fais n'importe quoi avec le CSS sur mon site (avec des liens qui changent de couleur quand on les survolle), mais je n'embarque pas de CSS dans les e-mails que j'envoie ?
 
 Bonne lecture !
 
@@ -52,8 +57,8 @@ Une faille en 0 click, c'est malheureux mais ça arrive.
 Une non-réaction en mode "*oui, boh, ça va hein, on s'en fout c'est pas si grave*", ça me déçoit bien plus.
 
 ### [Le Symbole Clippy](https://trending.knowyourmeme.com/editorials/guides/why-is-everyone-making-clippy-their-profile-picture-the-clippy-cult-movement-against-tech-companies-explained)
-Vous en avez marre que les corportations de la tech fouillent dans vos données sans votre réel consentement ? 
-Vous n'êtes pas seul·e, et le symbole de ce mouvement est Clippy, en hommage à cet assistant que nous proposait des conseils génériques et respectait notre vie privée.
+Vous en avez marre que les corporations de la tech fouillent dans vos données sans votre réel consentement ? 
+Vous n'êtes pas seul·e, et le symbole de ce mouvement est Clippy, en hommage à cet assistant qui nous proposait des conseils génériques et respectait notre vie privée.
 
 
 Tout part de [cette vidéo de Louis Rossmann](https://www.youtube.com/watch?v=2_Dtmpe9qaQ)
@@ -76,8 +81,8 @@ Puis j'ai fini par comprendre que je faisais exactement le type d'articles que j
 Je pense que j'avais peur, à la base, de ne pas avoir un "personal branding" assez fort pour m'assurer une carrière.
 Aujourd'hui, j'ai renoncé à me créer une image de marque et je le vis bien.
 
-Si je ne trouve pas quelque chose d'intéressant à dire 3 jours par semaine avec des bullets points et des emojis, je préfère maintenant ne rien dire plutôt que de dire du rien.
-Ce n'est pas grave, la Terre continue de tourner
+Si je ne trouve pas quelque chose d'intéressant à dire 3 jours par semaine avec des bullet points et des emojis, je préfère maintenant ne rien dire plutôt que de dire du rien.
+Ce n'est pas grave, la Terre continue de tourner.
 
 ### [On peut se passer des images IA dans nos blogs](https://livelaugh.blog/posts/non-ai-images-for-blogs-websites/)
 Les images générées par IA, pour plein de raisons, c'est pas fou.
@@ -98,7 +103,7 @@ Allumer la climatisation, ça aggrave vraiment les canicules ?
 Oui et non.
 Au delà de la logique "*si on refroidit quelque part, c'est qu'on réchauffe ailleurs*", la densité de la population joue un rôle.
 
-La réponse n'est pas simple, et voici un dossier pour mieux comprendre
+La réponse n'est pas simple, et voici un dossier pour mieux comprendre.
 
 ### [Le bouton de l'ennui](https://www.youtube.com/shorts/DMT7nzySqpA)
 Hannah Fry présente régulièrement des sujets fascinants.
