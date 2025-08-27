@@ -1,5 +1,5 @@
 ---
-layout: newsletter_mail
+layout: newsletter
 title: 76 - Un nouveau cycle
 category: newsletter
 subtitle: Rien à voir avec le vélo, j'ai juste changé de service de newsletter !
