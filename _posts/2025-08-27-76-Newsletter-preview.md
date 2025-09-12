@@ -26,7 +26,7 @@ Je ne garantis pas d'être de retour dans 2 semaines, il faudra probablement pat
 Et peut-être qu'un jour, j'écrirai sur mon système de newsletter et d'archives, pour répondre à ce genre de questions : 
 - Techniquement, ça fonctionne comment ? Je fais quoi pour publier ?
 - Ca me coûte combien exactement ?
-- Pourquoi je fais n'importe quoi avec le CSS sur mon site (avec des liens qui changent de couleur quand on les survolle), mais je n'embarque pas de CSS dans les e-mails que j'envoie ?
+- Pourquoi je fais n'importe quoi avec le CSS sur mon site (avec des liens qui changent de couleur quand on les survole), mais je n'embarque pas de CSS dans les e-mails que j'envoie ?
 
 Bonne lecture !
 
