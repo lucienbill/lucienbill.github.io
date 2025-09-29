@@ -20,7 +20,16 @@ const colorsDark =
 
 function setRandomElementColor() {
     let currentTheme = localStorage.getItem("data-theme") || "default";
-    elements = Array.from(document.querySelectorAll("a, h1, h2, h3, h4, h5, strong, .specialButton .randomcolor"))
+    const allElements = Array.from(document.querySelectorAll("a:not(.anchorjs-link), h1, h2, h3, h4, h5, strong, .specialButton .randomcolor"));
+
+    const filteredElements = allElements.filter(el => {
+        // Always include links
+        if (el.tagName.toLowerCase() === "a:not(.anchorjs-link)") return true;
+
+        // For non-links, exclude if they contain a link
+        return !el.querySelector("a:not(.anchorjs-link)");
+    });
+
 
     if (currentTheme == "light"){
         shuffle(colorsLight)
@@ -28,8 +37,8 @@ function setRandomElementColor() {
         shuffle(colorsDark)
     }
 
-    for (let index = 0; index < elements.length; index++) { // Faster than foreach
-        elements[index].style.color = getColorRoundRobin(currentTheme, index);
+    for (let index = 0; index < filteredElements.length; index++) { // Faster than foreach
+        filteredElements[index].style.color = getColorRoundRobin(currentTheme, index);
     }
 }
 
@@ -58,7 +67,7 @@ function getColorRoundRobin(theme="light", index) {
 }
 
 function setColorHoverListener() {
-    Array.from(document.querySelectorAll("a, button")).forEach((e) => {
+    Array.from(document.querySelectorAll("button, a:not(.anchorjs-link)")).forEach((e) => {
     e.addEventListener("mouseover", setRandomElementColor);
 });
 }
