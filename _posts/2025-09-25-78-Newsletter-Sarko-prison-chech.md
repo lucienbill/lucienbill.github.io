@@ -1,5 +1,5 @@
 ---
-layout: newsletter_mail
+layout: newsletter
 title: 78 - Hashtag JeSuisNico
 category: newsletter
 subtitle: Non je déconne, pas de hashtag, je n'ai aucune compassion pour ce Nicolas
@@ -98,7 +98,7 @@ La vidéo explique bien, même si j'ai du mal avec le style "reportage à l'amé
 Du métal liquide, c'est trop cool, pas besoin de rajouter une musique qui en fait des caisses par dessus !
 
 ### [Un clavier mécanique parfait. Cher, mais parfait](https://youtube.com/watch?v=N3FEv1qw4_w&si=22G4MEGHe5RN1ujN)
-Le problème des claviers mécaniques, c'est le bruit de la touche espace : il a généralement un bruit de ferraille qui bouge.
+Le problème des claviers mécaniques, c'est le bruit de la touche espace : il a généralement un son de ferraille qui bouge.
 
 Le parcours sur lequel cette personne s'est lancé pour résoudre un problème de niche me fascine, et il y a encore une fois de la belle ingénierie mécanique !
 
