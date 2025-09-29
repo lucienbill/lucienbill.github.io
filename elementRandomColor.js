@@ -37,8 +37,8 @@ function setRandomElementColor() {
         shuffle(colorsDark)
     }
 
-    for (let index = 0; index < elements.length; index++) { // Faster than foreach
-        elements[index].style.color = getColorRoundRobin(currentTheme, index);
+    for (let index = 0; index < filteredElements.length; index++) { // Faster than foreach
+        filteredElements[index].style.color = getColorRoundRobin(currentTheme, index);
     }
 }
 
