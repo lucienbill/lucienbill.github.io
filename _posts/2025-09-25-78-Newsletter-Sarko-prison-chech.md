@@ -2,7 +2,7 @@
 layout: newsletter_mail
 title: 78 - Hashtag JeSuisNico
 category: newsletter
-subtitle: Non je déconne, pas de hashtag, je n'ai aucune compassion pour Nicolas
+subtitle: Non je déconne, pas de hashtag, je n'ai aucune compassion pour ce Nicolas
 ---
 *{{ page.subtitle }}*
 <div class="date">
@@ -23,9 +23,9 @@ Le principe est similaire, à un détail près : sur hackernews, n'importe qui p
 Je pense que ces 2 modèles sont complémentaires.
 
 
-Ah, et comme de temps en temps : je publie un peu en décalé, pas d'inquiétude je suis juste en déplacement pro donc j'adapte un peu.
+Ah, et comme de temps en temps : je publie un peu en décalé, pas d'inquiétude j'étais juste en déplacement pro donc j'adapte un peu.
 
-J'ai profité du temps de trajet pour écouter des replays de l'emission "La Dernière" (radio Nova), les podcast [Burn your Idols](https://shows.acast.com/Burn-Your-Idols) de Magali Milbergue, et sa conférence "Burn Your Idols" ([YouTube](https://youtu.be/4nq0jc-7WCw?si=WpEwruxkh-kytiom)). Du divertissement, et de vraies réflexions sur le concept même d'idoles, importantes à comprendre si on veut dépasser un système qui pousse au culte de la personnalité. Typiquement, j'apprécie beaucoup ce que fait Magali, et sa personne également. Ça, c'est cool. Mais la mettre sur un piédestal, en faire une sorte de divinité personnelle, c'est beaucoup moins cool. 
+J'ai profité du temps de trajet pour écouter des replays de l'emission "La Dernière" (radio Nova), le podcast [Burn your Idols](https://shows.acast.com/Burn-Your-Idols) de Magali Milbergue, et sa conférence "Burn Your Idols" ([YouTube](https://youtu.be/4nq0jc-7WCw?si=WpEwruxkh-kytiom)). Du divertissement, et de vraies réflexions sur le concept même d'idoles, importantes à comprendre si on veut dépasser un système qui pousse au culte de la personnalité. Typiquement, j'apprécie beaucoup ce que fait Magali, et sa personne également. Ça, c'est cool. Mais la mettre sur un piédestal, en faire une sorte de divinité personnelle, ça serait beaucoup moins cool. 
 
 Bonne lecture !
 
@@ -35,14 +35,14 @@ J'avais déjà du mal avec l'entreprise Shopify, qui s'est mise au service du dr
 
 Shopify descend encore dans mon estime en torpillant la communauté open source.
 
-### [l'IA comme guide spirituel](https://arstechnica.com/ai/2025/09/millions-turn-to-ai-chatbots-for-spiritual-guidance-and-confession/)
+### [L'IA comme guide spirituel](https://arstechnica.com/ai/2025/09/millions-turn-to-ai-chatbots-for-spiritual-guidance-and-confession/)
 Je ne suis pas un expert en théologie.
 Cependant, je suis 100% persuadé que l'IA n'est pas une divinité, et je ne recommande pas de se tourner vers elle pour des conseils spirituels.
 
 ### [Oh, un ver !](https://thehackernews.com/2025/09/40-npm-packages-compromised-in-supply.html)
 L'écosystème javascript est encore attaqué, et cette fois c'est un beau ver qui se propage.
 
-Si je comprends bien, l'un des mécanismes de propagation est "*ma CI détecte quand des dépendences de mon protet sortent une version 'patch' (au sens versioning sémantique), et mettent automatiquement à jour dans ce cas*".
+Si je comprends bien, l'un des mécanismes de propagation est "*ma CI détecte quand des dépendences de mon projet sortent une version 'patch' (au sens versioning sémantique), et mettent automatiquement à jour dans ce cas*".
 
 ### [Intel outside](https://eaton-works.com/2025/08/18/intel-outside-hack/)
 Une faille de sécurité dans le sytème de commandes de cartes de visites chez Intel permettait d'accéder à beaucoup trop de données d'employé·es
