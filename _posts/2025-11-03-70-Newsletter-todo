@@ -9,4 +9,11 @@ subtitle: Todo
 Publiée le {{ page.date | date: "%d" }}/{{ page.date | date: "%m" }}/{{ page.date | date: "%Y" }}
 </div>
 
-Todo
+todo
+
+## Trucs techniques
+
+### [Comment foirer sa coloration syntaxique](https://tonsky.me/blog/syntax-highlighting/)
+Avec un IDE moderne, on peut mettre des couleurs dans tous les sens pour tenter d'y voir plus clair dans le code. Pour éviter de s'emmêler les pinceaux (ouais, je pioche dans le champ lexical de la couleur, achetez [ma formation](https://youtu.be/dQw4w9WgXcQ?si=IrclenulCFOYZrxk) pour apprendre toutes mes astuces de power writing), mieux vaut de pencher sur l'UX avant de tout personnaliser 
+
+## Les clowneries de la tech 🤡
