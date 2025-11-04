@@ -27,9 +27,10 @@ La partie que je trouve drôle : les pirates ont contacté Redhat pour tenter de
 ### [Prévoir comment va se comporter une IA en prod](https://arxiv.org/html/2403.16795v1)
 Version courte : c'est galère pour tout un tas de raisons.
 
+
 ## Les clowneries de la tech 🤡
 
-### [Pas d'IA dans le pub d'Open AI](https://www.forbes.com/sites/dimitarmixmihov/2025/02/10/why-ai-maker-openai-didnt-use-ai-to-make-its-super-bowl-ad-about-ai/)
+### [Pas d'IA dans la pub d'Open AI](https://www.forbes.com/sites/dimitarmixmihov/2025/02/10/why-ai-maker-openai-didnt-use-ai-to-make-its-super-bowl-ad-about-ai/)
 
 J'ai découvert qu'OpenAi avait lâché un gros paquet de pognon pour faire de la pub pendant le super bowl.
 
@@ -56,6 +57,9 @@ Oracle a construit le système du vidéo surveillance a Beijing. Le boss Larry E
 Dans la newsletter de [Cassidy Williams](https://cassidoo.co/newsletter/) j'ai découvert une façon créative de lutter contre le piratage de vos projets.
 Je ne spoil pas, l'article est court et se lit vraiment bien
 
+### [64 bits](https://dfarq.homeip.net/athlon-64-how-amd-turned-the-tables-on-intel/)
+L'histoire de la transition des OS 32 bits vers 64 bits pour les PC est très liée à la concurrence entre Intel et AMD.
+
 ## Vidéos
 ### [Le brutalisme constitutionnel de la macronie](https://www.youtube.com/watch?v=W5X4aDYJiEs)
 La macronie exploite toutes les règles de la loi et de la constitution de la Vième république pour faire nous oppresser en toute légalité. C'est le brutalisme constitutionnel.
@@ -69,6 +73,10 @@ Pour annoncer un plan social, pourquoi on ne ferait pas appel à un·e humoriste
 
 Bonne idée pour un film dystopique. Dans la réalité, je recommande plutôt aux  personnes qui sont tentées par ça d'enlever leurs vêtements et d'aller faire des câlins à des cactus.
 
+
+### [Transformer Portal 2 en serveur web](https://youtu.be/-v5vCLLsqbA?si=5dnBzPv81GoNpICr)
+c'est faisable, c'est fun, et curieusement utile pour mieux comprendre comment fonctionne un serveur web. 
+
 ## Insolite
-### [On peur recharger des piles non-rechargeable](https://www.linkedin.com/posts/lucile-vannier-%F0%9F%8C%BF%F0%9F%90%8C-she-her-104b191_greenit-numaezriqueresponsable-rse-activity-7379629861419622400-I74K)
+### [On peut recharger des piles non-rechargeable](https://www.linkedin.com/posts/lucile-vannier-%F0%9F%8C%BF%F0%9F%90%8C-she-her-104b191_greenit-numaezriqueresponsable-rse-activity-7379629861419622400-I74K)
 Je n'ai pas vérifié par moi même, mais le concept est pas idiot !
