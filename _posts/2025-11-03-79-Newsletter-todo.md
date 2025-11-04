@@ -9,7 +9,16 @@ subtitle: Todo
 Publiée le {{ page.date | date: "%d" }}/{{ page.date | date: "%m" }}/{{ page.date | date: "%Y" }}
 </div>
 
-todo
+Coucou !
+
+cette semaine je vous propose des news pas si fraiches, puisque j'ai encore pris une petite pause.
+
+J'ai vu des canards, je me suis déguisé en père Noël pour Halloween, et j'ai fait des essais de nerd sur des techniques de production audiovisuelle (timecode, et vidéos 10 bits log). 
+
+Bref, je ne garantis vraiment pas de tenir le rythme d'une publication toutes les 2 semaines, ce qui me conforte dans l'idée de continuer de faire ça gratuitement. Pour l'instant j'ai le privilège de pouvoir le faire sur mon temps libre sans que ça me coûte grand chose, je trouve ça très cool de ne pas avoir besoin de monétiser.
+
+Bonne lecture !
+
 
 ## Trucs techniques
 
@@ -59,6 +68,12 @@ Je ne spoil pas, l'article est court et se lit vraiment bien
 
 ### [64 bits](https://dfarq.homeip.net/athlon-64-how-amd-turned-the-tables-on-intel/)
 L'histoire de la transition des OS 32 bits vers 64 bits pour les PC est très liée à la concurrence entre Intel et AMD.
+
+### [On a réussi a faire pire que les mots de passe](https://blog.danielh.cc/blog/passwords)
+Sur certains services, quand vous tentez de vois connecter, vois recevez un mot de passe temporaire à 6 chiffres : en termes de sécurité, c'est pas fou.
+L'auteur écrit que c'est parce que ça protège vraiment pas du phising : un site malicieux peut vois piéger, et vous demander un code... qui proviendra du vrai site !
+
+[Ce commentaire](https://news.ycombinator.com/item?id=44821568) présente un autre vecteur d'attaque : 6 chiffres, c'est peu. Même quand le service est protégé contre le brute-force, si on tente de se connecter à énormément de comptes juste 4 fois pas jour, on a une chance trop élevée de deviner juste par hasard tôt ou tard. 
 
 ## Vidéos
 ### [Le brutalisme constitutionnel de la macronie](https://www.youtube.com/watch?v=W5X4aDYJiEs)
