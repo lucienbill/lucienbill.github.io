@@ -1,1 +1,12 @@
-toso
+---
+layout: newsletter
+title: 79 - Todo
+category: newsletter
+subtitle: Todo
+---
+*{{ page.subtitle }}*
+<div class="date">
+Publiée le {{ page.date | date: "%d" }}/{{ page.date | date: "%m" }}/{{ page.date | date: "%Y" }}
+</div>
+
+Todo
