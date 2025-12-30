@@ -26,7 +26,7 @@ Quand une personne délègue ce travail à une IA, il ne lui reste qu'à faire l
 Et faire ces revues en boucle, en ne créant plus rien soi-même, ce n'est pas nécessairement agréable. 
 En tout cas, j'ai un ami qui a cessé d'utiliser l'IA pour son travail de développeur pour cette raison : il prenait plus de plaisir à coder lui-même plutôt qu'à faire des revues de codes pondus par des LLM.
 
-Autrement formulé : la pertinence de l'IA générative en tant qu'outil dépend du cas d'usage, et on nous survend clairement l'efficacité de l'outil pour beaucoup de contextes. 
+Autrement formulé : la pertinence de l'IA générative en tant qu'outil dépend du cas d'usage. 
 Et honnêtement, ce point me dérange moins que les autres, c'est vraiment la pointe de l'Iceberg.
 
 ## L'Iceberg
@@ -79,3 +79,4 @@ De la même manière que si je débarque chez vous et que j'urine sur votre lit,
 
 Vous aurez probablement deviné ce que je pense des tech-bro qui clament haut et fort que soit tu utilises l'IA, soit tu es dépassé·e. 
 C'est au mieux de l'incompétence ou de l'ignorance (c'est pardonnable, et ça peut se régler), au pire de la malveillance délibérée.
+
