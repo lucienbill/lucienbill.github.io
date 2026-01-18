@@ -112,5 +112,5 @@ Personne ne peut deviner tous vos talents, c'est à vous de les mettre en avant.
 
 ## Autopromo
 - Pour me contacter, venez sur [Twitter](https://twitter.com/BillyTheTroll) ou [LinkedIn](https://www.linkedin.com/in/{{ site.footer-links.linkedin }}).
-- Pour papoter en direct, je suis aussi sur [Twitch](https://www.twitch.tv/billyzetroll/schedule) (en ce moment, je code et je fais de la veille technologique).
+- Pour papoter en direct, je suis aussi sur [Twitch]({{ site.projects-links.twitch }}) (en ce moment, je code et je fais de la veille technologique).
 - Et une fois par semaine, j'essaie de partager des choses intéressantes dans ma [Newsletter]({{ site.projects-links.newsletter }}).

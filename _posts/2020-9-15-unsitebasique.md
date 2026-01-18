@@ -16,7 +16,7 @@ D'autres que moi l'ont constaté : malgré nos connexions de plus en plus rapide
 
 ## Mon site et son impact
 
-Avec le peu de traffic que je génère, la pollution liée à mon site est faible. Si vraiment je ne voulais pas polluer du tout, je n'aurais pas de site internet, je ne streamerais pas sur [twitch](https://www.twitch.tv/allgeekstudio/), je ne balancerais pas autant de photos et vidéos débiles sur [Twitter](https://twitter.com/AllGeekStudio/status/1298280741936287747), [Facebook](https://www.facebook.com/AllGeekStudio/photos/a.1630812647133065/2617428641804789) ou [Instagram](https://www.instagram.com/p/CDYzNinIQ1W/)...
+Avec le peu de traffic que je génère, la pollution liée à mon site est faible. Si vraiment je ne voulais pas polluer du tout, je n'aurais pas de site internet, je ne streamerais pas sur [twitch]({{ site.projects-links.twitch }}), je ne balancerais pas autant de photos et vidéos débiles sur [Twitter](https://twitter.com/AllGeekStudio/status/1298280741936287747), [Facebook](https://www.facebook.com/AllGeekStudio/photos/a.1630812647133065/2617428641804789) ou [Instagram](https://www.instagram.com/p/CDYzNinIQ1W/)...
 
 Je tiens quand-même à ce que mon site soit léger et rapide à charger :
 
