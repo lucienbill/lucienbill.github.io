@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 Vous voulez automatiser vos tests logiciels : c'est cool !
 C'est probablement une bonne idée, mais il existe trop de façon de mal s'y prendre.
 
-Déjà, vous ne voulez pas automatiser vos tests, ce n'est pas un fin en soi.
+Déjà, vous ne voulez pas automatiser vos tests, ce n'est pas une fin en soi.
 Vous voulez automatiser dans un but précis, et vous ne devriez automatiser qu'une partie de vos tests.
 
 Et, si ça peut aider, je vous propose mon retour d'expériences et quelques conseils.
@@ -129,4 +129,10 @@ J'aurais pu enrichir avec des exemples, mais mon but n'est pas vraiment de conva
 
 Elle n'a rien de révolutionnaire, elle s'appuie sur un concept qui commence à dater mais qui est toujours aussi mal compris : l'agilité.
 
+Dites vous aussi également que si vous vous reconnaissez dans les pratiques que je tends à éviter, ce n'est pas grave.
+Peut-être même que dans votre contexte, elles ont du sens.
+
 Si cet article déclenche des réflexions, vous pousse à poser des questions autour de vous, alors je suis satisfait.
+
+S'il vous donne envie de changer certaines pratiques, c'est cool aussi, je vous encourage tout de même à essayer de ne pas changer tout d'un coup.
+Allez-y doucement, et travaillez en équipe.
