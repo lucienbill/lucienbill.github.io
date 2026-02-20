@@ -34,11 +34,11 @@ L'infrastructure n'est pas prête, l'environnement dans le contexte Bananatronic
 
 Les 10 fantastiques ont un objectif : prendre les cas de tests du référentiel, et en automatiser un maximum.
 
-Le temps passe, et l'environnement cible est enfin prêt.
+Le temps passe, et l'environnement cible est enfin opérationnel.
 Ca tombe bien, 80% des tests ont été automatisés !
-Elles ont fait un framework très technique et ont confiance dans leur code.
+Grâce à son framework très technique,l'équipe a confiance dans son code.
 
-Donc : l'équipe livre ses tests sur l'environnement et ... rien ne fonctionne.
+Donc : on livre les tests sur l'environnement et ... rien ne fonctionne.
 
 Si cette histoire vous est familière, c'est parce qu'elle est inspirée de plusieurs faits réels.
 
@@ -99,8 +99,8 @@ Donc, quand j'automatise un test manuel, j'ai tendance à le remplacer par :
 - un test automatisé qui vérifie le workflow. Idéalement d'une manière rapide à mettre en place, qui se concentre sur les tâches faciles pour un robot, et pénibles pour une personne (exemple : vérifier que les valeurs affichées utilisent la bonne formule mathématique)
 - un test manuel allégé, qui concentre l'effort sur l'UX, le visuel, ou l'exploration
 
-Aussi, je m'autorise à ce qu'un seul test automatisé couvre des portions qui correspondaient avant à plusieurs tests manuels.
-C'est une façon d'optimiser les temps d'exécutions.
+Aussi, je m'autorise à ce qu'un seul test automatisé couvre des portions qui correspondaient avant à plusieurs tests manuels - un seul test qui participe à couvrir plusieurs exigences.
+C'est une façon d'optimiser les temps d'exécutions, à condition d'avoir un système efficace pour relier les tests et les exigences.
 
 En bref : la suite d'instructions qui est décrite dans le test manuel n'est pas nécessairement celle que j'automatise.
 
