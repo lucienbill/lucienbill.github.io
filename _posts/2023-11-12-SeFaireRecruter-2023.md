@@ -5,7 +5,7 @@ excerpt_separator: <!--more-->
 ---
 
 ## Un peu de contexte
-J'ai un vieil article sur ce sujet : [Quelques astuces pour se faire recruter dans la tech]({{ site.url }}/SeFaireRecruter) - il date un peu, il est temps de le dépoussiérer.
+J'ai un vieil article sur ce sujet : [Quelques astuces pour se faire recruter dans la tech](/SeFaireRecruter) - il date un peu, il est temps de le dépoussiérer.
 
 Aujourd'hui se faire recruter est plus difficile qu'en 2021. La crise des financements des start-up secoue encore pas mal le secteur de l'IT, et je vois autour de moi quelques effets dont je me serais bien passé : 
 - Les juniors et les reconverti·es galèrent à trouver des entreprises qui leur donnent leur chance (pourtant les avoir des une équipe est une vraie richesse)
