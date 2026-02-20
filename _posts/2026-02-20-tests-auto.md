@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 ## Préambule
 
 Vous voulez automatiser vos tests logiciels : c'est cool !
-C'est probablement une bonne idée, mais il existe trop de façon de mal s'y prendre.
+C'est probablement une bonne idée, mais il existe trop de façons de mal s'y prendre.
 
 Déjà, vous ne voulez pas automatiser vos tests, ce n'est pas une fin en soi.
 Vous voulez automatiser dans un but précis, et vous ne devriez automatiser qu'une partie de vos tests.
@@ -59,9 +59,9 @@ Déjà, j'aime commencer un projet d'automatisation avec une petite équipe : id
 
 Être seul sur ce type de mission, j'ai déjà fait et je ne recommande pas : si je suis seul, qui peut m'aider à prendre de bonnes décisions ? 
 Qui peut poser des questions sur ce que je fais ?
-Ces questions mènent à la recherche de sens, et aident à éviter de faire une implémentation technique élégante mais pas adaptée au besoin métier.
+Ces questions mènent à la recherche de sens, et aident à éviter de faire une implémentation technique bancale ou pas adaptée au besoin métier.
 
-A l'opposé de cette situation, commencer avec une équipe conséquente dilue les responsabilités et les prises d'initiatives.
+A l'opposé de cette situation, commencer avec une équipe trop grande dilue les responsabilités et les prises d'initiatives.
 Si je suis avec 9 autres personnes que je ne connais pas, qui mène la danse, selon quels critères ? 
 Vais-je dépenser de l'énergie pour améliorer le fonctionnement, ou me conformer à une majorité floue pour ne pas faire de vagues, privilégiant ainsi ma survie en milieu d'entreprise ?
 
@@ -78,8 +78,10 @@ On peut tout scripter de notre côté, puis faire de grosses livraisons sur l'en
 Ca ne fonctionne pas, et on le sait.
 Par exemple : si vous codez un script d'une seule traite et l'exécutez à la fin, il n'y a aucune chance pour qu'il fasse ce que vous voulez !
 
+Je pense la même chose des gros frameworks, mais j'en parle plus loin.
+
 Bref : prenez quelques cas de test, trouvez une façon de les automatiser qui a du sens dans votre contexte.
-Trouves l'organisation de code qui est pertinente pour vous.
+Trouvez l'organisation de code qui est pertinente pour vous.
 Puis rajoutez des tests, découvrez petit à petit les problèmes, que vous pourrez résoudre les uns après les autres.
 
 Faites ça en boucle, remettez régulièrement en question vos besoins et vos hypothèses, et ça ira mieux.
@@ -90,7 +92,7 @@ Une personne est intelligente, un robot de test ne l'est pas.
 Lorsqu'on vous demande de tester une série d'actions sur une application, vous êtes capables de vérifier la cohérence du parcours, la conformité des visuels par rapport à une maquette ou un arrangement prédéfini, et de juger la qualité de l'expérience utilisateurice.
 
 Le robot, lui, n'exécute que ce qu'on lui demande : c'est excellent pour valider que la série d'actions mène à un effet quelconque, du type "remplir les formulaires mène à une écriture dans la base de données".
-L'effort nécessaire pour lui faire vérifier la cohérence visuelle d'une interface graphique peut être plus conséquent : est-ce toujours un effort qui vaut la peine ?
+L'effort nécessaire pour lui faire vérifier la cohérence visuelle d'une interface graphique peut être plus conséquent : c'est un cas d'usage que je garde pour plus tard, une fois qu'on a automatisé les parties plus faciles et qu'on maîtrise mieux le système.
 Et : le robot ne saura pas vérifier ce qu'on ne lui a pas demandé de vérifier.
 
 Donc, quand j'automatise un test manuel, j'ai tendance à le remplacer par : 
