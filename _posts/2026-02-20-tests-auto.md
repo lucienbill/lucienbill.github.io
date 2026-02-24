@@ -89,7 +89,7 @@ Faites ça en boucle, remettez régulièrement en question vos besoins et vos hy
 ### Un test manuel n'est pas forcément automatisable
 Une personne est intelligente, un robot de test ne l'est pas.
 
-Lorsqu'on vous demande de tester une série d'actions sur une application, vous êtes capables de vérifier la cohérence du parcours, la conformité des visuels par rapport à une maquette ou un arrangement prédéfini, et de juger la qualité de l'expérience utilisateurice.
+Lorsqu'on vous demande de tester une série d'actions sur une application, vous êtes capables de vérifier la cohérence du parcours, la conformité des visuels par rapport à une maquette ou un arrangement prédéfini, et de juger la qualité de l'expérience utilisateurice (UX).
 
 Le robot, lui, n'exécute que ce qu'on lui demande : c'est excellent pour valider que la série d'actions mène à un effet quelconque, du type "remplir les formulaires mène à une écriture dans la base de données".
 L'effort nécessaire pour lui faire vérifier la cohérence visuelle d'une interface graphique peut être plus conséquent : c'est un cas d'usage que je garde pour plus tard, une fois qu'on a automatisé les parties plus faciles et qu'on maîtrise mieux le système.
