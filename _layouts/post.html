@@ -16,7 +16,7 @@ layout: default
   {% endif %}
 
   <details>
-    <summary>Structure de l'article</summary>
+    <summary>{% if page.lang == "en-GB" %}Structure of the post{% else %}Structure de l'article{% endif %}</summary>
     <div id="articleSummary"></div>
   </details>
 
@@ -25,13 +25,27 @@ layout: default
   </div>
   <hr>
   <div class="share">
-    Vous avez aimé cet article ? Partagez-le -> <button id="copyPermalink" title="Cliquez ici pour copier le lien vers cet article." onclick="copyToClipboard()" permalink="{{ site.url }}{{ page.url }}">📄</button>
+    {% if page.lang == "en-GB" %}
+    Did you like what you just read? Share it ->
+    {% else %}
+    Vous avez aimé cet article ? Partagez-le -> 
+    {% endif %}
+    <button id="copyPermalink" title="Cliquez ici pour copier le lien vers cet article." onclick="copyToClipboard()" permalink="{{ site.url }}{{ page.url }}">📄</button>
   </div>
 
   <div class="date">
-    Publié le {{ page.date | date: "%d" }}/{{ page.date | date: "%m" }}/{{ page.date | date: "%Y" }}.
+    {% if page.lang == "en-GB" %}
+      {% assign this_date = page.date | date:"%Y-%m-%d" %}
+      {% assign published_date = "Published on " | append: this_date %}
+      {% assign updated_on = "Updated on " | append: page.updatedOn %}
+    {% else %}
+      {% assign this_date = page.date | date:"%d/%m/%Y" %}
+      {% assign published_date = "Publié le " | append: this_date %}
+      {% assign updated_on = "Mis à jour le " | append: page.updatedOn %}
+    {% endif %}
+    {{ published_date }}.
     {% if page.updatedOn %}
-    Mis à jour le {{page.updatedOn}}
+    {{updated_on}}
     {% endif %}
   </div>
 </article>
