@@ -67,7 +67,7 @@ These questions lead to the search for purpose, they help to avoid cobbling a fl
 
 On the opposite side of the spectrum, starting with too big of a team dilutes responsibility and initiatives.
 When I am whith 9 strangers, who leads the show ?
-Under which criteria?
+According to which criteria?
 Will I spend my energy trying to improve how we work, of will I follow a vague majority and blend in to favor corporate survival?
 
 A team starting at 2 people seems like a good trade-off.
@@ -140,14 +140,14 @@ Even though development hasn't even started, you can get an idea of which test w
 
 I'm stopping here, this is already quite a long post.
 I could have added more examples but my goal isn't really to convince anyone here.
-Rather, I wanted to share a summary of my vision
+Rather, I wanted to share a summary of my vision.
 
-It is nothing groundbreaking, it partially leans on a concept that is beginning to be quite dated and is yet still severely misunderstood: agility.
+It is nothing groundbreaking, it partially leans on a concept that isn't exactly new but is still woefully misunderstood: agility.
 
-Please also note that if you recognize yourself some of the practices I tend to avoid, it isn't a big deal.
+Please also note that if you recognize yourself in some of the practices I tend to avoid, it isn't a big deal.
 They might actually be relevant to your context.
 
-If this post sparks some reflection and make you ask questions, then I'm satisfied.
+If this post sparks some reflections and make you ask questions, then I'm satisfied.
 
 If it triggers a will to change some of your habits this is cool too, though I would encourage you to avoid changing everything all at once.
 Keep a moderate pace and rely on teamwork.
