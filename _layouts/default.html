@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{% if page.lang %}{{ page.lang }}{% else %}fr-fr{% endif %}" data-theme="dark">
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}fr{% endif %}" data-theme="dark">
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -48,7 +48,7 @@
           <div class="site-info">
             <p class="site-description" lang="fr">{{ site.description-fr }}</p>
             <hr>
-            <p class="site-description" lang="en-GB">{{ site.description-en }}</p>
+            <p class="site-description" lang="en">{{ site.description-en }}</p>
             <hr>
           </div>
           <nav>

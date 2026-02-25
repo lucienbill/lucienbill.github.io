@@ -2,7 +2,7 @@
 layout: post
 title: "About automating software tests"
 excerpt_separator: <!--more-->
-lang: "en-GB"
+lang: "en"
 ---
 
 ## Foreword

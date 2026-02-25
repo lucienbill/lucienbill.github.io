@@ -16,7 +16,7 @@ layout: default
   {% endif %}
 
   <details>
-    <summary>{% if page.lang == "en-GB" %}Structure of the post{% else %}Structure de l'article{% endif %}</summary>
+    <summary>{% if page.lang == "en" %}Structure of the post{% else %}Structure de l'article{% endif %}</summary>
     <div id="articleSummary"></div>
   </details>
 
@@ -25,7 +25,7 @@ layout: default
   </div>
   <hr>
   <div class="share">
-    {% if page.lang == "en-GB" %}
+    {% if page.lang == "en" %}
     Did you like what you just read? Share it ->
     {% else %}
     Vous avez aimé cet article ? Partagez-le -> 
@@ -34,7 +34,7 @@ layout: default
   </div>
 
   <div class="date">
-    {% if page.lang == "en-GB" %}
+    {% if page.lang == "en" %}
       {% assign this_date = page.date | date:"%Y-%m-%d" %}
       {% assign published_date = "Published on " | append: this_date %}
       {% assign updated_on = "Updated on " | append: page.updatedOn %}
