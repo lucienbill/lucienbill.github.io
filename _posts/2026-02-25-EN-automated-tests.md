@@ -100,7 +100,7 @@ When asked to perform a series of actions against an app, you can check whether 
 
 The robot, on the other hand, only does what it's told.
 This works wonders to assert that a sequence of actions leads to some effect, such as "fill the forms, then check that some data is written in the system".
-It can require more effort to get the robot the check the consistence of a UI layout: I usually keep such tasks for later, once the easy parts are taken care of and the team has a deeper understanding of the system.
+It can require more effort to get the robot the check the consistency of a UI layout: I usually keep such tasks for later, once the easy parts are taken care of and the team has a deeper understanding of the system.
 And: the robot will not check what it hasn't been asked to check.
 
 So when I automate a manual test case I tend to replace it with:
@@ -129,7 +129,7 @@ And please remember that you do not want to re-implement the logic of the tested
 
 ### New test cases
 It is Prime time: a new feature is being written, and it comes with new requirements and updates to some existing ones.
-While developers analyze the changes and start thinking about how to implement them, you also analyse them and with your critical perspective:
+While developers analyze the changes and start thinking about how to implement them, you also analyse them with your critical perspective:
 - Do they make sense?
 - How can they be tested?
 
