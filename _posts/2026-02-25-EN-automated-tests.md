@@ -74,7 +74,7 @@ A team starting at 2 people seems like a good trade-off.
 As the team is breaking in, it will know when it will be ready to welcome a third person, then an fourth etc.
 
 What I really like about starting small is how easy it is to operate on consensus rather than on hierarchy - to use a horizontal organisation rather than a vertical one.
-In the field of software quality engineering, it is an effective way to prevent great ideas from behind squashed by the weight of authority.
+In the field of software quality engineering, it is an effective way to prevent great ideas from being squashed by the weight of authority.
 
 
 ### Start small
