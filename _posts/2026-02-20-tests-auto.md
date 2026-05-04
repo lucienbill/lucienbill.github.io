@@ -36,7 +36,7 @@ Les 10 fantastiques ont un objectif : prendre les cas de tests du référentiel,
 
 Le temps passe, et l'environnement cible est enfin opérationnel.
 Ca tombe bien, 80% des tests ont été automatisés !
-Grâce à son framework très technique,l'équipe a confiance dans son code.
+Grâce à son framework très technique, l'équipe a confiance dans son code.
 
 Donc : on livre les tests sur l'environnement et ... rien ne fonctionne.
 
@@ -119,7 +119,7 @@ Mon rôle en tant que testeur est avant tout de vérifier que l'application test
 Et rappelez-vous que vous ne voulez pas réimplémenter la logique de l'application testée, vous voulez juste faciliter les tests.
 
 ### Les nouveaux cas de test
-C'est le grand jour : une nouvelle fonctionnalité est en cours d'écriture, avec son lot de nouvelles exigences, et de modification d'une partie de celles qui existaient déjà.
+C'est le grand jour : une nouvelle fonctionnalité est en cours d'écriture, avec son lot de nouvelles exigences, et de modifications d'une partie de celles qui existaient déjà.
 Pendant que les développeureuses analysent ces changement en se demandant comment les implémenter, vous les analysez en vous demandant : 
 - ont-ils du sens ?
 - comment les tester ?
